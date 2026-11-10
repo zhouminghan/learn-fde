@@ -32,3 +32,4 @@ npm run content:validate
 - 每次发布前及内容更新后，重新检查腾讯云 FDE 认证详情页的考试参数与知识分布。
 - 官方参数变化时：更新 `exam-blueprint.json` 的 `version`，并在 `docs/about/` 与本题库记录变更依据。
 - 未完成官方核验的内容应标注为待核验，不进入正式题库。
+- 多选题判分以官方指南“错选、漏选不得分”为准（https://cloud.tencent.com/document/product/658/137832，2026-09-10 更新），learn-FDE 实现为完全匹配计分。

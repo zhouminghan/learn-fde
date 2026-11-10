@@ -20,7 +20,7 @@
       <ul>
         <li>模拟考试题目为根据公开知识点设计的原创练习，非腾讯云官方真题。</li>
         <li>模拟成绩仅表示达到本项目模拟规则的分数，不代表腾讯云官方成绩或认证结果。</li>
-        <li>多选题“完全匹配计分”为 learn-FDE 当前模拟判分口径，不代表官方判分细则。</li>
+        <li>多选题按官方指南“错选、漏选不得分”判分，learn-FDE 实现为完全匹配计分。</li>
         <li>所有学习数据仅保存在当前浏览器本地，不会上传到任何服务器。</li>
       </ul>
     </section>
@@ -40,7 +40,7 @@
         </tbody>
       </table>
       <p class="note">
-        官方参数如发生变化，以腾讯云认证详情页最新公开信息为准。本项目会记录核验日期并版本化考试蓝图。
+        官方参数以腾讯云 FDE 官方指南（2026-09-10 更新）为准，并同步核对认证详情页。本项目会记录核验日期并版本化考试蓝图。
       </p>
     </section>
 
@@ -68,11 +68,12 @@ const rules = [
   { name: '多选题', value: '20 题 · 2 分/题', source: '腾讯云认证详情页' },
   { name: '考试时长', value: '90 分钟', source: '腾讯云认证详情页' },
   { name: '合格线', value: '70 分', source: '腾讯云认证详情页' },
-  { name: '多选判分', value: '完全匹配（learn-FDE 本地口径）', source: '项目自定义，非官方细则' }
+  { name: '多选判分', value: '完全匹配（错选、漏选不得分）', source: '腾讯云官方指南（2026-09-10）' }
 ]
 
 const sources = [
   { title: '腾讯云 ADP FDE 认证详情', href: 'https://cloud.tencent.com/edu/training/cert/detail?type=CFD' },
+  { title: '腾讯云 ADP FDE 官方指南', href: 'https://cloud.tencent.com/document/product/658/137832' },
   { title: '腾讯云 ADP 产品文档', href: 'https://cloud.tencent.com/document/product/1759' },
   { title: 'FDE 认证指南与生态伙伴', href: 'https://adp.tencent.com/zh/blog/adp-fde-certification-guide' },
   { title: 'learn-harness-engineering（结构与体验参考）', href: 'https://github.com/walkinglabs/learn-harness-engineering' }
