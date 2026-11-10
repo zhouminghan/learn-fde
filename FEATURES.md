@@ -14,7 +14,7 @@
 | F-06 | 60 题模拟考试 | 已完成 | `exam-generator.ts` + `exam-blueprint.json`，单元测试通过 |
 | F-07 | 考试报告、错题本、收藏、本机记录 | 已完成 | `ExamPage.vue` 报告 + `RecordsPage.vue`，E2E `exam.spec.ts` 通过 |
 | F-08 | JSON 备份导出/导入 | 已完成 | `backup.ts` + `RecordsPage.vue`，单元测试 `backup.test.ts` 通过 |
-| F-09 | GitHub Pages 自动部署 | 已完成 | `.github/workflows/deploy-pages.yml` |
+| F-09 | GitHub Pages 自动部署 | 已完成 | `.github/workflows/deploy-pages.yml`，运行 42807345206 成功，线上 `https://zhouminghan.github.io/learn-fde/` |
 
 ## 考试引擎
 
@@ -49,7 +49,7 @@
 | U-04 | 站内搜索、上一篇/下一篇、返回顶部 | 已完成 | 本地搜索 + docFooter + returnToTop |
 | U-05 | 首页入口卡片、进度、继续学习、薄弱域 | 已完成 | `HomePage.vue` |
 | U-06 | 考试页答题效率、剩余时间、答题卡 | 已完成 | `ExamPage.vue` |
-| U-07 | 键盘可操作、焦点可见、窄屏可用 | 已完成 | `:focus-visible` + 响应式 + 无横向溢出检查 |
+| U-07 | 键盘可操作、焦点可见、窄屏可用 | 已完成 | `:focus-visible` + 响应式 + `layout.spec.ts` 横向溢出回归（76 条 E2E 通过） |
 
 ## 内容质量
 

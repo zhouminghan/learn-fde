@@ -1,6 +1,6 @@
 # 进度记录
 
-最后更新：2026-11-10
+最后更新：2026-11-10（含 GitHub Pages 线上部署与验收）
 
 ## 已完成
 
@@ -14,13 +14,24 @@
 ## 验证证据
 
 ```text
-npm run typecheck        退出码 0
-npm run test             23 passed（5 个测试文件）
-npm run content:validate 退出码 0（78 道题，7 个知识域容量全部 OK）
-npm run docs:build       退出码 0
-npx playwright test      20 passed（desktop + mobile）
-横向溢出检查              390/768/960/1280px 关键页面无溢出
+npm run typecheck          退出码 0
+npm run test               23 passed（5 个测试文件）
+npm run content:validate   退出码 0（78 道题，7 个知识域容量全部 OK）
+npm run docs:build         退出码 0
+npx playwright test        76 passed（desktop + mobile）
+横向溢出回归               layout.spec.ts：7 路由 x 4 视口，无横向溢出
+GitHub Actions             42807345206：build 33s + deploy 3m55s，成功
+线上验收                   PLAYWRIGHT_BASE_URL=线上 Pages，76 passed
+资源与控制台检查            关键页面无 404 请求、无控制台错误
 ```
+
+部署地址：`https://zhouminghan.github.io/learn-fde/`
+
+## 部署状态
+
+- 仓库已重命名为小写 `learn-fde`（原空仓库 `learn-FDE`）。
+- 默认分支为 `main`，GitHub Pages 来源已设为 `GitHub Actions`。
+- 本地 `main` 分支已推送并跟踪 `origin/main`。
 
 ## 未完成项
 

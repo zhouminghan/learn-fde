@@ -14,8 +14,10 @@ learn-FDE 已完成首期全部 P0/P1 功能，构建、测试与部署验证通
 | 单元测试 | `npm run test` | 0 | 23 passed（5 个文件） |
 | 内容校验 | `npm run content:validate` | 0 | 78 道已发布题，7 域容量 OK |
 | 生产构建 | `npm run docs:build` | 0 | 通过 |
-| 端到端测试 | `npx playwright test` | 0 | 20 passed（desktop + mobile） |
-| 横向溢出 | Playwright 脚本 | 0 | 390/768/960/1280px 无溢出 |
+| 端到端测试（本地） | `npx playwright test` | 0 | 76 passed（desktop + mobile） |
+| GitHub Actions | 运行 42807345206 | 0 | build 33s + deploy 3m55s |
+| 端到端测试（线上） | `PLAYWRIGHT_BASE_URL=... npx playwright test` | 0 | 76 passed |
+| 资源与控制台 | Playwright 脚本 | 0 | 关键页面无 404、无控制台错误 |
 
 ## 覆盖的关键流程
 
@@ -25,6 +27,13 @@ learn-FDE 已完成首期全部 P0/P1 功能，构建、测试与部署验证通
 - 模拟考试开始、作答、标记、交卷、成绩报告。
 - 考试刷新恢复。
 - 移动端首页、课程与考试入口。
+- 线上 Pages 路由、资源加载与 390/768/960/1280px 横向溢出检查。
+
+## 部署信息
+
+- 仓库：`https://github.com/zhouminghan/learn-fde`
+- 站点：`https://zhouminghan.github.io/learn-fde/`
+- Pages 来源：GitHub Actions，默认分支 `main`。
 
 ## 明确声明
 
