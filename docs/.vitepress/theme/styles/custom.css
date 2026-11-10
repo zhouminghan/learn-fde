@@ -1,0 +1,206 @@
+:root {
+  --lf-bg: #f7f4ef;
+  --lf-bg-soft: #f1ece4;
+  --lf-bg-elv: #fffdf9;
+  --lf-text: #2f2a26;
+  --lf-text-2: #655d54;
+  --lf-text-3: #948a7e;
+  --lf-accent: #c85b2d;
+  --lf-accent-hover: #ab4a22;
+  --lf-accent-soft: #f6e3d7;
+  --lf-divider: #e7e0d5;
+  --lf-green: #3f7d54;
+  --lf-green-soft: #e2efe5;
+  --lf-red: #b84b3d;
+  --lf-red-soft: #f7e2de;
+  --lf-yellow: #9a7420;
+  --lf-yellow-soft: #f5ebd2;
+  --lf-blue: #3c6e91;
+  --lf-blue-soft: #e0ebf2;
+  --lf-card-radius: 8px;
+
+  --vp-c-bg: var(--lf-bg);
+  --vp-c-bg-alt: var(--lf-bg-soft);
+  --vp-c-bg-soft: var(--lf-bg-soft);
+  --vp-c-bg-elv: var(--lf-bg-elv);
+  --vp-c-text-1: var(--lf-text);
+  --vp-c-text-2: var(--lf-text-2);
+  --vp-c-text-3: var(--lf-text-3);
+  --vp-c-divider: var(--lf-divider);
+  --vp-c-gutter: var(--lf-divider);
+  --vp-c-brand-1: var(--lf-accent);
+  --vp-c-brand-2: var(--lf-accent-hover);
+  --vp-c-brand-3: var(--lf-accent);
+  --vp-c-brand-soft: var(--lf-accent-soft);
+  --vp-c-default-1: var(--lf-text-2);
+  --vp-c-default-2: #d9d2c7;
+  --vp-c-default-3: #e8e1d6;
+  --vp-c-default-soft: var(--lf-bg-soft);
+  --vp-font-family-base: 'Inter', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei',
+    'Source Han Sans SC', -apple-system, 'Segoe UI', sans-serif;
+  --vp-font-family-mono: 'SFMono-Regular', 'JetBrains Mono', Menlo, Consolas, monospace;
+  --vp-layout-max-width: 1440px;
+}
+
+.dark {
+  --lf-bg: #1e1c19;
+  --lf-bg-soft: #26231f;
+  --lf-bg-elv: #2b2823;
+  --lf-text: #eae4dc;
+  --lf-text-2: #b6aea3;
+  --lf-text-3: #8a8378;
+  --lf-accent: #e58a5f;
+  --lf-accent-hover: #f0a179;
+  --lf-accent-soft: #463126;
+  --lf-divider: #3a3530;
+  --lf-green: #79b58d;
+  --lf-green-soft: #263b2d;
+  --lf-red: #df8b7d;
+  --lf-red-soft: #432a27;
+  --lf-yellow: #d4ad5b;
+  --lf-yellow-soft: #3c3421;
+  --lf-blue: #84acd1;
+  --lf-blue-soft: #263440;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  letter-spacing: 0;
+}
+
+.VPDoc {
+  padding-top: 24px;
+}
+
+.VPHome {
+  padding-top: 0;
+}
+
+.VPNavBar {
+  border-bottom: 1px solid var(--vp-c-divider);
+  background-color: color-mix(in srgb, var(--vp-c-bg) 92%, transparent);
+  backdrop-filter: saturate(1.2) blur(8px);
+}
+
+.VPNavBar .title {
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.VPNavBar .title .logo-text {
+  color: var(--vp-c-text-1);
+}
+
+.VPNavBarMenuLink,
+.VPNavBarMenuGroup .text {
+  font-size: 14px;
+}
+
+.VPNavBarMenuLink.active {
+  color: var(--vp-c-brand-1);
+}
+
+@media (max-width: 959px) {
+  .VPNavBarMenu {
+    display: none !important;
+  }
+
+  .VPNavBarHamburger {
+    display: flex !important;
+  }
+
+  .VPNavScreen {
+    display: block !important;
+  }
+}
+
+.VPContent {
+  background: var(--vp-c-bg);
+}
+
+.VPSidebar {
+  background: var(--vp-c-bg-alt);
+  border-right: 1px solid var(--vp-c-divider);
+}
+
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3 {
+  letter-spacing: 0;
+}
+
+.vp-doc h1 {
+  font-size: 30px;
+  font-weight: 750;
+}
+
+.vp-doc h2 {
+  font-size: 22px;
+  font-weight: 700;
+  border-top: 1px solid var(--vp-c-divider);
+  padding-top: 28px;
+}
+
+.vp-doc h3 {
+  font-size: 17px;
+  font-weight: 650;
+}
+
+.vp-doc a {
+  color: var(--vp-c-brand-1);
+  text-decoration-color: color-mix(in srgb, var(--vp-c-brand-1) 45%, transparent);
+}
+
+.vp-doc blockquote {
+  border-left: 3px solid var(--vp-c-brand-1);
+  background: var(--vp-c-bg-alt);
+}
+
+.vp-doc code {
+  color: var(--vp-c-brand-1);
+}
+
+.vp-doc div[class*='language-'] {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: var(--lf-card-radius);
+}
+
+.vp-doc table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.vp-doc th,
+.vp-doc td {
+  border: 1px solid var(--vp-c-divider);
+}
+
+.VPNavBarSearch .DocSearch-Button,
+.DocSearch-Button {
+  border: 1px solid var(--vp-c-divider);
+  border-radius: var(--lf-card-radius);
+}
+
+.VPDocAsideOutline .outline-link.active {
+  color: var(--vp-c-brand-1);
+}
+
+.VPDocFooter {
+  border-top: 1px solid var(--vp-c-divider);
+}
+
+/* 聚焦可见性 */
+:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 2px;
+}
+
+@media (max-width: 959px) {
+  .VPHome {
+    padding: 0 16px;
+  }
+}

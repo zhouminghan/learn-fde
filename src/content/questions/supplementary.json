@@ -1,0 +1,490 @@
+[
+  {
+    "id": "D5-S1",
+    "domainId": "D5",
+    "lessonIds": ["S2"],
+    "type": "single",
+    "difficulty": "easy",
+    "stem": "零售行业常见的智能体应用场景是？",
+    "options": [
+      { "id": "A", "text": "智能导购与商品推荐" },
+      { "id": "B", "text": "工业设备故障预测" },
+      { "id": "C", "text": "医疗影像诊断" },
+      { "id": "D", "text": "课堂点名" }
+    ],
+    "answerIds": ["A"],
+    "explanation": "零售行业常见智能导购、商品推荐与客服；设备故障预测偏制造，影像诊断偏医疗。",
+    "tags": ["行业", "零售"],
+    "sourceType": "original",
+    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D5-S2",
+    "domainId": "D5",
+    "lessonIds": ["S2"],
+    "type": "single",
+    "difficulty": "easy",
+    "stem": "金融行业落地智能体方案时，最需要优先关注的约束是什么？",
+    "options": [
+      { "id": "A", "text": "数据安全、合规与可审计性" },
+      { "id": "B", "text": "页面颜色是否鲜艳" },
+      { "id": "C", "text": "是否使用最多的动画" },
+      { "id": "D", "text": "Logo 是否足够大" }
+    ],
+    "answerIds": ["A"],
+    "explanation": "金融行业对数据安全、合规与审计要求高，是方案设计的硬约束。",
+    "tags": ["行业", "金融", "合规"],
+    "sourceType": "original",
+    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D5-S3",
+    "domainId": "D5",
+    "lessonIds": ["S2"],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "制造行业最典型的智能体应用场景是？",
+    "options": [
+      { "id": "A", "text": "设备运维知识助手与生产流程辅助" },
+      { "id": "B", "text": "电商直播话术生成" },
+      { "id": "C", "text": "患者分诊" },
+      { "id": "D", "text": "考试阅卷" }
+    ],
+    "answerIds": ["A"],
+    "explanation": "制造业常见设备运维知识助手、生产流程辅助与工单处理；直播偏零售，分诊偏医疗。",
+    "tags": ["行业", "制造"],
+    "sourceType": "original",
+    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D5-S4",
+    "domainId": "D5",
+    "lessonIds": ["S2"],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "教育行业智能体方案常见的价值点是？",
+    "options": [
+      { "id": "A", "text": "个性化学习辅导与答疑" },
+      { "id": "B", "text": "替代教师的全部职责" },
+      { "id": "C", "text": "只做考勤记录" },
+      { "id": "D", "text": "完全取代教材" }
+    ],
+    "answerIds": ["A"],
+    "explanation": "教育行业价值在于个性化辅导与答疑；智能体是辅助工具，不替代教师与教材。",
+    "tags": ["行业", "教育"],
+    "sourceType": "original",
+    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D5-S5",
+    "domainId": "D5",
+    "lessonIds": ["S2"],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "医疗健康场景落地智能体时，最关键的红线是？",
+    "options": [
+      { "id": "A", "text": "保护患者隐私，且不得以智能体输出替代专业诊断" },
+      { "id": "B", "text": "让智能体直接开处方" },
+      { "id": "C", "text": "把患者数据公开展示" },
+      { "id": "D", "text": "完全不需要人工复核" }
+    ],
+    "answerIds": ["A"],
+    "explanation": "医疗场景必须保护隐私，智能体只能辅助，不能替代专业诊断，且需要人工复核。",
+    "tags": ["行业", "医疗", "安全"],
+    "sourceType": "original",
+    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D5-S6",
+    "domainId": "D5",
+    "lessonIds": ["S2"],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "不同行业智能体方案出现差异的根源主要是什么？",
+    "options": [
+      { "id": "A", "text": "数据形态、业务流程、合规要求与用户诉求不同" },
+      { "id": "B", "text": "使用的字体不同" },
+      { "id": "C", "text": "服务器颜色不同" },
+      { "id": "D", "text": "没有本质差异" }
+    ],
+    "answerIds": ["A"],
+    "explanation": "行业差异源于数据、流程、合规与诉求，决定了方案的技术选型与治理重点。",
+    "tags": ["行业", "方案差异"],
+    "sourceType": "original",
+    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D5-S7",
+    "domainId": "D5",
+    "lessonIds": ["S2", "S3"],
+    "type": "single",
+    "difficulty": "hard",
+    "stem": "行业解决方案落地的共性步骤通常是？",
+    "options": [
+      { "id": "A", "text": "需求澄清 → 数据与集成准备 → 方案构建 → 验证评测 → 上线运营" },
+      { "id": "B", "text": "直接部署，无需任何准备" },
+      { "id": "C", "text": "先上线，再考虑需求" },
+      { "id": "D", "text": "只做界面，不做数据" }
+    ],
+    "answerIds": ["A"],
+    "explanation": "共性步骤是从需求到数据、构建、验证再到运营的闭环，保证方案可控可迭代。",
+    "tags": ["行业", "落地"],
+    "sourceType": "original",
+    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D5-S8",
+    "domainId": "D5",
+    "lessonIds": ["S2"],
+    "type": "single",
+    "difficulty": "hard",
+    "stem": "把一个行业的成功案例迁移到另一个行业时，正确的做法是？",
+    "options": [
+      { "id": "A", "text": "抽象可复用方法，并针对新行业的约束重新设计与验证" },
+      { "id": "B", "text": "原样照搬，不做任何调整" },
+      { "id": "C", "text": "只更换 Logo 即可" },
+      { "id": "D", "text": "完全忽略行业差异" }
+    ],
+    "answerIds": ["A"],
+    "explanation": "案例迁移应抽象方法、保留共性，同时针对新行业的数据、流程与合规重新设计和验证。",
+    "tags": ["行业", "案例迁移"],
+    "sourceType": "original",
+    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D5-M1",
+    "domainId": "D5",
+    "lessonIds": ["S2"],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "零售行业智能导购助手通常可以提供哪些能力？",
+    "options": [
+      { "id": "A", "text": "基于商品知识库回答咨询" },
+      { "id": "B", "text": "结合用户偏好进行推荐" },
+      { "id": "C", "text": "引导下单与售后流程" },
+      { "id": "D", "text": "理解营销与优惠规则" },
+      { "id": "E", "text": "直接管理仓库全部库存" }
+    ],
+    "answerIds": ["A", "B", "C", "D"],
+    "explanation": "导购助手侧重知识问答、推荐、流程引导与规则理解；库存管理由专业系统负责。",
+    "optionExplanations": {
+      "E": "库存管理需接入专业系统，不由导购助手直接承担。"
+    },
+    "tags": ["行业", "零售"],
+    "sourceType": "original",
+    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D5-M2",
+    "domainId": "D5",
+    "lessonIds": ["S2"],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "金融行业智能体落地需要重点关注的方面有哪些？",
+    "options": [
+      { "id": "A", "text": "客户数据脱敏与隐私保护" },
+      { "id": "B", "text": "回答的合规性与可审计性" },
+      { "id": "C", "text": "高风险结论的人工复核" },
+      { "id": "D", "text": "敏感操作的最小权限控制" },
+      { "id": "E", "text": "忽略监管要求以提升速度" }
+    ],
+    "answerIds": ["A", "B", "C", "D"],
+    "explanation": "金融方案需关注脱敏、合规审计、人工复核与最小权限；忽略监管是不可接受的。",
+    "optionExplanations": {
+      "E": "监管合规是金融行业的硬约束。"
+    },
+    "tags": ["行业", "金融", "合规"],
+    "sourceType": "original",
+    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D5-M3",
+    "domainId": "D5",
+    "lessonIds": ["S2"],
+    "type": "multiple",
+    "difficulty": "hard",
+    "stem": "各行业智能体方案的共性需求通常包括哪些？",
+    "options": [
+      { "id": "A", "text": "基于行业知识的准确问答" },
+      { "id": "B", "text": "与业务系统和流程的集成" },
+      { "id": "C", "text": "可评测的效果与可治理的风险" },
+      { "id": "D", "text": "持续运营与迭代机制" },
+      { "id": "E", "text": "完全不需要人工参与" }
+    ],
+    "answerIds": ["A", "B", "C", "D"],
+    "explanation": "跨行业共性包括知识问答、系统集成、效果评测、风险治理与持续运营；完全无人参与不符合实际。",
+    "optionExplanations": {
+      "E": "关键环节仍需人工监督与兜底。"
+    },
+    "tags": ["行业", "共性需求"],
+    "sourceType": "original",
+    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D5-M4",
+    "domainId": "D5",
+    "lessonIds": ["S2"],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "教育行业智能体应用通常可以提供哪些能力？",
+    "options": [
+      { "id": "A", "text": "根据学习进度进行个性化辅导" },
+      { "id": "B", "text": "基于课程知识库答疑" },
+      { "id": "C", "text": "生成练习与学习建议" },
+      { "id": "D", "text": "辅助教师进行学情分析" },
+      { "id": "E", "text": "替代教师进行全部授课" }
+    ],
+    "answerIds": ["A", "B", "C", "D"],
+    "explanation": "教育智能体可提供个性化辅导、答疑、练习与学情分析，辅助教师而非替代授课。",
+    "optionExplanations": {
+      "E": "智能体辅助教学，不替代教师。"
+    },
+    "tags": ["行业", "教育"],
+    "sourceType": "original",
+    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D7-S1",
+    "domainId": "D7",
+    "lessonIds": ["S4"],
+    "type": "single",
+    "difficulty": "easy",
+    "stem": "数据权限设计中的“最小权限原则”指的是？",
+    "options": [
+      { "id": "A", "text": "只授予完成任务所必需的最小权限" },
+      { "id": "B", "text": "给所有人授予全部权限" },
+      { "id": "C", "text": "权限越大越好" },
+      { "id": "D", "text": "完全不设置权限" }
+    ],
+    "answerIds": ["A"],
+    "explanation": "最小权限原则要求按需授权，降低越权访问与误操作风险。",
+    "tags": ["安全", "权限"],
+    "sourceType": "official_knowledge",
+    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "authorNote": "根据公开知识点整理的原创练习。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D7-S2",
+    "domainId": "D7",
+    "lessonIds": ["S4"],
+    "type": "single",
+    "difficulty": "easy",
+    "stem": "智能体应用引入内容安全审核机制的主要目的是什么？",
+    "options": [
+      { "id": "A", "text": "拦截违法违规与不当内容，降低内容风险" },
+      { "id": "B", "text": "让所有回答都变得更长" },
+      { "id": "C", "text": "完全替代人工运营" },
+      { "id": "D", "text": "只用于统计用户数量" }
+    ],
+    "answerIds": ["A"],
+    "explanation": "内容安全审核用于拦截违规内容、降低风险，是安全合规的重要一环。",
+    "tags": ["安全", "内容审核"],
+    "sourceType": "official_knowledge",
+    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "authorNote": "根据公开知识点整理的原创练习。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D7-S3",
+    "domainId": "D7",
+    "lessonIds": ["S4"],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "针对大模型的幻觉风险，最稳妥的兜底方式是？",
+    "options": [
+      { "id": "A", "text": "对高风险结论引入人工审核与来源校验" },
+      { "id": "B", "text": "完全信任模型输出" },
+      { "id": "C", "text": "关闭所有日志" },
+      { "id": "D", "text": "不做任何限制" }
+    ],
+    "answerIds": ["A"],
+    "explanation": "人工审核与来源校验是降低幻觉风险的有效兜底；完全信任会增加出错概率。",
+    "tags": ["安全", "幻觉", "兜底"],
+    "sourceType": "original",
+    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D7-S4",
+    "domainId": "D7",
+    "lessonIds": ["S4"],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "保留智能体应用的审计日志，主要作用是什么？",
+    "options": [
+      { "id": "A", "text": "便于追踪操作、定位问题与满足合规审计要求" },
+      { "id": "B", "text": "让系统运行更慢" },
+      { "id": "C", "text": "只用于统计访问量" },
+      { "id": "D", "text": "完全没有任何作用" }
+    ],
+    "answerIds": ["A"],
+    "explanation": "审计日志用于操作追踪、问题定位与合规审计，是安全治理的重要依据。",
+    "tags": ["安全", "审计"],
+    "sourceType": "official_knowledge",
+    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "authorNote": "根据公开知识点整理的原创练习。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D7-S5",
+    "domainId": "D7",
+    "lessonIds": ["S4"],
+    "type": "single",
+    "difficulty": "hard",
+    "stem": "“责任 AI（Responsible AI）”的核心原则通常包括哪些？",
+    "options": [
+      { "id": "A", "text": "公平、透明、可解释、可问责与安全" },
+      { "id": "B", "text": "追求速度而忽略安全" },
+      { "id": "C", "text": "完全不透明的黑盒" },
+      { "id": "D", "text": "免除所有责任" }
+    ],
+    "answerIds": ["A"],
+    "explanation": "责任 AI 强调公平、透明、可解释、可问责与安全，是负责任地使用 AI 的基本原则。",
+    "tags": ["责任 AI", "原则"],
+    "sourceType": "official_knowledge",
+    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "authorNote": "根据公开知识点整理的原创练习。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D7-M1",
+    "domainId": "D7",
+    "lessonIds": ["S4"],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "智能体应用保护用户隐私的常见措施包括哪些？",
+    "options": [
+      { "id": "A", "text": "敏感数据脱敏" },
+      { "id": "B", "text": "按最小权限控制数据访问" },
+      { "id": "C", "text": "对数据使用进行审计" },
+      { "id": "D", "text": "明确数据保留与删除策略" },
+      { "id": "E", "text": "将用户数据公开分享" }
+    ],
+    "answerIds": ["A", "B", "C", "D"],
+    "explanation": "脱敏、最小权限、审计与保留策略都是隐私保护手段；公开分享用户数据违反隐私原则。",
+    "optionExplanations": {
+      "E": "公开分享用户数据严重违反隐私保护。"
+    },
+    "tags": ["安全", "隐私"],
+    "sourceType": "official_knowledge",
+    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "authorNote": "根据公开知识点整理的原创练习。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D7-M2",
+    "domainId": "D7",
+    "lessonIds": ["S4"],
+    "type": "multiple",
+    "difficulty": "hard",
+    "stem": "企业落地“责任 AI”时，通常需要建立哪些机制？",
+    "options": [
+      { "id": "A", "text": "AI 伦理与合规评审流程" },
+      { "id": "B", "text": "输出内容的安全与合规审核" },
+      { "id": "C", "text": "高风险场景的人工兜底与问责机制" },
+      { "id": "D", "text": "模型行为的监控与审计" },
+      { "id": "E", "text": "完全依赖模型自律" }
+    ],
+    "answerIds": ["A", "B", "C", "D"],
+    "explanation": "责任 AI 需要评审、审核、兜底、问责与监控等机制；“完全依赖自律”不可靠。",
+    "optionExplanations": {
+      "E": "不能只依赖模型自律，需要组织与流程保障。"
+    },
+    "tags": ["责任 AI", "治理"],
+    "sourceType": "original",
+    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D7-M3",
+    "domainId": "D7",
+    "lessonIds": ["S4"],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "防止智能体越权访问数据的常见做法有哪些？",
+    "options": [
+      { "id": "A", "text": "按用户身份实施权限隔离" },
+      { "id": "B", "text": "对工具调用做授权校验" },
+      { "id": "C", "text": "记录并审计敏感数据访问" },
+      { "id": "D", "text": "为不同角色设置不同的数据范围" },
+      { "id": "E", "text": "所有用户共享同一套管理员权限" }
+    ],
+    "answerIds": ["A", "B", "C", "D"],
+    "explanation": "权限隔离、调用授权校验、审计与角色数据范围都能防越权；共享管理员权限会放大风险。",
+    "optionExplanations": {
+      "E": "共享管理员权限违反最小权限原则。"
+    },
+    "tags": ["安全", "越权"],
+    "sourceType": "original",
+    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  }
+]

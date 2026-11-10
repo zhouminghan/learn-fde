@@ -1,0 +1,32 @@
+{
+  "id": "fde-theory-exam",
+  "version": "2026-11-10",
+  "title": "FDE 理论模拟考试（官方公开蓝图）",
+  "durationSeconds": 5400,
+  "totalQuestions": 60,
+  "totalScore": 100,
+  "passScore": 70,
+  "questionTypeTargets": {
+    "single": 40,
+    "multiple": 20
+  },
+  "questionScores": {
+    "single": 1.5,
+    "multiple": 2
+  },
+  "domainTargets": [
+    { "domainId": "D1", "weightPercent": 10, "questionCount": 6, "singleCount": 4, "multipleCount": 2 },
+    { "domainId": "D2", "weightPercent": 7, "questionCount": 4, "singleCount": 3, "multipleCount": 1 },
+    { "domainId": "D3", "weightPercent": 22, "questionCount": 13, "singleCount": 8, "multipleCount": 5 },
+    { "domainId": "D4", "weightPercent": 25, "questionCount": 15, "singleCount": 10, "multipleCount": 5 },
+    { "domainId": "D5", "weightPercent": 15, "questionCount": 9, "singleCount": 6, "multipleCount": 3 },
+    { "domainId": "D6", "weightPercent": 11, "questionCount": 7, "singleCount": 5, "multipleCount": 2 },
+    { "domainId": "D7", "weightPercent": 10, "questionCount": 6, "singleCount": 4, "multipleCount": 2 }
+  ],
+  "multipleScoring": "exact_match",
+  "difficultyTargets": {
+    "easy": 0.3,
+    "medium": 0.5,
+    "hard": 0.2
+  }
+}

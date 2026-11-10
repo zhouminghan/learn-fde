@@ -1,0 +1,440 @@
+[
+  {
+    "id": "D4-S1",
+    "domainId": "D4",
+    "lessonIds": ["3.1", "S1"],
+    "type": "single",
+    "difficulty": "easy",
+    "stem": "接到一个智能体项目需求后，方案设计的第一步通常是什么？",
+    "options": [
+      { "id": "A", "text": "澄清业务目标、用户角色、现状流程与核心痛点" },
+      { "id": "B", "text": "直接开始编写提示词" },
+      { "id": "C", "text": "先确定服务器型号" },
+      { "id": "D", "text": "先设计界面配色" }
+    ],
+    "answerIds": ["A"],
+    "explanation": "需求澄清是方案设计起点，需先明确目标、角色、流程与痛点，再谈技术方案。",
+    "tags": ["方案设计", "需求澄清"],
+    "sourceType": "original",
+    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D4-S2",
+    "domainId": "D4",
+    "lessonIds": ["3.1", "3.2"],
+    "type": "single",
+    "difficulty": "easy",
+    "stem": "以下哪类需求最适合优先采用“标准知识助手”模式？",
+    "options": [
+      { "id": "A", "text": "基于已有文档库进行检索式问答" },
+      { "id": "B", "text": "需要严格按审批流执行的多步业务" },
+      { "id": "C", "text": "需要实时控制工业设备的场景" },
+      { "id": "D", "text": "纯静态内容展示" }
+    ],
+    "answerIds": ["A"],
+    "explanation": "知识助手适合以文档检索问答为主的场景；严格审批流更适合 Workflow；实时设备控制需结合专业系统。",
+    "tags": ["方案设计", "知识助手"],
+    "sourceType": "original",
+    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D4-S3",
+    "domainId": "D4",
+    "lessonIds": ["3.1", "3.3"],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "判断一个需求应该用“知识助手”还是“工作流”模式，最关键的区分依据是什么？",
+    "options": [
+      { "id": "A", "text": "任务是否需要严格的步骤顺序、条件分支与系统集成" },
+      { "id": "B", "text": "界面是否好看" },
+      { "id": "C", "text": "部署在哪个机房" },
+      { "id": "D", "text": "团队人数多少" }
+    ],
+    "answerIds": ["A"],
+    "explanation": "需要确定性的步骤、分支与集成时用 Workflow；以开放式检索问答为主时用知识助手。",
+    "tags": ["方案设计", "模式选择"],
+    "sourceType": "original",
+    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D4-S4",
+    "domainId": "D4",
+    "lessonIds": ["3.1"],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "进行技术选型时，下列哪个维度最需要优先考虑？",
+    "options": [
+      { "id": "A", "text": "业务目标、数据与系统现状、团队能力和长期运维成本" },
+      { "id": "B", "text": "哪个方案名字最好听" },
+      { "id": "C", "text": "哪个方案代码最少，不看是否契合场景" },
+      { "id": "D", "text": "是否必须使用最新硬件" }
+    ],
+    "answerIds": ["A"],
+    "explanation": "选型要围绕业务目标、现状、能力与运维成本综合判断，而不是追求名称或代码量。",
+    "tags": ["方案设计", "技术选型"],
+    "sourceType": "original",
+    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D4-S5",
+    "domainId": "D4",
+    "lessonIds": ["3.1"],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "一个典型的企业智能体应用架构，通常可以划分为哪些层次？",
+    "options": [
+      { "id": "A", "text": "接入层、智能体编排层、知识/工具层、数据与系统层" },
+      { "id": "B", "text": "只有前端一个层次" },
+      { "id": "C", "text": "只有数据库一个层次" },
+      { "id": "D", "text": "只有提示词一个层次" }
+    ],
+    "answerIds": ["A"],
+    "explanation": "典型架构包含接入、编排、知识/工具与数据系统等层次，便于解耦、扩展与治理。",
+    "tags": ["方案设计", "架构"],
+    "sourceType": "original",
+    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D4-S6",
+    "domainId": "D4",
+    "lessonIds": ["3.1"],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "制定智能体项目的验收标准时，下列哪项做法最合理？",
+    "options": [
+      { "id": "A", "text": "使用可量化、可复现的指标，并约定测试集与通过阈值" },
+      { "id": "B", "text": "只写“效果很好”作为验收依据" },
+      { "id": "C", "text": "验收时不看任何数据" },
+      { "id": "D", "text": "只要页面能打开就算通过" }
+    ],
+    "answerIds": ["A"],
+    "explanation": "验收标准应可量化、可复现，结合测试集与阈值，才能客观判断方案是否达标。",
+    "tags": ["方案设计", "验收"],
+    "sourceType": "original",
+    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D4-S7",
+    "domainId": "D4",
+    "lessonIds": ["3.3"],
+    "type": "single",
+    "difficulty": "hard",
+    "stem": "客服助手工作流中，设计“人工兜底”环节的主要目的是什么？",
+    "options": [
+      { "id": "A", "text": "在模型无法可靠处理或出现异常时，将请求转交人工处理" },
+      { "id": "B", "text": "让所有问题都必须由人工回答" },
+      { "id": "C", "text": "删除所有自动回复" },
+      { "id": "D", "text": "让模型无限重试" }
+    ],
+    "answerIds": ["A"],
+    "explanation": "人工兜底用于处理低置信度、异常或敏感场景，保证服务可靠性和用户体验。",
+    "tags": ["Workflow", "客服", "兜底"],
+    "sourceType": "original",
+    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D4-S8",
+    "domainId": "D4",
+    "lessonIds": ["3.4"],
+    "type": "single",
+    "difficulty": "hard",
+    "stem": "用 Multi-Agent 构建内容创作助手，下列角色拆分最合理的是？",
+    "options": [
+      { "id": "A", "text": "策划、撰写、审校、汇总，各司其职并依次传递" },
+      { "id": "B", "text": "所有 Agent 都做完全相同的撰写工作" },
+      { "id": "C", "text": "只设置一个 Agent 且不做任何协作" },
+      { "id": "D", "text": "让审校 Agent 负责所有策划工作" }
+    ],
+    "answerIds": ["A"],
+    "explanation": "内容创作可按策划、撰写、审校、汇总拆分角色，形成清晰流水线，提升质量与可控性。",
+    "tags": ["Multi-Agent", "内容创作"],
+    "sourceType": "original",
+    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D4-S9",
+    "domainId": "D4",
+    "lessonIds": ["3.5"],
+    "type": "single",
+    "difficulty": "hard",
+    "stem": "下列哪类任务更适合采用 Claw 模式（自主规划调用工具）？",
+    "options": [
+      { "id": "A", "text": "目标明确、步骤可验证、需要多次调用工具才能完成的任务" },
+      { "id": "B", "text": "只需要一句静态回复的任务" },
+      { "id": "C", "text": "完全不需要任何外部操作的任务" },
+      { "id": "D", "text": "结果完全不可验证的任务" }
+    ],
+    "answerIds": ["A"],
+    "explanation": "Claw 模式适合目标明确、可验证且需要多次工具调用的任务；无外部操作或不可验证时收益有限。",
+    "tags": ["Claw", "场景选择"],
+    "sourceType": "original",
+    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D4-S10",
+    "domainId": "D4",
+    "lessonIds": ["3.2"],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "验收知识助手效果时，最应关注的核心指标组合是？",
+    "options": [
+      { "id": "A", "text": "回答准确率、答案来源可溯性与拒绝回答的合理性" },
+      { "id": "B", "text": "页面加载速度是否为全场最快" },
+      { "id": "C", "text": "Logo 是否足够大" },
+      { "id": "D", "text": "对话窗口使用了多少种颜色" }
+    ],
+    "answerIds": ["A"],
+    "explanation": "知识助手应重点评估准确率、可溯源性，以及在无依据时是否合理拒绝而不是编造。",
+    "tags": ["知识助手", "验收"],
+    "sourceType": "original",
+    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D4-S11",
+    "domainId": "D4",
+    "lessonIds": ["S1"],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "对多个需求进行优先级排序时，通常应优先考虑什么？",
+    "options": [
+      { "id": "A", "text": "业务价值、紧急程度、实现成本与风险的平衡" },
+      { "id": "B", "text": "只按提出者的职位高低" },
+      { "id": "C", "text": "只按实现难度从高到低" },
+      { "id": "D", "text": "随机排序" }
+    ],
+    "answerIds": ["A"],
+    "explanation": "需求优先级应综合业务价值、紧急度、成本与风险，而非单一维度。",
+    "tags": ["需求分析", "优先级"],
+    "sourceType": "original",
+    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D4-S12",
+    "domainId": "D4",
+    "lessonIds": ["3.1"],
+    "type": "single",
+    "difficulty": "hard",
+    "stem": "方案设计阶段识别出关键风险后，正确的处理方式是？",
+    "options": [
+      { "id": "A", "text": "记录风险、评估影响并制定应对与回退措施" },
+      { "id": "B", "text": "忽略风险，直接上线" },
+      { "id": "C", "text": "只口头告知，不做记录" },
+      { "id": "D", "text": "等上线失败后再处理" }
+    ],
+    "answerIds": ["A"],
+    "explanation": "风险需要被记录、评估并配套应对与回退措施，前置管理比事后补救成本更低。",
+    "tags": ["方案设计", "风险管理"],
+    "sourceType": "original",
+    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D4-M1",
+    "domainId": "D4",
+    "lessonIds": ["S1"],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "进行客户需求澄清时，通常需要收集哪些信息？",
+    "options": [
+      { "id": "A", "text": "业务目标与成功指标" },
+      { "id": "B", "text": "用户角色与使用场景" },
+      { "id": "C", "text": "现状流程与核心痛点" },
+      { "id": "D", "text": "约束条件与数据现状" },
+      { "id": "E", "text": "办公室的装修风格" }
+    ],
+    "answerIds": ["A", "B", "C", "D"],
+    "explanation": "需求澄清关注目标、角色、场景、流程、痛点、约束与数据；“装修风格”与需求无关。",
+    "optionExplanations": {
+      "E": "与智能体项目需求无关。"
+    },
+    "tags": ["需求分析"],
+    "sourceType": "original",
+    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D4-M2",
+    "domainId": "D4",
+    "lessonIds": ["3.1"],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "判断一个业务需求是否适合用智能体方案解决，通常需要满足哪些条件？",
+    "options": [
+      { "id": "A", "text": "问题涉及语言理解、知识检索或灵活决策" },
+      { "id": "B", "text": "有可用的数据、文档或系统接口" },
+      { "id": "C", "text": "可以定义可验证的效果目标" },
+      { "id": "D", "text": "不确定性可被评测、兜底与治理" },
+      { "id": "E", "text": "问题完全不涉及语言与流程" }
+    ],
+    "answerIds": ["A", "B", "C", "D"],
+    "explanation": "适合智能体的场景通常涉及语言理解/决策，有数据与接口支撑，且效果可验证、不确定性可治理。",
+    "optionExplanations": {
+      "E": "完全不涉及语言与流程时，智能体方案收益有限。"
+    },
+    "tags": ["方案设计", "场景判断"],
+    "sourceType": "original",
+    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D4-M3",
+    "domainId": "D4",
+    "lessonIds": ["3.1"],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "一份完整的智能体解决方案设计文档，通常应包含哪些内容？",
+    "options": [
+      { "id": "A", "text": "需求与目标" },
+      { "id": "B", "text": "架构与技术选型" },
+      { "id": "C", "text": "数据与集成方案" },
+      { "id": "D", "text": "验收标准与风险应对" },
+      { "id": "E", "text": "团队成员的星座" }
+    ],
+    "answerIds": ["A", "B", "C", "D"],
+    "explanation": "方案文档应覆盖需求、架构、选型、数据集成、验收与风险；“星座”不属于方案内容。",
+    "optionExplanations": {
+      "E": "与方案设计无关。"
+    },
+    "tags": ["方案设计", "文档"],
+    "sourceType": "original",
+    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D4-M4",
+    "domainId": "D4",
+    "lessonIds": ["3.3"],
+    "type": "multiple",
+    "difficulty": "hard",
+    "stem": "客服助手工作流中，需要重点设计的异常路径包括哪些？",
+    "options": [
+      { "id": "A", "text": "知识库检索不到答案时的处理" },
+      { "id": "B", "text": "用户输入意图不明确时的澄清" },
+      { "id": "C", "text": "工具或接口调用失败时的重试与兜底" },
+      { "id": "D", "text": "超出机器人处理范围时的转人工" },
+      { "id": "E", "text": "任何异常都静默忽略" }
+    ],
+    "answerIds": ["A", "B", "C", "D"],
+    "explanation": "检索无结果、意图不清、调用失败与转人工都是常见异常路径；静默忽略会破坏体验。",
+    "optionExplanations": {
+      "E": "静默忽略异常会让用户失去反馈。"
+    },
+    "tags": ["Workflow", "客服", "异常处理"],
+    "sourceType": "original",
+    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D4-M5",
+    "domainId": "D4",
+    "lessonIds": ["3.2"],
+    "type": "multiple",
+    "difficulty": "hard",
+    "stem": "验收一个企业知识问答助手时，下列哪些指标是合理的？",
+    "options": [
+      { "id": "A", "text": "回答准确率" },
+      { "id": "B", "text": "答案来源可溯性" },
+      { "id": "C", "text": "无依据时是否合理拒答" },
+      { "id": "D", "text": "关键问题的用户满意度" },
+      { "id": "E", "text": "界面使用了多少种动画" }
+    ],
+    "answerIds": ["A", "B", "C", "D"],
+    "explanation": "准确率、可溯源、合理拒答与满意度是知识助手的关键验收指标；动画数量与效果无关。",
+    "optionExplanations": {
+      "E": "与知识助手效果无关。"
+    },
+    "tags": ["知识助手", "验收"],
+    "sourceType": "original",
+    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D4-M6",
+    "domainId": "D4",
+    "lessonIds": ["3.6"],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "智能工作台在交付场景中的典型价值包括哪些？",
+    "options": [
+      { "id": "A", "text": "集中管理与编排多个智能体能力" },
+      { "id": "B", "text": "统一展示任务状态与结果" },
+      { "id": "C", "text": "沉淀可复用的工作流程" },
+      { "id": "D", "text": "提升团队协作与交付效率" },
+      { "id": "E", "text": "替代所有企业员工" }
+    ],
+    "answerIds": ["A", "B", "C", "D"],
+    "explanation": "智能工作台通过集中管理、统一展示、流程沉淀提升效率，不替代人的判断与责任。",
+    "optionExplanations": {
+      "E": "工作台是协作工具，不替代员工。"
+    },
+    "tags": ["智能工作台"],
+    "sourceType": "original",
+    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "authorNote": "根据公开知识点设计的原创情境题。",
+    "status": "published",
+    "createdAt": "2026-11-10",
+    "updatedAt": "2026-11-10"
+  }
+]
