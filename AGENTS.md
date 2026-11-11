@@ -12,6 +12,7 @@
 - `src/domain/`：组卷、判分、评测、统计、实验执行等纯业务逻辑。
 - `src/storage/`：IndexedDB 数据访问、迁移与备份。
 - `tests/unit/`：单元测试；`tests/e2e/`：Playwright 端到端测试。
+- `tests/visual/`：Playwright 截图与视觉验收；`tests/helpers/`：测试共享辅助；`tests/config/`：Vitest、Playwright 配置。
 - `scripts/`：内容校验脚本。
 
 ## 数据保护

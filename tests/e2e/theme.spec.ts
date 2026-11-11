@@ -1,5 +1,5 @@
 import { expect, test } from '@playwright/test'
-import { prepareThemePage } from './helpers/theme'
+import { prepareThemePage } from '../helpers/theme'
 
 test('保存的深色主题在 hydration 前生效并持久化', async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('learn-fde-theme', 'dark'))

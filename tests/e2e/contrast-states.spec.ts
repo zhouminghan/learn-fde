@@ -1,5 +1,5 @@
 import { expect, test, type Locator, type Page } from '@playwright/test'
-import { prepareThemePage } from './helpers/theme'
+import { prepareThemePage } from '../helpers/theme'
 
 function parseColor(value: string) {
   const channels = value.match(/[\d.]+/g)?.map(Number)

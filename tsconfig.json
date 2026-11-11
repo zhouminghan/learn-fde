@@ -27,8 +27,6 @@
     "docs/**/*.vue",
     "scripts/**/*.ts",
     "tests/**/*.ts",
-    "tests/**/*.vue",
-    "vitest.config.ts",
-    "playwright.config.ts"
+    "tests/**/*.vue"
   ]
 }

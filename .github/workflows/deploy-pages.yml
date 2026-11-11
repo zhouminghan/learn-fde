@@ -35,23 +35,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Typecheck
-        run: npm run typecheck
-
-      - name: Unit tests
-        run: npm run test
-
-      - name: Validate content
-        run: npm run content:validate
-
-      - name: Build with VitePress
-        run: npm run docs:build
-
-      - name: Install Playwright browsers
-        run: npx playwright install --with-deps chromium
-
-      - name: E2E tests
-        run: npm run test:e2e
+      - name: Verify
+        run: npm run verify
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5

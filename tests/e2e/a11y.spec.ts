@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test'
 import { assertNoA11yViolations } from './helpers/a11y'
-import { prepareThemePage, type Theme } from './helpers/theme'
+import { prepareThemePage, type Theme } from '../helpers/theme'
 
 const routes = [
   { route: '', name: '首页' },

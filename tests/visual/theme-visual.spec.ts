@@ -1,7 +1,7 @@
 import { mkdirSync, statSync } from 'node:fs'
 import { join } from 'node:path'
-import { expect, test } from '@playwright/test'
-import { prepareThemePage, routeSlug, type Theme } from './helpers/theme'
+import { devices, expect, test } from '@playwright/test'
+import { prepareThemePage, routeSlug, type Theme } from '../helpers/theme'
 
 const routes = [
   '',
@@ -16,14 +16,15 @@ const routes = [
   'course/04-evaluation-optimization/4-3.html'
 ]
 
-const viewports = [
-  { width: 1440, height: 900 },
-  { width: 390, height: 844 }
-]
-
-for (const viewport of viewports) {
-  test.describe(`${viewport.width}x${viewport.height} theme screenshots`, () => {
-    test.use({ viewport })
+function registerThemeScreenshots(
+  label: string,
+  width: number,
+  height: number,
+  device: (typeof devices)['Desktop Chrome']
+) {
+  const { defaultBrowserType: _defaultBrowserType, ...deviceOptions } = device
+  test.describe(`${label} ${width}x${height} theme screenshots`, () => {
+    test.use({ ...deviceOptions, viewport: { width, height } })
 
     for (const theme of ['light', 'dark'] as Theme[]) {
       for (const route of routes) {
@@ -39,7 +40,7 @@ for (const viewport of viewports) {
             'test-results',
             'p9-screenshots',
             testInfo.project.name,
-            String(viewport.width),
+            String(width),
             theme
           )
           mkdirSync(directory, { recursive: true })
@@ -51,6 +52,9 @@ for (const viewport of viewports) {
     }
   })
 }
+
+registerThemeScreenshots('desktop', 1440, 900, devices['Desktop Chrome'])
+registerThemeScreenshots('mobile', 390, 844, devices['Pixel 7'])
 
 for (const theme of ['light', 'dark'] as Theme[]) {
   test(`${theme} 练习解析状态截图`, async ({ page }, testInfo) => {

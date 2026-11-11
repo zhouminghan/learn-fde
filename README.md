@@ -175,9 +175,12 @@ npm run dev          # http://localhost:5173/learn-fde/
 npm run typecheck        # vue-tsc --noEmit
 npm run test             # vitest run（单元测试）
 npm run test:e2e         # playwright test（端到端测试）
+npm run test:visual      # 截图与视觉验收（独立 Playwright 项目）
 npm run content:validate # 题目与考试蓝图结构校验
 npm run docs:build       # 生产构建
 npm run docs:preview     # 预览生产构建
+npm run verify           # 本地与 CI 共用的质量门禁
+npm run verify:full      # verify + 截图验收
 ```
 
 ## 部署
@@ -189,11 +192,8 @@ npm run docs:preview     # 预览生产构建
 工作流 `.github/workflows/deploy-pages.yml` 执行：
 
 1. `npm ci`
-2. `npm run typecheck`
-3. `npm run test`
-4. `npm run content:validate`
-5. `npm run docs:build`
-6. 上传 `docs/.vitepress/dist` 并部署
+2. `npm run verify`
+3. 上传 `docs/.vitepress/dist` 并部署
 
 VitePress `base` 由环境变量控制：
 
@@ -289,6 +289,9 @@ src/domain/            # 组卷、判分、评测、统计、实验执行等纯�
 src/storage/           # IndexedDB 数据访问、迁移与备份
 tests/unit/            # 单元测试
 tests/e2e/             # Playwright 端到端测试
+tests/visual/          # Playwright 截图与视觉验收
+tests/helpers/         # 测试共享辅助
+tests/config/          # Vitest 与 Playwright 配置
 scripts/               # 内容校验脚本
 ```
 
