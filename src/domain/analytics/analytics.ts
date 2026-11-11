@@ -1,5 +1,16 @@
 import type { CourseProgress, ExamAttempt, PracticeAttempt } from '@/types'
 
+export type MasteryLevel = 'insufficient' | 'weak' | 'developing' | 'proficient'
+
+export interface DomainMastery {
+  domainId: string
+  title: string
+  answered: number
+  correct: number
+  accuracy: number
+  level: MasteryLevel
+}
+
 export function courseCompletion(progress: CourseProgress[], totalLessons: number) {
   const completed = progress.filter((p) => p.status === 'completed').length
   const inProgress = progress.filter((p) => p.status === 'in_progress').length
@@ -61,4 +72,67 @@ export function examTrend(attempts: ExamAttempt[]) {
       score: a.score ?? 0,
       durationSeconds: a.durationSeconds
     }))
+}
+
+export function domainMastery(
+  attempts: ExamAttempt[],
+  practice: PracticeAttempt[],
+  domains: { id: string; title: string }[],
+  minSamples = 5
+): DomainMastery[] {
+  const acc = new Map<string, { total: number; correct: number }>()
+
+  for (const attempt of attempts) {
+    if (attempt.status !== 'submitted' && attempt.status !== 'timeout') continue
+    for (const stat of attempt.domainStats ?? []) {
+      const entry = acc.get(stat.domainId) ?? { total: 0, correct: 0 }
+      entry.total += stat.total
+      entry.correct += stat.correct
+      acc.set(stat.domainId, entry)
+    }
+  }
+
+  for (const attempt of practice) {
+    const domainId = domains.find((d) => attempt.filters.domainIds?.includes(d.id))?.id
+    if (domainId && attempt.filters.domainIds?.length === 1) {
+      const entry = acc.get(domainId) ?? { total: 0, correct: 0 }
+      entry.total += attempt.total
+      entry.correct += attempt.correctCount
+      acc.set(domainId, entry)
+    }
+  }
+
+  return domains.map((domain) => {
+    const entry = acc.get(domain.id) ?? { total: 0, correct: 0 }
+    const accuracy = entry.total > 0 ? entry.correct / entry.total : 0
+    const level: MasteryLevel =
+      entry.total < minSamples
+        ? 'insufficient'
+        : accuracy < 0.6
+          ? 'weak'
+          : accuracy < 0.8
+            ? 'developing'
+            : 'proficient'
+    return {
+      domainId: domain.id,
+      title: domain.title,
+      answered: entry.total,
+      correct: entry.correct,
+      accuracy,
+      level
+    }
+  })
+}
+
+export function reviewRecommendations(mastery: DomainMastery[], lessons: { id: string; title: string; domainIds: string[] }[]) {
+  const weak = mastery
+    .filter((m) => m.level === 'weak' || m.level === 'insufficient')
+    .sort((a, b) => a.accuracy - b.accuracy)
+    .map((m) => ({
+      ...m,
+      lessons: lessons
+        .filter((l) => l.domainIds.includes(m.domainId))
+        .map((l) => ({ id: l.id, title: l.title }))
+    }))
+  return weak
 }

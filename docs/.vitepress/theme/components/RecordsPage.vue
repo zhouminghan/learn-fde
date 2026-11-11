@@ -36,6 +36,28 @@
     </section>
 
     <section class="block">
+      <h2>掌握度与复习建议</h2>
+      <p class="block__desc">基于已有练习与模拟考试正确率计算；作答样本不足时不给出虚假精度。</p>
+      <div v-for="m in mastery" :key="m.domainId" class="mastery-row">
+        <div class="mastery-row__top">
+          <span class="mastery-row__name">{{ m.title }}</span>
+          <span class="mastery-row__meta">{{ m.answered }} 题 · {{ Math.round(m.accuracy * 100) }}%</span>
+          <span class="badge" :class="'mastery--' + m.level">{{ masteryLabel(m.level) }}</span>
+        </div>
+        <div class="meter"><span :style="{ width: Math.round(m.accuracy * 100) + '%' }"></span></div>
+      </div>
+      <div v-if="recommendations.length" class="recommend">
+        <p class="recommend__title">建议优先复习</p>
+        <div v-for="r in recommendations" :key="r.domainId" class="recommend__item">
+          <span class="recommend__domain">{{ r.title }}</span>
+          <span v-for="l in r.lessons" :key="l.id" class="recommend__lesson">
+            <a :href="withBase(lessonPath(l.id))">{{ l.id }} · {{ l.title }}</a>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
       <h2>错题本（{{ wrongRows.length }}）</h2>
       <div v-for="w in wrongRows" :key="w.question.id" class="wrong-row">
         <div>
@@ -81,6 +103,7 @@
 import { computed, onMounted, ref } from 'vue'
 import { withBase } from 'vitepress'
 import { curriculum, loadPublishedQuestions } from '@/content'
+import { domainMastery, reviewRecommendations } from '@/domain/analytics/analytics'
 import type { CourseProgress, ExamAttempt, PracticeAttempt, Question, WrongQuestionRecord } from '@/types'
 
 const progress = ref<CourseProgress[]>([])
@@ -105,6 +128,14 @@ const practiceAccuracy = computed(() => {
   const correct = practice.value.reduce((s, a) => s + a.correctCount, 0)
   return total > 0 ? Math.round((correct / total) * 100) : 0
 })
+
+const mastery = computed(() =>
+  domainMastery(exams.value, practice.value, curriculum.domains, 5)
+)
+
+const recommendations = computed(() =>
+  reviewRecommendations(mastery.value, curriculum.lessons)
+)
 
 const examCount = computed(() => exams.value.filter((a) => a.status !== 'in_progress').length)
 const examRows = computed(() =>
@@ -142,6 +173,20 @@ function statusLabel(id: string) {
 
 function domainTitle(id: string) {
   return curriculum.domains.find((d) => d.id === id)?.shortTitle ?? id
+}
+
+function masteryLabel(level: string) {
+  return level === 'insufficient'
+    ? '样本不足'
+    : level === 'weak'
+      ? '待加强'
+      : level === 'developing'
+        ? '发展中'
+        : '已掌握'
+}
+
+function lessonPath(id: string) {
+  return curriculum.lessons.find((l) => l.id === id)?.path ?? '#'
 }
 
 function formatDate(iso: string) {
@@ -475,6 +520,74 @@ onMounted(loadAll)
 .btn--danger {
   color: #fff;
   background: var(--lf-red);
+}
+
+.mastery-row {
+  padding: 10px 0;
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.mastery-row__top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.mastery-row__name {
+  font-weight: 600;
+}
+
+.mastery-row__meta {
+  color: var(--vp-c-text-3);
+  font-size: 12px;
+}
+
+.mastery--insufficient {
+  color: var(--vp-c-text-3);
+  background: var(--vp-c-default-soft);
+}
+
+.mastery--weak {
+  color: var(--lf-red);
+  background: var(--lf-red-soft);
+}
+
+.mastery--developing {
+  color: var(--lf-yellow);
+  background: var(--lf-yellow-soft);
+}
+
+.mastery--proficient {
+  color: var(--lf-teal);
+  background: var(--lf-teal-soft);
+}
+
+.recommend {
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 8px;
+  background: var(--vp-c-bg-soft);
+}
+
+.recommend__title {
+  margin: 0 0 8px;
+  font-weight: 650;
+}
+
+.recommend__item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.recommend__domain {
+  color: var(--vp-c-text-2);
+}
+
+.recommend__lesson {
+  font-size: 12px;
 }
 
 @media (max-width: 640px) {
