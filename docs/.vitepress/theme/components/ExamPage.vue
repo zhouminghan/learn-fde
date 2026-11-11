@@ -290,8 +290,8 @@ async function createNewAttempt() {
   currentIndex.value = 0
   remaining.value = examBlueprint.durationSeconds
   startedAtMs = Date.now()
-  phase.value = 'running'
   await persist()
+  phase.value = 'running'
   startTimer()
 }
 
