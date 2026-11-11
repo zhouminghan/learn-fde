@@ -9,9 +9,9 @@
 | P3 FDE Lab | COMPLETED | Lab 引擎支持 choice 分支与 nextStepId，新增知识问答/天气/智能客服三个入门案例 |
 | P4 可视化教学 | COMPLETED | 修复 SVG Marker SSR 水合、Mermaid securityLevel、InteractiveWorkflow 定时器防御 |
 | P5 学习闭环 | COMPLETED | 掌握度与个性化复习基于现有数据实时计算，样本不足不给出虚假精度 |
-| P6 整体验收 | RUNNING | 对 P1-P5 做功能/测试/兼容/安全审计 |
-| P7 模拟考试 | PENDING | 已有基础，验收为主 |
-| P8 发布运营 | PENDING | 需人工授权 |
+| P6 整体验收 | COMPLETED | typecheck/单测/内容校验/重复题检测/构建/E2E 全部通过 |
+| P7 模拟考试 | COMPLETED | 考试蓝图、随机组卷、倒计时、判分、报告与快照均已验证 |
+| P8 发布运营 | APPROVAL_REQUIRED | 等待 Git Push 与 Pages 部署授权 |
 
 ## 已知风险
 
