@@ -3979,5 +3979,271 @@
     "status": "published",
     "createdAt": "2026-11-11",
     "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D2-S16",
+    "domainId": "D2",
+    "lessonIds": [
+      "2.1"
+    ],
+    "type": "single",
+    "difficulty": "hard",
+    "stem": "某企业希望用 ADP 构建“自动审批并发放大额借款”的助手。以下判断最准确的是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "该场景含不可逆高风险操作，应设计人工审批与权限边界"
+      },
+      {
+        "id": "B",
+        "text": "平台可完全自动完成"
+      },
+      {
+        "id": "C",
+        "text": "只需提高模型温度"
+      },
+      {
+        "id": "D",
+        "text": "不需要任何知识库"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "大额、不可逆操作需人工审批与权限边界，不能完全自动执行。",
+    "tags": [
+      "能力边界",
+      "安全"
+    ],
+    "sourceType": "original",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "原创情境练习题，基于公开知识点设计，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D2-S17",
+    "domainId": "D2",
+    "lessonIds": [
+      "2.1"
+    ],
+    "type": "single",
+    "difficulty": "hard",
+    "stem": "一个智能体项目在演示时表现良好，但上线后错误率上升。最可能的原因是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "真实数据与权限边界比演示样本更复杂，缺少异常与兜底设计"
+      },
+      {
+        "id": "B",
+        "text": "页面加载变慢"
+      },
+      {
+        "id": "C",
+        "text": "模型名称变化"
+      },
+      {
+        "id": "D",
+        "text": "图标颜色变化"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "演示到生产的差距通常来自真实数据、权限边界与异常场景的复杂性。",
+    "tags": [
+      "交付",
+      "故障排查"
+    ],
+    "sourceType": "original",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "原创情境练习题，基于公开知识点设计，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D2-S18",
+    "domainId": "D2",
+    "lessonIds": [
+      "2.1"
+    ],
+    "type": "single",
+    "difficulty": "hard",
+    "stem": "判断是否值得用平台化方案构建智能体，最关键的三个考量是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "知识可获取性、流程重复度、交付与审批边界"
+      },
+      {
+        "id": "B",
+        "text": "界面美观度、字体、配色"
+      },
+      {
+        "id": "C",
+        "text": "只关注模型参数"
+      },
+      {
+        "id": "D",
+        "text": "只关注服务器数量"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "知识、流程与边界决定平台方案是否成立。",
+    "tags": [
+      "选型",
+      "综合"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S41",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-B",
+      "2.2-C"
+    ],
+    "type": "single",
+    "difficulty": "hard",
+    "stem": "知识助手返回了与知识库无关的答案，且工具调用记录为空。最可能的原因是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "检索步骤失败或未执行，模型在没有依据的情况下直接生成"
+      },
+      {
+        "id": "B",
+        "text": "知识库文档过长"
+      },
+      {
+        "id": "C",
+        "text": "页面响应变慢"
+      },
+      {
+        "id": "D",
+        "text": "字体设置不当"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "答案与知识库无关且无工具记录，通常说明检索未成功或未进入检索节点。",
+    "tags": [
+      "知识库",
+      "Workflow",
+      "故障排查"
+    ],
+    "sourceType": "original",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "原创情境练习题，基于公开知识点设计，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S42",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-B"
+    ],
+    "type": "single",
+    "difficulty": "hard",
+    "stem": "工具首次调用因参数错误失败，以下处理最合理的是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "按错误码修正参数并在有限次数内重试，仍失败则进入兜底"
+      },
+      {
+        "id": "B",
+        "text": "无限重试不修正参数"
+      },
+      {
+        "id": "C",
+        "text": "直接忽略错误"
+      },
+      {
+        "id": "D",
+        "text": "删除工具"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "工具失败应先校验参数、有限次重试，并保留兜底路径。",
+    "tags": [
+      "工具",
+      "重试"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S43",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-C"
+    ],
+    "type": "single",
+    "difficulty": "hard",
+    "stem": "Multi-Agent 协作中，某 Agent 的输出与另一 Agent 冲突。最佳处理是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "由汇总节点依据规则判定冲突并降级处理"
+      },
+      {
+        "id": "B",
+        "text": "随机选择一个结果"
+      },
+      {
+        "id": "C",
+        "text": "让所有 Agent 重跑无限次"
+      },
+      {
+        "id": "D",
+        "text": "删除冲突 Agent"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "多 Agent 冲突应由汇总节点按规则裁决并降级，而不是随机或无限重试。",
+    "tags": [
+      "Multi-Agent",
+      "冲突处理"
+    ],
+    "sourceType": "original",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "原创情境练习题，基于公开知识点设计，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
   }
 ]

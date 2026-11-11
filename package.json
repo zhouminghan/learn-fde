@@ -19,7 +19,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
-    "content:validate": "node --import tsx scripts/validate-content.ts"
+    "content:validate": "node --import tsx scripts/validate-content.ts",
+    "content:check-duplicates": "node --import tsx scripts/check-duplicates.ts"
   },
   "dependencies": {
     "dexie": "^4.0.11",

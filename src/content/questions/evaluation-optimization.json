@@ -1747,5 +1747,137 @@
     "status": "published",
     "createdAt": "2026-11-11",
     "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D6-S26",
+    "domainId": "D6",
+    "lessonIds": [
+      "4.1"
+    ],
+    "type": "single",
+    "difficulty": "hard",
+    "stem": "一个问答系统召回率高但精确率低，意味着什么？",
+    "options": [
+      {
+        "id": "A",
+        "text": "找回了大量相关结果，但其中混入较多无关内容"
+      },
+      {
+        "id": "B",
+        "text": "一个相关结果都没找到"
+      },
+      {
+        "id": "C",
+        "text": "返回数量太少"
+      },
+      {
+        "id": "D",
+        "text": "与质量无关"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "召回率高、精确率低说明找回全但结果不纯，需要提升排序与过滤。",
+    "tags": [
+      "评测指标",
+      "综合"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D6-S27",
+    "domainId": "D6",
+    "lessonIds": [
+      "4.3"
+    ],
+    "type": "single",
+    "difficulty": "hard",
+    "stem": "RAG 系统回答与检索片段矛盾，最可能的根因是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "生成阶段没有忠实使用检索上下文"
+      },
+      {
+        "id": "B",
+        "text": "检索片段太短"
+      },
+      {
+        "id": "C",
+        "text": "页面加载慢"
+      },
+      {
+        "id": "D",
+        "text": "字体不清晰"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "回答与检索矛盾通常是生成未忠实遵循检索上下文。",
+    "tags": [
+      "RAG",
+      "故障排查"
+    ],
+    "sourceType": "original",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "原创情境练习题，基于公开知识点设计，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D6-S28",
+    "domainId": "D6",
+    "lessonIds": [
+      "2.3"
+    ],
+    "type": "single",
+    "difficulty": "hard",
+    "stem": "上线后监控到成功率骤降，第一步应做的是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "冻结当前版本并依据日志定位变化点"
+      },
+      {
+        "id": "B",
+        "text": "立即全量回滚且不再分析"
+      },
+      {
+        "id": "C",
+        "text": "忽略告警"
+      },
+      {
+        "id": "D",
+        "text": "删除监控"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "成功率骤降应先定位变化点，再决定回滚或修复。",
+    "tags": [
+      "运维",
+      "监控"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
   }
 ]

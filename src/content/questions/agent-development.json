@@ -3343,5 +3343,137 @@
     "status": "published",
     "createdAt": "2026-11-11",
     "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S51",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "hard",
+    "stem": "客户既要求快速上线，又要求覆盖大量边缘情况。最合理的方案是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "分阶段交付：先覆盖核心路径的 MVP，再按风险优先级补齐边界"
+      },
+      {
+        "id": "B",
+        "text": "一次做完所有边缘情况"
+      },
+      {
+        "id": "C",
+        "text": "只做界面"
+      },
+      {
+        "id": "D",
+        "text": "忽略边缘情况"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "MVP 分阶段交付能在上线速度与边界覆盖之间取得平衡。",
+    "tags": [
+      "方案设计",
+      "综合"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S52",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "hard",
+    "stem": "某方案的知识来源包含多个系统且权限不一。设计中最应优先明确的是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "各知识源的访问权限、更新频率与责任边界"
+      },
+      {
+        "id": "B",
+        "text": "界面统一风格"
+      },
+      {
+        "id": "C",
+        "text": "字体大小"
+      },
+      {
+        "id": "D",
+        "text": "按钮数量"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "多知识源方案需先明确权限、时效与责任边界，才能保证安全与质量。",
+    "tags": [
+      "方案设计",
+      "权限"
+    ],
+    "sourceType": "original",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "原创情境练习题，基于公开知识点设计，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S53",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "hard",
+    "stem": "验收时发现模型回答“看起来正确”但缺少来源。这属于哪类问题？",
+    "options": [
+      {
+        "id": "A",
+        "text": "可溯源性问题，应要求答案附带依据并纳入验收标准"
+      },
+      {
+        "id": "B",
+        "text": "纯视觉问题"
+      },
+      {
+        "id": "C",
+        "text": "与验收无关"
+      },
+      {
+        "id": "D",
+        "text": "只需增加回答长度"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "缺少来源是可溯源性问题，应把来源标注纳入验收标准。",
+    "tags": [
+      "验收标准",
+      "溯源"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
   }
 ]

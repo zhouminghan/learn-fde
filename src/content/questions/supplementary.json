@@ -3235,5 +3235,269 @@
     "status": "published",
     "createdAt": "2026-11-11",
     "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D5-S31",
+    "domainId": "D5",
+    "lessonIds": [
+      "S2"
+    ],
+    "type": "single",
+    "difficulty": "hard",
+    "stem": "某金融机构的智能助手在回答前无法确认用户身份。正确的处理是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "先完成身份验证与权限校验，再返回受限信息"
+      },
+      {
+        "id": "B",
+        "text": "直接返回全部数据"
+      },
+      {
+        "id": "C",
+        "text": "忽略身份"
+      },
+      {
+        "id": "D",
+        "text": "只返回更长文本"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "金融场景必须先验证身份与权限，再返回受限信息。",
+    "tags": [
+      "金融",
+      "安全"
+    ],
+    "sourceType": "original",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "原创情境练习题，基于公开知识点设计，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D5-S32",
+    "domainId": "D5",
+    "lessonIds": [
+      "S2"
+    ],
+    "type": "single",
+    "difficulty": "hard",
+    "stem": "同一套知识助手方案在零售与医疗两个行业复用，最需要重新设计的是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "安全边界、术语体系与审批流程"
+      },
+      {
+        "id": "B",
+        "text": "界面配色"
+      },
+      {
+        "id": "C",
+        "text": "Logo"
+      },
+      {
+        "id": "D",
+        "text": "字体"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "跨行业复用需重点重设计安全、术语与审批等业务差异。",
+    "tags": [
+      "行业差异",
+      "综合"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D5-S33",
+    "domainId": "D5",
+    "lessonIds": [
+      "S2"
+    ],
+    "type": "single",
+    "difficulty": "hard",
+    "stem": "行业案例落地验证中，真实样本通过率显著低于演示样本。最可能原因是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "真实样本覆盖了演示未包含的边界与噪声"
+      },
+      {
+        "id": "B",
+        "text": "真实样本更短"
+      },
+      {
+        "id": "C",
+        "text": "演示样本使用了特殊字体"
+      },
+      {
+        "id": "D",
+        "text": "与数据无关"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "真实样本的边界与噪声远高于演示样本，是验证差距的常见原因。",
+    "tags": [
+      "案例落地",
+      "故障排查"
+    ],
+    "sourceType": "original",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "原创情境练习题，基于公开知识点设计，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D7-S21",
+    "domainId": "D7",
+    "lessonIds": [
+      "S4"
+    ],
+    "type": "single",
+    "difficulty": "hard",
+    "stem": "某工具接口同时暴露了读取与删除能力，而业务只需要读取。正确的安全设计是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "只授予读取所需的最小权限并限制参数范围"
+      },
+      {
+        "id": "B",
+        "text": "同时授予读取与删除权限"
+      },
+      {
+        "id": "C",
+        "text": "权限越大越好"
+      },
+      {
+        "id": "D",
+        "text": "不做任何限制"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "最小权限原则要求只授予业务所需能力，并限制参数范围。",
+    "tags": [
+      "权限",
+      "安全"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D7-S22",
+    "domainId": "D7",
+    "lessonIds": [
+      "S4"
+    ],
+    "type": "single",
+    "difficulty": "hard",
+    "stem": "高风险操作被人工拒绝后，系统应如何处理？",
+    "options": [
+      {
+        "id": "A",
+        "text": "记录拒绝原因并终止该高风险操作，保留审计痕迹"
+      },
+      {
+        "id": "B",
+        "text": "忽略拒绝继续执行"
+      },
+      {
+        "id": "C",
+        "text": "自动再次提交"
+      },
+      {
+        "id": "D",
+        "text": "删除日志"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "拒绝后应终止高风险操作、记录原因并保留审计痕迹。",
+    "tags": [
+      "人工审批",
+      "审计"
+    ],
+    "sourceType": "original",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "原创情境练习题，基于公开知识点设计，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D7-S23",
+    "domainId": "D7",
+    "lessonIds": [
+      "S4"
+    ],
+    "type": "single",
+    "difficulty": "hard",
+    "stem": "发现内容安全告警后，最完整的处理链路是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "隔离输出、定位触发样本、修复策略并复盘改进"
+      },
+      {
+        "id": "B",
+        "text": "只删掉告警"
+      },
+      {
+        "id": "C",
+        "text": "忽略并继续"
+      },
+      {
+        "id": "D",
+        "text": "重启服务即可"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "内容安全事件需要隔离、定位、修复与复盘形成闭环。",
+    "tags": [
+      "内容安全",
+      "应急"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
   }
 ]
