@@ -125,7 +125,7 @@ function difficultyLabel(d: Difficulty) {
 }
 
 function sourceLabel(s: SourceType) {
-  return s === 'original' ? '原创练习' : s === 'official_doc' ? '官方文档' : '官方知识'
+  return s === 'original' ? '原创练习' : s === 'official_doc' ? '官方文档' : '基于官方知识点'
 }
 
 async function toggleBookmark(id: string) {

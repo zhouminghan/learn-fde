@@ -2,17 +2,43 @@
   <div class="home">
     <header class="home__hero">
       <div class="home__hero-inner">
-        <p class="home__eyebrow">腾讯云 ADP · FDE 学习与能力训练站</p>
-        <h1 class="home__title">learn-FDE</h1>
+        <p class="home__eyebrow">腾讯云 ADP · FDE 学习与实战训练平台</p>
+        <h1 class="home__title">Learning FDE</h1>
         <p class="home__subtitle">
-          围绕 FDE 认证的课程学习、专项练习、模拟考试与学习记录，帮助你建立可交付的企业级 Agent 能力。
+          从 Agent 技术体系、ADP 产品能力到企业应用交付，通过结构化课程、可视化讲解、
+          交互式实验室和模拟考试，把 FDE 知识转化为可交付的实战能力。
         </p>
         <div class="home__cta">
           <a class="btn btn--primary" :href="withBase('/course/')">开始学习</a>
+          <a class="btn btn--accent" :href="withBase('/lab/')">进入 FDE 实验室</a>
           <a class="btn btn--ghost" :href="withBase('/exam/')">参加模拟考试</a>
         </div>
       </div>
     </header>
+
+    <section class="home__section">
+      <h2 class="section-title">学习目标</h2>
+      <div class="goals">
+        <div v-for="g in goals" :key="g.title" class="goal">
+          <span class="goal__dot"></span>
+          <div>
+            <p class="goal__title">{{ g.title }}</p>
+            <p class="goal__desc">{{ g.desc }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home__section">
+      <h2 class="section-title">学习入口</h2>
+      <div class="entry-grid">
+        <a v-for="e in entries" :key="e.title" class="entry" :href="withBase(e.link)">
+          <span class="entry__icon"><component :is="e.icon" :size="20" :stroke-width="1.8" /></span>
+          <p class="entry__title">{{ e.title }}</p>
+          <p class="entry__desc">{{ e.desc }}</p>
+        </a>
+      </div>
+    </section>
 
     <section class="home__section">
       <h2 class="section-title">学习概览</h2>
@@ -23,7 +49,7 @@
         </div>
         <div class="stat">
           <span class="stat__value">{{ practiceTotal }}</span>
-          <span class="stat__label">累计练习题</span>
+          <span class="stat__label">累计作答题次</span>
         </div>
         <div class="stat">
           <span class="stat__value">{{ examCount }}</span>
@@ -39,9 +65,7 @@
     <section class="home__section">
       <div class="split">
         <div class="panel">
-          <div class="panel__head">
-            <h2 class="section-title">继续学习</h2>
-          </div>
+          <h2 class="section-title">继续学习</h2>
           <template v-if="continueLesson">
             <p class="panel__lead">{{ continueLesson.title }}</p>
             <p class="panel__desc">{{ continueLesson.summary }}</p>
@@ -50,9 +74,7 @@
           <p v-else class="panel__empty">还没有开始学习的章节。</p>
         </div>
         <div class="panel">
-          <div class="panel__head">
-            <h2 class="section-title">考试入口</h2>
-          </div>
+          <h2 class="section-title">考试入口</h2>
           <p class="panel__desc">60 题 · 单选 40 / 多选 20 · 90 分钟 · 满分 100 · 70 分合格</p>
           <div class="panel__actions">
             <a class="btn btn--primary" :href="withBase('/exam/')">官方蓝图模拟考</a>
@@ -91,7 +113,7 @@
     <section class="home__section">
       <h2 class="section-title">官方资料入口</h2>
       <div class="link-row">
-        <a class="link-chip" href="https://cloud.tencent.com/edu/training/cert/detail?type=CFD" target="_blank" rel="noopener noreferrer">腾讯云 FDE 认证详情</a>
+        <a class="link-chip" href="https://cloud.tencent.com/document/product/658/137832" target="_blank" rel="noopener noreferrer">FDE 官方考试指南</a>
         <a class="link-chip" href="https://cloud.tencent.com/document/product/1759" target="_blank" rel="noopener noreferrer">ADP 产品文档</a>
         <a class="link-chip" href="https://adp.tencent.com/zh/blog/adp-fde-certification-guide" target="_blank" rel="noopener noreferrer">FDE 认证指南</a>
       </div>
@@ -102,6 +124,7 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
 import { useData, withBase } from 'vitepress'
+import { BookOpen, FlaskConical, FileQuestion, GraduationCap } from 'lucide-vue-next'
 import { curriculum } from '@/content'
 import type { ExamAttempt, PracticeAttempt, CourseProgress } from '@/types'
 
@@ -113,6 +136,20 @@ const practice = ref<PracticeAttempt[]>([])
 const exams = ref<ExamAttempt[]>([])
 
 const modules = curriculum.modules
+
+const goals = [
+  { title: '建立 FDE 技术体系', desc: '理解 AI、Agent、RAG、MCP、Workflow 与评测的核心概念和边界。' },
+  { title: '掌握 ADP 产品能力', desc: '熟悉应用搭建、知识库、工具、连接器与 Multi-Agent 编排。' },
+  { title: '完成企业应用交付', desc: '通过案例与实验室训练需求分析、方案设计和上线交付。' },
+  { title: '定位并补齐薄弱项', desc: '用专项练习和模拟考试识别知识缺口，形成复习闭环。' }
+]
+
+const entries = [
+  { title: '课程学习', desc: '四大官方模块与补充专题的结构化课程。', link: '/course/', icon: BookOpen },
+  { title: 'FDE 实验室', desc: '企业 IT 服务台 Agent 的可交互模拟执行。', link: '/lab/', icon: FlaskConical },
+  { title: '模拟考试', desc: '按官方蓝图组卷，倒计时与成绩报告。', link: '/exam/', icon: FileQuestion },
+  { title: '题库浏览', desc: '搜索、筛选、收藏与错题强化。', link: '/questions/', icon: GraduationCap }
+]
 
 const progressPercent = computed(() => {
   const done = progress.value.filter((p) => p.status === 'completed').length
@@ -191,34 +228,35 @@ onMounted(async () => {
 }
 
 .home__hero {
-  padding: 72px 0 40px;
+  padding: 64px 0 36px;
 }
 
 .home__hero-inner {
-  max-width: 760px;
+  max-width: 780px;
 }
 
 .home__eyebrow {
   margin: 0 0 12px;
-  color: var(--vp-c-brand-1);
+  color: var(--lf-accent);
   font-size: 14px;
-  font-weight: 650;
+  font-weight: 700;
 }
 
 .home__title {
   margin: 0 0 14px;
-  font-size: 52px;
-  line-height: 1.08;
+  font-size: 54px;
+  line-height: 1.05;
   font-weight: 800;
   letter-spacing: 0;
+  color: var(--lf-navy-text);
 }
 
 .home__subtitle {
   margin: 0 0 28px;
-  max-width: 620px;
+  max-width: 640px;
   color: var(--vp-c-text-2);
   font-size: 17px;
-  line-height: 1.7;
+  line-height: 1.75;
 }
 
 .home__cta,
@@ -238,6 +276,88 @@ onMounted(async () => {
   font-size: 18px;
   font-weight: 700;
   letter-spacing: 0;
+  color: var(--lf-navy-text);
+}
+
+.goals {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.goal {
+  display: flex;
+  gap: 10px;
+  padding: 16px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  background: var(--vp-c-bg-elv);
+}
+
+.goal__dot {
+  flex: none;
+  width: 8px;
+  height: 8px;
+  margin-top: 6px;
+  border-radius: 50%;
+  background: var(--lf-accent);
+}
+
+.goal__title {
+  margin: 0 0 4px;
+  font-weight: 650;
+  font-size: 14px;
+}
+
+.goal__desc {
+  margin: 0;
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.entry-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.entry {
+  display: block;
+  padding: 18px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  background: var(--vp-c-bg-elv);
+  text-decoration: none;
+  color: var(--vp-c-text-1);
+}
+
+.entry:hover {
+  border-color: var(--lf-accent);
+}
+
+.entry__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  color: var(--lf-accent);
+  background: var(--lf-accent-soft);
+}
+
+.entry__title {
+  margin: 0 0 4px;
+  font-weight: 650;
+}
+
+.entry__desc {
+  margin: 0;
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  line-height: 1.55;
 }
 
 .stat-grid {
@@ -257,7 +377,7 @@ onMounted(async () => {
   display: block;
   font-size: 28px;
   font-weight: 750;
-  color: var(--vp-c-text-1);
+  color: var(--lf-navy-text);
 }
 
 .stat__label {
@@ -276,12 +396,6 @@ onMounted(async () => {
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
   background: var(--vp-c-bg-elv);
-}
-
-.panel__head {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .panel__lead {
@@ -324,7 +438,7 @@ onMounted(async () => {
 }
 
 .weak-card__acc {
-  color: var(--vp-c-brand-1);
+  color: var(--lf-accent);
   font-weight: 700;
 }
 
@@ -339,7 +453,7 @@ onMounted(async () => {
   display: block;
   height: 100%;
   border-radius: 999px;
-  background: var(--vp-c-brand-1);
+  background: var(--lf-accent);
 }
 
 .path {
@@ -368,8 +482,8 @@ onMounted(async () => {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  background: var(--vp-c-brand-soft);
-  color: var(--vp-c-brand-1);
+  background: var(--lf-navy-soft);
+  color: var(--lf-navy-text);
   font-size: 12px;
   font-weight: 700;
 }
@@ -402,11 +516,21 @@ onMounted(async () => {
 
 .btn--primary {
   color: #fff;
-  background: var(--vp-c-brand-1);
+  background: var(--lf-navy);
 }
 
 .btn--primary:hover {
-  background: var(--vp-c-brand-2);
+  background: var(--lf-navy-text);
+  color: #fff;
+}
+
+.btn--accent {
+  color: #fff;
+  background: var(--lf-accent);
+}
+
+.btn--accent:hover {
+  background: var(--lf-accent-hover);
   color: #fff;
 }
 
@@ -417,7 +541,7 @@ onMounted(async () => {
 }
 
 .btn--ghost:hover {
-  border-color: var(--vp-c-brand-1);
+  border-color: var(--lf-accent);
 }
 
 .link-chip {
@@ -431,13 +555,15 @@ onMounted(async () => {
 }
 
 .link-chip:hover {
-  border-color: var(--vp-c-brand-1);
-  color: var(--vp-c-brand-1);
+  border-color: var(--lf-accent);
+  color: var(--lf-accent);
 }
 
 @media (max-width: 959px) {
   .stat-grid,
-  .weak-grid {
+  .weak-grid,
+  .entry-grid,
+  .goals {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -460,11 +586,13 @@ onMounted(async () => {
   }
 
   .home__title {
-    font-size: 38px;
+    font-size: 40px;
   }
 
   .stat-grid,
   .weak-grid,
+  .entry-grid,
+  .goals,
   .path {
     grid-template-columns: 1fr;
   }

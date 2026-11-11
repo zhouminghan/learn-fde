@@ -1,7 +1,7 @@
 export type QuestionType = 'single' | 'multiple'
 export type Difficulty = 'easy' | 'medium' | 'hard'
 export type QuestionStatus = 'draft' | 'review' | 'published' | 'retired'
-export type SourceType = 'official_knowledge' | 'official_doc' | 'original'
+export type SourceType = 'knowledge_based' | 'official_doc' | 'original'
 
 export interface QuestionOption {
   id: string

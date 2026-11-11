@@ -1,14 +1,19 @@
 :root {
-  --lf-bg: #f7f4ef;
-  --lf-bg-soft: #f1ece4;
-  --lf-bg-elv: #fffdf9;
-  --lf-text: #2f2a26;
-  --lf-text-2: #655d54;
-  --lf-text-3: #948a7e;
-  --lf-accent: #c85b2d;
-  --lf-accent-hover: #ab4a22;
-  --lf-accent-soft: #f6e3d7;
-  --lf-divider: #e7e0d5;
+  --lf-bg: #f7f6f3;
+  --lf-bg-soft: #f0eee9;
+  --lf-bg-elv: #fffefb;
+  --lf-text: #1d2733;
+  --lf-text-2: #4b5664;
+  --lf-text-3: #7c8593;
+  --lf-navy: #14283d;
+  --lf-navy-text: #14283d;
+  --lf-navy-soft: #e3e9f1;
+  --lf-accent: #d1763c;
+  --lf-accent-hover: #b85e2a;
+  --lf-accent-soft: #f9e8da;
+  --lf-teal: #2c8f86;
+  --lf-teal-soft: #dcf0ed;
+  --lf-divider: #e6e2da;
   --lf-green: #3f7d54;
   --lf-green-soft: #e2efe5;
   --lf-red: #b84b3d;
@@ -28,13 +33,13 @@
   --vp-c-text-3: var(--lf-text-3);
   --vp-c-divider: var(--lf-divider);
   --vp-c-gutter: var(--lf-divider);
-  --vp-c-brand-1: var(--lf-accent);
-  --vp-c-brand-2: var(--lf-accent-hover);
-  --vp-c-brand-3: var(--lf-accent);
-  --vp-c-brand-soft: var(--lf-accent-soft);
+  --vp-c-brand-1: var(--lf-navy);
+  --vp-c-brand-2: var(--lf-navy-text);
+  --vp-c-brand-3: var(--lf-navy);
+  --vp-c-brand-soft: var(--lf-navy-soft);
   --vp-c-default-1: var(--lf-text-2);
-  --vp-c-default-2: #d9d2c7;
-  --vp-c-default-3: #e8e1d6;
+  --vp-c-default-2: #d6d3cb;
+  --vp-c-default-3: #e7e3db;
   --vp-c-default-soft: var(--lf-bg-soft);
   --vp-font-family-base: 'Inter', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei',
     'Source Han Sans SC', -apple-system, 'Segoe UI', sans-serif;
@@ -43,18 +48,23 @@
 }
 
 .dark {
-  --lf-bg: #1e1c19;
-  --lf-bg-soft: #26231f;
-  --lf-bg-elv: #2b2823;
-  --lf-text: #eae4dc;
-  --lf-text-2: #b6aea3;
-  --lf-text-3: #8a8378;
-  --lf-accent: #e58a5f;
-  --lf-accent-hover: #f0a179;
+  --lf-bg: #151c24;
+  --lf-bg-soft: #1b232c;
+  --lf-bg-elv: #202a34;
+  --lf-text: #e8eef4;
+  --lf-text-2: #b8c3cf;
+  --lf-text-3: #8996a3;
+  --lf-navy: #1c3853;
+  --lf-navy-text: #b8cee4;
+  --lf-navy-soft: #1c2c3d;
+  --lf-accent: #e8955d;
+  --lf-accent-hover: #f2aa77;
   --lf-accent-soft: #463126;
-  --lf-divider: #3a3530;
+  --lf-teal: #6cc7bb;
+  --lf-teal-soft: #1d3a36;
+  --lf-divider: #303b46;
   --lf-green: #79b58d;
-  --lf-green-soft: #263b2d;
+  --lf-green-soft: #243b2d;
   --lf-red: #df8b7d;
   --lf-red-soft: #432a27;
   --lf-yellow: #d4ad5b;
@@ -135,6 +145,7 @@ body {
 .vp-doc h1 {
   font-size: 30px;
   font-weight: 750;
+  color: var(--lf-navy-text);
 }
 
 .vp-doc h2 {
@@ -142,6 +153,7 @@ body {
   font-weight: 700;
   border-top: 1px solid var(--vp-c-divider);
   padding-top: 28px;
+  color: var(--lf-navy-text);
 }
 
 .vp-doc h3 {
@@ -155,7 +167,7 @@ body {
 }
 
 .vp-doc blockquote {
-  border-left: 3px solid var(--vp-c-brand-1);
+  border-left: 3px solid var(--lf-accent);
   background: var(--vp-c-bg-alt);
 }
 
@@ -193,9 +205,23 @@ body {
   border-top: 1px solid var(--vp-c-divider);
 }
 
+.VPFooter {
+  border-top: 1px solid var(--lf-divider);
+  background: var(--lf-navy);
+}
+
+.VPFooter .message,
+.VPFooter .copyright {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.VPFooter a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
 /* 聚焦可见性 */
 :focus-visible {
-  outline: 2px solid var(--vp-c-brand-1);
+  outline: 2px solid var(--lf-accent);
   outline-offset: 2px;
 }
 

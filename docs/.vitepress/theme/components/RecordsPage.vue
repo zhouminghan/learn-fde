@@ -23,7 +23,7 @@
     <section class="block">
       <h2>练习与考试</h2>
       <div class="stat-grid">
-        <div class="stat"><span class="stat__value">{{ practiceTotal }}</span><span class="stat__label">累计练习题</span></div>
+        <div class="stat"><span class="stat__value">{{ practiceTotal }}</span><span class="stat__label">累计作答题次</span></div>
         <div class="stat"><span class="stat__value">{{ practiceAccuracy }}%</span><span class="stat__label">练习正确率</span></div>
         <div class="stat"><span class="stat__value">{{ examCount }}</span><span class="stat__label">考试次数</span></div>
       </div>

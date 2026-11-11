@@ -34,8 +34,8 @@ export default withMermaid(
   defineConfig({
     base,
     lang: 'zh-CN',
-    title: 'learn-FDE',
-    description: '腾讯云 ADP FDE 认证学习与能力训练站',
+    title: 'Learning FDE',
+    description: '腾讯云 ADP FDE 学习与实战训练平台',
     appearance: false,
     lastUpdated: true,
     head: [
@@ -49,6 +49,7 @@ export default withMermaid(
         { text: '课程学习', link: '/course/', activeMatch: '^/course/' },
         { text: '专项练习', link: '/practice/' },
         { text: '模拟考试', link: '/exam/' },
+        { text: 'FDE 实验室', link: '/lab/' },
         { text: '题库浏览', link: '/questions/' },
         { text: '学习记录', link: '/records/' },
         { text: '资源中心', link: '/resources/' },
@@ -84,8 +85,8 @@ export default withMermaid(
         }
       },
       footer: {
-        message: 'learn-FDE 是独立学习项目，与腾讯云官方认证无隶属关系，不提供真实考试题。',
-        copyright: 'learn-FDE'
+        message: 'Learning FDE 是独立学习项目，与腾讯云官方认证无隶属关系，不提供真实考试题。',
+        copyright: 'Learning FDE'
       }
     },
     vite: {

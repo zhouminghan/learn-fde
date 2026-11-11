@@ -7,7 +7,7 @@
     <section class="block">
       <h2>项目说明</h2>
       <p>
-        learn-FDE 是独立的 FDE 学习与模拟练习项目，用于整理公开课程知识、训练企业级 Agent
+        Learning FDE 是独立的 FDE 学习与实战训练项目，用于整理公开课程知识、训练企业级 Agent
         交付能力并记录个人学习过程。项目与腾讯云官方认证无隶属关系，不提供真实考试题，不承诺认证结果。
       </p>
       <p>
@@ -75,8 +75,7 @@ const sources = [
   { title: '腾讯云 ADP FDE 认证详情', href: 'https://cloud.tencent.com/edu/training/cert/detail?type=CFD' },
   { title: '腾讯云 ADP FDE 官方指南', href: 'https://cloud.tencent.com/document/product/658/137832' },
   { title: '腾讯云 ADP 产品文档', href: 'https://cloud.tencent.com/document/product/1759' },
-  { title: 'FDE 认证指南与生态伙伴', href: 'https://adp.tencent.com/zh/blog/adp-fde-certification-guide' },
-  { title: 'learn-harness-engineering（结构与体验参考）', href: 'https://github.com/walkinglabs/learn-harness-engineering' }
+  { title: 'FDE 认证指南与生态伙伴', href: 'https://adp.tencent.com/zh/blog/adp-fde-certification-guide' }
 ]
 </script>
 

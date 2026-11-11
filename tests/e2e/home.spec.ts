@@ -8,7 +8,7 @@ async function openMobileNavIfNeeded(page: import('@playwright/test').Page) {
 test('首页展示品牌与核心入口', async ({ page }) => {
   await page.goto('')
   await page.waitForSelector('html[data-app-hydrated="true"]')
-  await expect(page.getByRole('heading', { name: 'learn-FDE' })).toBeVisible()
+  await expect(page.getByRole('heading', { name: 'Learning FDE' })).toBeVisible()
   await openMobileNavIfNeeded(page)
   await expect(page.getByRole('link', { name: '课程学习' }).first()).toBeVisible()
   await expect(page.getByRole('link', { name: '模拟考试' }).first()).toBeVisible()

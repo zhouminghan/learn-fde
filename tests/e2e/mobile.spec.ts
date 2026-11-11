@@ -5,7 +5,7 @@ test.use({ viewport: { width: 390, height: 844 } })
 test('移动端首页与考试入口可用', async ({ page }) => {
   await page.goto('')
   await page.waitForSelector('html[data-app-hydrated="true"]')
-  await expect(page.getByRole('heading', { name: 'learn-FDE' })).toBeVisible()
+  await expect(page.getByRole('heading', { name: 'Learning FDE' })).toBeVisible()
   await expect(page.getByRole('link', { name: '开始学习' })).toBeVisible()
 })
 

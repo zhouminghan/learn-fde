@@ -1,5 +1,8 @@
 <template>
   <DefaultLayout>
+    <template #nav-bar-title-before>
+      <BrandLogo />
+    </template>
     <template #nav-bar-content-after>
       <ThemeToggle />
     </template>
