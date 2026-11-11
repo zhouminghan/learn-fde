@@ -36,6 +36,7 @@ export default withMermaid(
     lang: 'zh-CN',
     title: 'Learning FDE',
     description: '腾讯云 ADP FDE 学习与实战训练平台',
+    srcExclude: ['project/**'],
     appearance: false,
     lastUpdated: true,
     head: [

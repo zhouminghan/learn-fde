@@ -1,6 +1,6 @@
 import { expect, test } from '@playwright/test'
 
-const routes = ['', 'course/', 'course/01-ai-agent-basics/1-1.html', 'practice/', 'exam/', 'questions/', 'records/']
+const routes = ['', 'course/', 'course/01-ai-agent-basics/1-1.html', 'practice/', 'exam/', 'lab/', 'questions/', 'records/']
 const viewports = [
   { width: 390, height: 844 },
   { width: 768, height: 1024 },
