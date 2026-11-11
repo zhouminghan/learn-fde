@@ -8,8 +8,8 @@
 | P2 题库质量治理 | COMPLETED | 重复题 3 对已删除，19 道记忆题校准为 easy，新增 21 道 hard 场景/故障题，新增重复题检测脚本 |
 | P3 FDE Lab | COMPLETED | Lab 引擎支持 choice 分支与 nextStepId，新增知识问答/天气/智能客服三个入门案例 |
 | P4 可视化教学 | COMPLETED | 修复 SVG Marker SSR 水合、Mermaid securityLevel、InteractiveWorkflow 定时器防御 |
-| P5 学习闭环 | RUNNING | 依赖 IndexedDB 迁移设计，进行中 |
-| P6 整体验收 | PENDING | 依赖 P1-P5 |
+| P5 学习闭环 | COMPLETED | 掌握度与个性化复习基于现有数据实时计算，样本不足不给出虚假精度 |
+| P6 整体验收 | RUNNING | 对 P1-P5 做功能/测试/兼容/安全审计 |
 | P7 模拟考试 | PENDING | 已有基础，验收为主 |
 | P8 发布运营 | PENDING | 需人工授权 |
 
