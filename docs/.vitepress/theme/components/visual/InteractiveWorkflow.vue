@@ -16,36 +16,42 @@
           :key="step.id"
           class="iw__step"
           :class="stepClass(i)"
-          @click="goTo(i)"
         >
-          <span class="iw__dot"></span>
-          <div class="iw__step-body">
-            <p class="iw__step-title">
+          <button
+            type="button"
+            class="iw__step-button"
+            :aria-current="i === index ? 'step' : undefined"
+            @click="goTo(i)"
+          >
+            <span class="iw__dot"></span>
+            <span class="iw__step-title">
               <span class="iw__index">{{ i + 1 }}</span>
               {{ step.title }}
               <span v-if="step.kind" class="iw__kind">{{ step.kind }}</span>
-            </p>
-            <template v-if="i <= index">
-              <p class="iw__summary">{{ step.summary }}</p>
-              <ul v-if="step.details?.length" class="iw__details">
-                <li v-for="d in step.details" :key="d">{{ d }}</li>
-              </ul>
-              <dl v-if="step.evidence?.length" class="iw__evidence">
-                <template v-for="e in step.evidence" :key="e.label">
-                  <dt>{{ e.label }}</dt>
-                  <dd>{{ e.value }}</dd>
-                </template>
-              </dl>
-            </template>
+              <span class="iw__state">{{ stepStateLabel(i) }}</span>
+            </span>
+          </button>
+          <div v-if="i <= index" class="iw__step-content">
+            <p class="iw__summary">{{ step.summary }}</p>
+            <ul v-if="step.details?.length" class="iw__details">
+              <li v-for="d in step.details" :key="d">{{ d }}</li>
+            </ul>
+            <dl v-if="step.evidence?.length" class="iw__evidence">
+              <template v-for="e in step.evidence" :key="e.label">
+                <dt>{{ e.label }}</dt>
+                <dd>{{ e.value }}</dd>
+              </template>
+            </dl>
           </div>
         </li>
       </ol>
+      <p class="sr-only" aria-live="polite">{{ liveStatus }}</p>
     </div>
   </DiagramFrame>
 </template>
 
 <script setup lang="ts">
-import { onBeforeUnmount, ref } from 'vue'
+import { computed, onBeforeUnmount, ref } from 'vue'
 import DiagramFrame from './DiagramFrame.vue'
 
 export interface WorkflowStep {
@@ -77,6 +83,18 @@ function stepClass(i: number) {
   if (i === index.value) return 'iw__step--active'
   return 'iw__step--pending'
 }
+
+function stepStateLabel(i: number) {
+  if (i < index.value) return '已完成'
+  if (i === index.value) return '当前步骤'
+  return '待执行'
+}
+
+const liveStatus = computed(() =>
+  index.value < 0
+    ? '流程尚未开始'
+    : `当前第 ${index.value + 1} 步：${props.steps[index.value]?.title ?? ''}`
+)
 
 function play() {
   pause()
@@ -132,7 +150,7 @@ onBeforeUnmount(pause)
 
 .iw__btn {
   padding: 7px 12px;
-  border: 1px solid var(--vp-c-divider);
+  border: 1px solid var(--lf-border-control);
   border-radius: 7px;
   color: var(--vp-c-text-1);
   background: var(--vp-c-bg-elv);
@@ -141,14 +159,21 @@ onBeforeUnmount(pause)
 }
 
 .iw__btn:disabled {
-  opacity: 0.45;
+  color: var(--lf-text-disabled);
+  background: var(--lf-disabled-bg);
+  border-color: var(--lf-disabled-border);
+  opacity: 1;
   cursor: not-allowed;
 }
 
 .iw__btn--primary {
-  color: #fff;
-  background: var(--lf-accent);
-  border-color: var(--lf-accent);
+  color: var(--lf-on-brand);
+  background: var(--lf-brand);
+  border-color: var(--lf-brand);
+}
+
+.iw__btn--primary:hover:not(:disabled) {
+  background: var(--lf-brand-hover);
 }
 
 .iw__timeline {
@@ -159,11 +184,7 @@ onBeforeUnmount(pause)
 
 .iw__step {
   position: relative;
-  display: flex;
-  gap: 12px;
-  padding: 12px 0;
   border-bottom: 1px solid var(--vp-c-divider);
-  cursor: pointer;
 }
 
 .iw__step:not(:last-child)::before {
@@ -182,6 +203,22 @@ onBeforeUnmount(pause)
 
 .iw__step:last-child {
   border-bottom: 0;
+}
+
+.iw__step-button {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.iw__step-button:hover {
+  background: var(--lf-hover-bg);
 }
 
 .iw__dot {
@@ -204,25 +241,26 @@ onBeforeUnmount(pause)
   background: var(--lf-accent);
 }
 
-.iw__step--active .iw__step-body {
+.iw__step--active .iw__step-content {
   border-left: 3px solid var(--lf-accent);
   padding-left: 10px;
 }
 
-.iw__step--done .iw__step-body {
+.iw__step--done .iw__step-content {
   border-left: 3px solid var(--lf-teal);
   padding-left: 10px;
 }
 
-.iw__step-body {
-  min-width: 0;
-  flex: 1;
+.iw__step-content {
+  margin-left: 24px;
+  padding-bottom: 12px;
 }
 
 .iw__step-title {
-  margin: 0;
-  font-weight: 650;
   display: flex;
+  min-width: 0;
+  flex: 1;
+  font-weight: 650;
   align-items: center;
   gap: 8px;
   flex-wrap: wrap;
@@ -249,8 +287,30 @@ onBeforeUnmount(pause)
   font-weight: 600;
 }
 
+.iw__state {
+  padding: 1px 7px;
+  border: 1px solid var(--lf-border-control);
+  border-radius: 999px;
+  color: var(--lf-text-2);
+  background: var(--vp-c-bg-elv);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .iw__summary {
-  margin: 6px 0 0;
+  margin: 0;
   color: var(--vp-c-text-2);
   font-size: 14px;
   line-height: 1.6;

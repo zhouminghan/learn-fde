@@ -124,7 +124,7 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
 import { useData, withBase } from 'vitepress'
-import { BookOpen, FlaskConical, FileQuestion, GraduationCap } from 'lucide-vue-next'
+import { BookOpen, FlaskConical, FileQuestion, GraduationCap } from '@lucide/vue'
 import { curriculum } from '@/content'
 import type { ExamAttempt, PracticeAttempt, CourseProgress } from '@/types'
 
@@ -237,7 +237,7 @@ onMounted(async () => {
 
 .home__eyebrow {
   margin: 0 0 12px;
-  color: var(--lf-accent);
+  color: var(--lf-brand-soft-text);
   font-size: 14px;
   font-weight: 700;
 }
@@ -292,6 +292,7 @@ onMounted(async () => {
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
   background: var(--vp-c-bg-elv);
+  box-shadow: var(--lf-shadow-card);
 }
 
 .goal__dot {
@@ -300,7 +301,7 @@ onMounted(async () => {
   height: 8px;
   margin-top: 6px;
   border-radius: 50%;
-  background: var(--lf-accent);
+  background: var(--lf-brand);
 }
 
 .goal__title {
@@ -330,10 +331,13 @@ onMounted(async () => {
   background: var(--vp-c-bg-elv);
   text-decoration: none;
   color: var(--vp-c-text-1);
+  box-shadow: var(--lf-shadow-card);
+  transition: border-color 0.15s ease, background-color 0.15s ease;
 }
 
 .entry:hover {
-  border-color: var(--lf-accent);
+  border-color: var(--lf-brand);
+  background: var(--lf-hover-bg);
 }
 
 .entry__icon {
@@ -344,8 +348,8 @@ onMounted(async () => {
   height: 36px;
   margin-bottom: 12px;
   border-radius: 8px;
-  color: var(--lf-accent);
-  background: var(--lf-accent-soft);
+  color: var(--lf-brand-soft-text);
+  background: var(--lf-brand-soft);
 }
 
 .entry__title {
@@ -371,6 +375,7 @@ onMounted(async () => {
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
   background: var(--vp-c-bg-elv);
+  box-shadow: var(--lf-shadow-card);
 }
 
 .stat__value {
@@ -396,6 +401,7 @@ onMounted(async () => {
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
   background: var(--vp-c-bg-elv);
+  box-shadow: var(--lf-shadow-card);
 }
 
 .panel__lead {
@@ -425,6 +431,7 @@ onMounted(async () => {
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
   background: var(--vp-c-bg-elv);
+  box-shadow: var(--lf-shadow-card);
 }
 
 .weak-card__top {
@@ -438,7 +445,7 @@ onMounted(async () => {
 }
 
 .weak-card__acc {
-  color: var(--lf-accent);
+  color: var(--lf-brand-soft-text);
   font-weight: 700;
 }
 
@@ -453,7 +460,7 @@ onMounted(async () => {
   display: block;
   height: 100%;
   border-radius: 999px;
-  background: var(--lf-accent);
+  background: var(--lf-brand);
 }
 
 .path {
@@ -472,6 +479,7 @@ onMounted(async () => {
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
   background: var(--vp-c-bg-elv);
+  box-shadow: var(--lf-shadow-card);
 }
 
 .path__index {
@@ -515,38 +523,39 @@ onMounted(async () => {
 }
 
 .btn--primary {
-  color: #fff;
-  background: var(--lf-navy);
+  color: var(--lf-on-brand);
+  background: var(--lf-brand);
 }
 
 .btn--primary:hover {
-  background: var(--lf-navy-text);
-  color: #fff;
+  background: var(--lf-brand-hover);
+  color: var(--lf-on-brand);
 }
 
 .btn--accent {
-  color: #fff;
-  background: var(--lf-accent);
+  color: var(--lf-on-brand);
+  background: var(--lf-brand);
 }
 
 .btn--accent:hover {
-  background: var(--lf-accent-hover);
-  color: #fff;
+  background: var(--lf-brand-hover);
+  color: var(--lf-on-brand);
 }
 
 .btn--ghost {
   color: var(--vp-c-text-1);
   background: var(--vp-c-bg-elv);
-  border-color: var(--vp-c-divider);
+  border-color: var(--lf-border-control);
 }
 
 .btn--ghost:hover {
-  border-color: var(--lf-accent);
+  border-color: var(--lf-brand);
+  background: var(--lf-hover-bg);
 }
 
 .link-chip {
   padding: 9px 14px;
-  border: 1px solid var(--vp-c-divider);
+  border: 1px solid var(--lf-border-control);
   border-radius: 8px;
   background: var(--vp-c-bg-elv);
   color: var(--vp-c-text-1);
@@ -555,8 +564,9 @@ onMounted(async () => {
 }
 
 .link-chip:hover {
-  border-color: var(--lf-accent);
-  color: var(--lf-accent);
+  border-color: var(--lf-brand);
+  color: var(--lf-brand-soft-text);
+  background: var(--lf-hover-bg);
 }
 
 @media (max-width: 959px) {

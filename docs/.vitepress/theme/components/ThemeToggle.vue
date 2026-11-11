@@ -5,7 +5,7 @@
       :key="option.value"
       type="button"
       class="theme-toggle__btn"
-      :class="{ active: pref === option.value }"
+      :data-theme-option="option.value"
       :aria-pressed="pref === option.value"
       :title="option.label"
       @click="select(option.value)"
@@ -18,10 +18,15 @@
 
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, ref } from 'vue'
-import { Moon, Monitor, Sun } from 'lucide-vue-next'
+import { Moon, Monitor, Sun } from '@lucide/vue'
 import type { ThemePreference } from '@/types'
-
-const STORAGE_KEY = 'learn-fde-theme'
+import {
+  THEME_STORAGE_KEY,
+  applyThemePreference,
+  isThemePreference,
+  readStoredThemePreference,
+  writeStoredThemePreference
+} from '../theme-preference'
 
 const options: { value: ThemePreference; label: string; icon: unknown }[] = [
   { value: 'light', label: '浅色模式', icon: Sun },
@@ -31,57 +36,68 @@ const options: { value: ThemePreference; label: string; icon: unknown }[] = [
 
 const pref = ref<ThemePreference>('system')
 let media: MediaQueryList | null = null
-
-function readSaved(): ThemePreference {
-  if (typeof window === 'undefined') return 'system'
-  const saved = window.localStorage.getItem(STORAGE_KEY)
-  return saved === 'light' || saved === 'dark' || saved === 'system' ? saved : 'system'
-}
-
-function apply(preference: ThemePreference) {
-  if (typeof document === 'undefined') return
-  const dark =
-    preference === 'dark' ||
-    (preference === 'system' &&
-      typeof window !== 'undefined' &&
-      window.matchMedia('(prefers-color-scheme: dark)').matches)
-  document.documentElement.classList.toggle('dark', dark)
-}
+let persistQueue = Promise.resolve()
+let userChanged = false
 
 function select(value: ThemePreference) {
+  userChanged = true
   pref.value = value
-  try {
-    window.localStorage.setItem(STORAGE_KEY, value)
-  } catch {
-    // 存储不可用时仅影响本次会话。
-  }
-  apply(value)
+  writeStoredThemePreference(value)
+  applyThemePreference(value)
   void persist(value)
 }
 
-async function persist(value: ThemePreference) {
+function persist(value: ThemePreference) {
   if (typeof window === 'undefined') return
-  try {
+  persistQueue = persistQueue.then(async () => {
     const { setThemePreference } = await import('@/storage/settings')
     await setThemePreference(value)
-  } catch {
+  }).catch(() => {
     // IndexedDB 不可用时主题仍由 localStorage 持久化。
-  }
+  })
 }
 
 function onSystemChange() {
-  if (pref.value === 'system') apply('system')
+  if (pref.value === 'system') applyThemePreference('system')
+}
+
+function onStorageChange(event: StorageEvent) {
+  if (event.key !== THEME_STORAGE_KEY) return
+  const next = isThemePreference(event.newValue) ? event.newValue : 'system'
+  pref.value = next
+  applyThemePreference(next)
 }
 
 onMounted(() => {
-  pref.value = readSaved()
-  apply(pref.value)
+  const saved = readStoredThemePreference()
+  pref.value = saved ?? 'system'
+  applyThemePreference(pref.value)
   media = window.matchMedia('(prefers-color-scheme: dark)')
   media.addEventListener('change', onSystemChange)
+  window.addEventListener('storage', onStorageChange)
+
+  if (saved) {
+    void persist(saved)
+    return
+  }
+
+  void (async () => {
+    try {
+      const { getThemePreference } = await import('@/storage/settings')
+      const stored = await getThemePreference()
+      if (userChanged || readStoredThemePreference()) return
+      pref.value = stored
+      writeStoredThemePreference(stored)
+      applyThemePreference(stored)
+    } catch {
+      // 存储不可用时保留 System 模式。
+    }
+  })()
 })
 
 onBeforeUnmount(() => {
   media?.removeEventListener('change', onSystemChange)
+  window.removeEventListener('storage', onStorageChange)
 })
 </script>
 
@@ -113,11 +129,14 @@ onBeforeUnmount(() => {
 
 .theme-toggle__btn:hover {
   color: var(--vp-c-text-1);
+  background: var(--lf-hover-bg);
 }
 
-.theme-toggle__btn.active {
-  color: var(--vp-c-brand-1);
-  background: var(--vp-c-brand-soft);
+:global(html[data-theme-preference='light']) .theme-toggle__btn[data-theme-option='light'],
+:global(html[data-theme-preference='dark']) .theme-toggle__btn[data-theme-option='dark'],
+:global(html[data-theme-preference='system']) .theme-toggle__btn[data-theme-option='system'] {
+  color: var(--lf-brand-soft-text);
+  background: var(--lf-brand-soft);
 }
 
 .sr-only {

@@ -311,7 +311,7 @@ onMounted(async () => {
   width: 100%;
   min-width: 0;
   padding: 8px 10px;
-  border: 1px solid var(--vp-c-divider);
+  border: 1px solid var(--lf-border-control);
   border-radius: 8px;
   background: var(--vp-c-bg-elv);
   color: var(--vp-c-text-1);
@@ -359,7 +359,7 @@ onMounted(async () => {
   display: block;
   height: 100%;
   border-radius: 999px;
-  background: var(--vp-c-brand-1);
+  background: var(--lf-brand);
 }
 
 .session__nav {
@@ -431,31 +431,35 @@ onMounted(async () => {
 }
 
 .btn--primary {
-  color: #fff;
-  background: var(--vp-c-brand-1);
+  color: var(--lf-on-brand);
+  background: var(--lf-brand);
 }
 
 .btn--primary:hover:not(:disabled) {
-  background: var(--vp-c-brand-2);
+  background: var(--lf-brand-hover);
 }
 
 .btn--primary:disabled {
-  opacity: 0.5;
+  color: var(--lf-text-disabled);
+  background: var(--lf-disabled-bg);
+  border-color: var(--lf-disabled-border);
+  opacity: 1;
   cursor: not-allowed;
 }
 
 .btn--ghost {
   color: var(--vp-c-text-1);
   background: var(--vp-c-bg-elv);
-  border-color: var(--vp-c-divider);
+  border-color: var(--lf-border-control);
 }
 
 .btn--ghost:hover:not(:disabled) {
-  border-color: var(--vp-c-brand-1);
+  border-color: var(--lf-brand);
+  background: var(--lf-hover-bg);
 }
 
 .btn--ghost:disabled {
-  opacity: 0.5;
+  opacity: 1;
   cursor: not-allowed;
 }
 

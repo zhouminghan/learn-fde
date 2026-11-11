@@ -15,7 +15,7 @@ test('FDE 实验室可完整执行 IT 服务台案例', async ({ page }) => {
   }
 
   await expect(page.getByText('需要人工审批')).toBeVisible()
-  await page.getByRole('button', { name: /批准/ }).click()
+  await page.getByRole('button', { name: '批准', exact: true }).click()
 
   await expect(page.getByText('最终报告')).toBeVisible({ timeout: 15_000 })
   await expect(page.locator('.lab__final')).toContainText('IT-2026-1182')

@@ -93,6 +93,8 @@
               :key="qid"
               class="cell"
               :class="cellClass(qid, i)"
+              :aria-label="cellLabel(qid, i)"
+              :aria-current="i === currentIndex ? 'true' : undefined"
               @click="jumpTo(i)"
             >
               {{ i + 1 }}
@@ -144,7 +146,7 @@
 
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
-import { Clock, Flag } from 'lucide-vue-next'
+import { Clock, Flag } from '@lucide/vue'
 import { curriculum, examBlueprint, loadPublishedQuestions } from '@/content'
 import { generateExam } from '@/domain/exam/exam-generator'
 import { scoreExam } from '@/domain/exam/exam-scoring'
@@ -235,6 +237,14 @@ function cellClass(qid: string, index: number) {
   if (attempt.value?.markedQuestionIds.includes(qid)) classes.push('marked')
   if (index === currentIndex.value) classes.push('current')
   return classes
+}
+
+function cellLabel(qid: string, index: number) {
+  const states = [`第 ${index + 1} 题`]
+  if ((attempt.value?.answers[qid]?.length ?? 0) > 0) states.push('已答')
+  if (attempt.value?.markedQuestionIds.includes(qid)) states.push('已标记')
+  if (index === currentIndex.value) states.push('当前题')
+  return states.join('，')
 }
 
 function jumpTo(index: number) {
@@ -527,15 +537,15 @@ onBeforeUnmount(() => {
   gap: 6px;
   padding: 4px 10px;
   border-radius: 8px;
-  background: var(--vp-c-brand-soft);
-  color: var(--vp-c-brand-1);
+  background: var(--lf-brand-soft);
+  color: var(--lf-brand-soft-text);
   font-variant-numeric: tabular-nums;
   font-weight: 700;
 }
 
 .running__timer.urgent {
   background: var(--lf-red-soft);
-  color: var(--lf-red);
+  color: var(--lf-danger);
 }
 
 .running__progress {
@@ -566,7 +576,7 @@ onBeforeUnmount(() => {
   align-items: center;
   gap: 6px;
   padding: 6px 10px;
-  border: 1px solid var(--vp-c-divider);
+  border: 1px solid var(--lf-border-control);
   border-radius: 8px;
   background: var(--vp-c-bg-elv);
   color: var(--vp-c-text-2);
@@ -642,7 +652,7 @@ onBeforeUnmount(() => {
 }
 
 .dot--answered {
-  background: var(--vp-c-brand-1);
+  background: var(--lf-brand);
 }
 
 .dot--marked {
@@ -661,7 +671,7 @@ onBeforeUnmount(() => {
 
 .cell {
   aspect-ratio: 1;
-  border: 1px solid var(--vp-c-divider);
+  border: 1px solid var(--lf-border-control);
   border-radius: 6px;
   background: var(--vp-c-bg);
   color: var(--vp-c-text-1);
@@ -670,9 +680,9 @@ onBeforeUnmount(() => {
 }
 
 .cell.answered {
-  background: var(--vp-c-brand-soft);
-  color: var(--vp-c-brand-1);
-  border-color: var(--vp-c-brand-1);
+  background: var(--lf-brand-soft);
+  color: var(--lf-brand-soft-text);
+  border-color: var(--lf-brand);
 }
 
 .cell.marked {
@@ -681,8 +691,25 @@ onBeforeUnmount(() => {
   border-color: var(--lf-yellow);
 }
 
+.cell.answered.marked {
+  background: var(--lf-brand-soft);
+  color: var(--lf-brand-soft-text);
+  border-color: var(--lf-yellow);
+  box-shadow: inset 0 0 0 2px var(--lf-yellow);
+}
+
+.cell.answered.marked::after {
+  content: '★';
+  display: block;
+  margin-top: -0.15em;
+  font-size: 8px;
+  line-height: 1;
+  color: var(--lf-warning);
+}
+
 .cell.current {
-  box-shadow: 0 0 0 2px var(--vp-c-brand-1);
+  outline: 2px solid var(--lf-brand);
+  outline-offset: 1px;
 }
 
 .report__score {
@@ -780,7 +807,7 @@ onBeforeUnmount(() => {
   display: block;
   height: 100%;
   border-radius: 999px;
-  background: var(--vp-c-brand-1);
+  background: var(--lf-brand);
 }
 
 .report__empty {
@@ -826,37 +853,45 @@ onBeforeUnmount(() => {
 }
 
 .btn--primary {
-  color: #fff;
-  background: var(--vp-c-brand-1);
+  color: var(--lf-on-brand);
+  background: var(--lf-brand);
 }
 
 .btn--primary:hover:not(:disabled) {
-  background: var(--vp-c-brand-2);
+  background: var(--lf-brand-hover);
 }
 
 .btn--primary:disabled {
-  opacity: 0.5;
+  color: var(--lf-text-disabled);
+  background: var(--lf-disabled-bg);
+  border-color: var(--lf-disabled-border);
+  opacity: 1;
   cursor: not-allowed;
 }
 
 .btn--ghost {
   color: var(--vp-c-text-1);
   background: var(--vp-c-bg-elv);
-  border-color: var(--vp-c-divider);
+  border-color: var(--lf-border-control);
 }
 
 .btn--ghost:hover:not(:disabled) {
-  border-color: var(--vp-c-brand-1);
+  border-color: var(--lf-brand);
+  background: var(--lf-hover-bg);
 }
 
 .btn--ghost:disabled {
-  opacity: 0.5;
+  opacity: 1;
   cursor: not-allowed;
 }
 
 .btn--danger {
-  color: #fff;
-  background: var(--lf-red);
+  color: var(--lf-on-danger);
+  background: var(--lf-danger);
+}
+
+.btn--danger:hover {
+  background: var(--lf-danger-hover);
 }
 
 @media (max-width: 959px) {

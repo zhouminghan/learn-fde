@@ -1,5 +1,13 @@
 <template>
-  <figure class="diagram" :class="{ 'diagram--full': full }">
+  <figure
+    ref="figure"
+    class="diagram"
+    :class="{ 'diagram--full': full }"
+    :role="full ? 'dialog' : undefined"
+    :aria-modal="full ? 'true' : undefined"
+    :aria-label="full ? (title || '图表全屏查看') : undefined"
+    tabindex="-1"
+  >
     <div v-if="title || fullscreen" class="diagram__bar">
       <figcaption v-if="title" class="diagram__title">{{ title }}</figcaption>
       <button
@@ -7,8 +15,9 @@
         type="button"
         class="diagram__fullscreen"
         :title="full ? '退出全屏' : '全屏查看'"
+        :aria-label="full ? '退出全屏' : '全屏查看'"
         :aria-expanded="full"
-        @click="full = !full"
+        @click="toggleFull"
       >
         <Minimize2 v-if="full" :size="15" />
         <Maximize2 v-else :size="15" />
@@ -27,8 +36,8 @@
 </template>
 
 <script setup lang="ts">
-import { onBeforeUnmount, onMounted, ref } from 'vue'
-import { Maximize2, Minimize2 } from 'lucide-vue-next'
+import { nextTick, onBeforeUnmount, onMounted, ref } from 'vue'
+import { Maximize2, Minimize2 } from '@lucide/vue'
 
 withDefaults(
   defineProps<{
@@ -41,13 +50,58 @@ withDefaults(
 )
 
 const full = ref(false)
+const figure = ref<HTMLElement | null>(null)
+let previousFocus: HTMLElement | null = null
 
 function onKeydown(event: KeyboardEvent) {
-  if (event.key === 'Escape' && full.value) full.value = false
+  if (!full.value) return
+  if (event.key === 'Escape') {
+    event.preventDefault()
+    closeFullscreen()
+    return
+  }
+  if (event.key !== 'Tab' || !figure.value) return
+
+  const focusable = [...figure.value.querySelectorAll<HTMLElement>(
+    'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+  )].filter((element) => !element.hasAttribute('disabled'))
+  if (!focusable.length) return
+
+  const first = focusable[0]!
+  const last = focusable[focusable.length - 1]!
+  if (event.shiftKey && document.activeElement === first) {
+    event.preventDefault()
+    last.focus()
+  } else if (!event.shiftKey && document.activeElement === last) {
+    event.preventDefault()
+    first.focus()
+  }
+}
+
+async function toggleFull() {
+  if (full.value) {
+    closeFullscreen()
+    return
+  }
+  previousFocus = document.activeElement instanceof HTMLElement ? document.activeElement : null
+  full.value = true
+  document.body.style.overflow = 'hidden'
+  await nextTick()
+  figure.value?.querySelector<HTMLElement>('.diagram__fullscreen')?.focus()
+}
+
+function closeFullscreen() {
+  full.value = false
+  document.body.style.overflow = ''
+  previousFocus?.focus()
+  previousFocus = null
 }
 
 onMounted(() => window.addEventListener('keydown', onKeydown))
-onBeforeUnmount(() => window.removeEventListener('keydown', onKeydown))
+onBeforeUnmount(() => {
+  window.removeEventListener('keydown', onKeydown)
+  document.body.style.overflow = ''
+})
 </script>
 
 <style scoped>
@@ -68,6 +122,7 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKeydown))
   border-radius: 0;
   display: flex;
   flex-direction: column;
+  background: var(--lf-bg-elv);
 }
 
 .diagram__bar {
@@ -93,7 +148,7 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKeydown))
   width: 30px;
   height: 28px;
   padding: 0;
-  border: 1px solid var(--vp-c-divider);
+  border: 1px solid var(--lf-border-control);
   border-radius: 6px;
   color: var(--vp-c-text-2);
   background: var(--vp-c-bg-elv);
@@ -101,8 +156,9 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKeydown))
 }
 
 .diagram__fullscreen:hover {
-  color: var(--lf-accent);
-  border-color: var(--lf-accent);
+  color: var(--lf-brand-soft-text);
+  border-color: var(--lf-brand);
+  background: var(--lf-hover-bg);
 }
 
 .diagram__body {

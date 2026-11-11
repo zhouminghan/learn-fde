@@ -67,7 +67,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import { Check, Star } from 'lucide-vue-next'
+import { Check, Star } from '@lucide/vue'
 import { curriculum, examBlueprint } from '@/content'
 import type { Question, SourceType } from '@/types'
 
@@ -186,8 +186,8 @@ function optionClass(id: string) {
 }
 
 .qview__type {
-  color: var(--vp-c-brand-1);
-  background: var(--vp-c-brand-soft);
+  color: var(--lf-brand-soft-text);
+  background: var(--lf-brand-soft);
 }
 
 .qview__difficulty {
@@ -206,8 +206,8 @@ function optionClass(id: string) {
 }
 
 .qview__score {
-  color: var(--lf-accent);
-  background: var(--lf-accent-soft);
+  color: var(--lf-brand-soft-text);
+  background: var(--lf-brand-soft);
 }
 
 .qview__id {
@@ -222,7 +222,7 @@ function optionClass(id: string) {
   justify-content: center;
   width: 30px;
   height: 30px;
-  border: 1px solid var(--vp-c-divider);
+  border: 1px solid var(--lf-border-control);
   border-radius: 8px;
   color: var(--vp-c-text-2);
   background: var(--vp-c-bg-elv);
@@ -253,7 +253,7 @@ function optionClass(id: string) {
   width: 100%;
   padding: 11px 12px;
   text-align: left;
-  border: 1px solid var(--vp-c-divider);
+  border: 1px solid var(--lf-border-control);
   border-radius: 8px;
   background: var(--vp-c-bg-elv);
   color: var(--vp-c-text-1);
@@ -263,12 +263,14 @@ function optionClass(id: string) {
 }
 
 .option:hover:not(:disabled) {
-  border-color: var(--vp-c-brand-1);
+  border-color: var(--lf-brand);
+  background: var(--lf-hover-bg);
 }
 
 .option.is-selected {
-  border-color: var(--vp-c-brand-1);
-  background: var(--vp-c-brand-soft);
+  border-color: var(--lf-brand);
+  background: var(--lf-brand-soft);
+  color: var(--lf-selected-text);
 }
 
 .option.is-correct {
@@ -293,15 +295,15 @@ function optionClass(id: string) {
   width: 22px;
   height: 22px;
   border-radius: 6px;
-  border: 1px solid var(--vp-c-divider);
+  border: 1px solid var(--lf-border-control);
   font-size: 12px;
   font-weight: 700;
 }
 
 .option.is-selected .option__mark {
-  background: var(--vp-c-brand-1);
-  border-color: var(--vp-c-brand-1);
-  color: #fff;
+  background: var(--lf-brand);
+  border-color: var(--lf-brand);
+  color: var(--lf-on-brand);
 }
 
 .option__icon {

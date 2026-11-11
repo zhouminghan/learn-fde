@@ -1,6 +1,14 @@
 <template>
   <DiagramFrame :title="title" :caption="caption" :legend="legend">
-    <div ref="host" class="mermaid-host"></div>
+    <div
+      ref="host"
+      class="mermaid-host"
+      role="img"
+      :aria-label="title || 'Mermaid 图表'"
+      :aria-busy="loading"
+    ></div>
+    <p v-if="loading" class="mermaid-loading">图表加载中…</p>
+    <p v-if="error" class="mermaid-error" role="alert">图形渲染失败：{{ error }}</p>
   </DiagramFrame>
 </template>
 
@@ -19,53 +27,55 @@ const props = withDefaults(
 )
 
 const host = ref<HTMLElement | null>(null)
+const loading = ref(true)
+const error = ref('')
 let observer: MutationObserver | null = null
 let renderSeq = 0
+
+function cssVariable(name: string) {
+  return getComputedStyle(document.documentElement).getPropertyValue(name).trim()
+}
 
 async function renderDiagram() {
   const el = host.value
   if (!el) return
   const mermaid = (await import('mermaid')).default
   const dark = document.documentElement.classList.contains('dark')
+  loading.value = true
+  error.value = ''
 
   mermaid.initialize({
     startOnLoad: false,
     securityLevel: 'strict',
     theme: 'base',
     fontFamily: 'Inter, "PingFang SC", "Microsoft YaHei", sans-serif',
-    themeVariables: dark
-      ? {
-          background: '#202a34',
-          primaryColor: '#26364a',
-          primaryBorderColor: '#3a4c63',
-          primaryTextColor: '#e8eef4',
-          secondaryColor: '#243b2d',
-          tertiaryColor: '#1c2c3d',
-          lineColor: '#54667a',
-          textColor: '#b8c3cf',
-          fontSize: '15px'
-        }
-      : {
-          background: '#fffefb',
-          primaryColor: '#e3e9f1',
-          primaryBorderColor: '#b9c6d6',
-          primaryTextColor: '#1d2733',
-          secondaryColor: '#dcf0ed',
-          tertiaryColor: '#f9e8da',
-          lineColor: '#8b97a5',
-          textColor: '#1d2733',
-          fontSize: '15px'
-        }
+    themeVariables: {
+      background: cssVariable('--lf-chart-surface'),
+      primaryColor: cssVariable('--lf-mermaid-primary'),
+      primaryBorderColor: cssVariable('--lf-mermaid-primary-border'),
+      primaryTextColor: cssVariable('--lf-mermaid-text'),
+      secondaryColor: cssVariable('--lf-mermaid-secondary'),
+      tertiaryColor: cssVariable('--lf-mermaid-tertiary'),
+      lineColor: cssVariable('--lf-mermaid-line'),
+      textColor: cssVariable('--lf-mermaid-text'),
+      fontSize: '15px',
+      fontFamily: cssVariable('--vp-font-family-base')
+    }
   })
 
   const seq = ++renderSeq
   const id = `mmd-${seq}-${Date.now()}`
   try {
     const { svg } = await mermaid.render(id, props.code)
-    if (seq === renderSeq) el.innerHTML = svg
-  } catch (error) {
     if (seq === renderSeq) {
-      el.innerHTML = `<p class="mermaid-error">图形渲染失败：${(error as Error).message}</p>`
+      el.innerHTML = svg
+      loading.value = false
+    }
+  } catch (renderError) {
+    if (seq === renderSeq) {
+      loading.value = false
+      el.innerHTML = ''
+      error.value = (renderError as Error).message
     }
   }
 }
@@ -83,7 +93,9 @@ onBeforeUnmount(() => observer?.disconnect())
 .mermaid-host {
   display: flex;
   justify-content: center;
+  min-height: 180px;
   overflow-x: auto;
+  background: var(--lf-chart-surface);
 }
 
 .mermaid-host :deep(svg) {
@@ -95,5 +107,12 @@ onBeforeUnmount(() => observer?.disconnect())
   margin: 0;
   color: var(--lf-red);
   font-size: 13px;
+}
+
+.mermaid-loading {
+  margin: 8px 0 0;
+  color: var(--lf-text-2);
+  font-size: 13px;
+  text-align: center;
 }
 </style>

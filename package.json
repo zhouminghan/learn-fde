@@ -6,7 +6,7 @@
   "type": "module",
   "license": "MIT",
   "engines": {
-    "node": ">=20"
+    "node": "^20.19.0 || ^22.12.0 || >=24.0.0"
   },
   "scripts": {
     "dev": "vitepress dev docs",
@@ -23,8 +23,8 @@
     "content:check-duplicates": "node --import tsx scripts/check-duplicates.ts"
   },
   "dependencies": {
+    "@lucide/vue": "^1.72.0",
     "dexie": "^4.0.11",
-    "lucide-vue-next": "^0.468.0",
     "mermaid": "^11.4.1",
     "vitepress": "^1.6.3",
     "vitepress-plugin-mermaid": "^2.0.17",
@@ -35,7 +35,8 @@
     "@types/node": "^22.10.2",
     "@vitejs/plugin-vue": "^5.2.1",
     "@vue/test-utils": "^2.4.6",
-    "jsdom": "^25.0.1",
+    "axe-core": "^4.14.0",
+    "jsdom": "^28.1.0",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2",
     "vitest": "^2.1.8",

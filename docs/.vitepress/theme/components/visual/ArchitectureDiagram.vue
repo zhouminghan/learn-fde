@@ -1,7 +1,7 @@
 <template>
   <DiagramFrame :title="title" :caption="caption" :legend="legend">
     <div class="arch">
-      <svg class="arch__svg" :viewBox="viewBox" role="img" :aria-label="title || '架构图'">
+      <svg class="arch__svg" :viewBox="viewBox" role="group" :aria-label="title || '架构图'">
         <defs>
           <marker :id="markerId" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto">
             <path d="M0,0 L9,4 L0,8 z" class="arch__arrow" />
@@ -25,20 +25,28 @@
           class="arch__node"
           :class="{ 'arch__node--selected': selected?.id === node.id }"
           :transform="`translate(${positions[node.id].x},${positions[node.id].y})`"
+          role="button"
+          tabindex="0"
+          :aria-label="`${kindLabel(node)}：${node.label}${node.desc ? `，${node.desc}` : ''}`"
+          :aria-pressed="selected?.id === node.id"
+          :aria-controls="detailId"
+          @keydown.enter="selected = node"
+          @keydown.space.prevent="selected = node"
           @click="selected = node"
         >
           <rect :width="nodeWidth" :height="nodeHeight" rx="7" :class="nodeClass(node)" />
-          <text :x="nodeWidth / 2" :y="20" class="arch__label" text-anchor="middle">{{ node.label }}</text>
-          <text v-if="node.desc" :x="nodeWidth / 2" :y="40" class="arch__desc" text-anchor="middle">
+          <text :x="10" :y="13" class="arch__kind">{{ kindLabel(node) }}</text>
+          <text :x="nodeWidth / 2" :y="29" class="arch__label" text-anchor="middle">{{ node.label }}</text>
+          <text v-if="node.desc" :x="nodeWidth / 2" :y="45" class="arch__desc" text-anchor="middle">
             {{ node.desc }}
           </text>
         </g>
       </svg>
-      <div v-if="selected" class="arch__detail">
+      <div v-if="selected" :id="detailId" class="arch__detail" aria-live="polite">
         <p class="arch__detail-title">{{ selected.label }}</p>
         <p class="arch__detail-desc">{{ selected.desc || '点击节点可查看职责说明。' }}</p>
       </div>
-      <p v-if="!selected" class="arch__hint">点击节点查看职责说明。</p>
+      <p v-if="!selected" :id="detailId" class="arch__hint">点击节点查看职责说明。</p>
     </div>
   </DiagramFrame>
 </template>
@@ -74,8 +82,9 @@ const props = withDefaults(
 
 const selected = ref<ArchNode | null>(null)
 const nodeWidth = 174
-const nodeHeight = 52
+const nodeHeight = 58
 const markerId = `arch-arrow-${useId()}`
+const detailId = `arch-detail-${useId()}`
 
 const columns = computed(() => Math.max(...props.nodes.map((n) => n.col)) + 1)
 
@@ -168,6 +177,16 @@ function nodeClass(node: ArchNode) {
   const kind = node.kind ?? 'core'
   return `arch__rect arch__rect--${kind}`
 }
+
+function kindLabel(node: ArchNode) {
+  const labels = {
+    core: '核心流程',
+    data: '数据状态',
+    tool: '工具执行',
+    output: '输出'
+  } as const
+  return labels[node.kind ?? 'core']
+}
 </script>
 
 <style scoped>
@@ -183,12 +202,12 @@ function nodeClass(node: ArchNode) {
 
 .arch__edge {
   fill: none;
-  stroke: var(--vp-c-text-3);
+  stroke: var(--lf-chart-line);
   stroke-width: 1.5;
 }
 
 .arch__arrow {
-  fill: var(--vp-c-text-3);
+  fill: var(--lf-chart-line);
 }
 
 .arch__edge-label {
@@ -206,23 +225,23 @@ function nodeClass(node: ArchNode) {
 }
 
 .arch__rect--core {
-  fill: var(--lf-navy-soft);
-  stroke: var(--lf-navy);
+  fill: var(--lf-chart-core-fill);
+  stroke: var(--lf-chart-core-stroke);
 }
 
 .arch__rect--data {
-  fill: var(--lf-blue-soft);
-  stroke: var(--lf-blue);
+  fill: var(--lf-chart-data-fill);
+  stroke: var(--lf-chart-data-stroke);
 }
 
 .arch__rect--tool {
-  fill: var(--lf-teal-soft);
-  stroke: var(--lf-teal);
+  fill: var(--lf-chart-tool-fill);
+  stroke: var(--lf-chart-tool-stroke);
 }
 
 .arch__rect--output {
-  fill: var(--lf-accent-soft);
-  stroke: var(--lf-accent);
+  fill: var(--lf-chart-output-fill);
+  stroke: var(--lf-chart-output-stroke);
 }
 
 .arch__node--selected .arch__rect {
@@ -230,14 +249,20 @@ function nodeClass(node: ArchNode) {
 }
 
 .arch__label {
-  fill: var(--vp-c-text-1);
+  fill: var(--lf-text);
   font-size: 14px;
   font-weight: 650;
 }
 
 .arch__desc {
-  fill: var(--vp-c-text-2);
+  fill: var(--lf-text-2);
   font-size: 11px;
+}
+
+.arch__kind {
+  fill: var(--lf-text-3);
+  font-size: 9px;
+  font-weight: 650;
 }
 
 .arch__detail {

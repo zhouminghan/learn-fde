@@ -64,7 +64,7 @@
           <p class="wrong-row__stem">{{ w.question.stem }}</p>
           <p class="wrong-row__meta">累计错误 {{ w.count }} 次 · {{ domainTitle(w.question.domainId) }}</p>
         </div>
-        <button class="icon-btn" title="移除错题" @click="removeWrong(w.question.id)">×</button>
+        <button class="icon-btn" title="移除错题" aria-label="移除错题" @click="removeWrong(w.question.id)">×</button>
       </div>
       <p v-if="wrongRows.length === 0" class="empty">暂无错题。</p>
     </section>
@@ -302,6 +302,7 @@ onMounted(loadAll)
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
   background: var(--vp-c-bg-elv);
+  box-shadow: var(--lf-shadow-card);
 }
 
 .block h2 {
@@ -339,7 +340,7 @@ onMounted(loadAll)
   display: block;
   height: 100%;
   border-radius: 999px;
-  background: var(--vp-c-brand-1);
+  background: var(--lf-brand);
 }
 
 .overview__text {
@@ -462,7 +463,7 @@ onMounted(loadAll)
 }
 
 .icon-btn {
-  border: 1px solid var(--vp-c-divider);
+  border: 1px solid var(--lf-border-control);
   border-radius: 6px;
   background: var(--vp-c-bg-elv);
   color: var(--vp-c-text-2);
@@ -470,6 +471,12 @@ onMounted(loadAll)
   width: 28px;
   height: 28px;
   font-size: 16px;
+}
+
+.icon-btn:hover {
+  color: var(--lf-danger);
+  border-color: var(--lf-danger);
+  background: var(--lf-danger-soft);
 }
 
 .empty {
@@ -507,19 +514,32 @@ onMounted(loadAll)
 }
 
 .btn--primary {
-  color: #fff;
-  background: var(--vp-c-brand-1);
+  color: var(--lf-on-brand);
+  background: var(--lf-brand);
+}
+
+.btn--primary:hover {
+  background: var(--lf-brand-hover);
 }
 
 .btn--ghost {
   color: var(--vp-c-text-1);
   background: var(--vp-c-bg-elv);
-  border-color: var(--vp-c-divider);
+  border-color: var(--lf-border-control);
+}
+
+.btn--ghost:hover {
+  border-color: var(--lf-brand);
+  background: var(--lf-hover-bg);
 }
 
 .btn--danger {
-  color: #fff;
-  background: var(--lf-red);
+  color: var(--lf-on-danger);
+  background: var(--lf-danger);
+}
+
+.btn--danger:hover {
+  background: var(--lf-danger-hover);
 }
 
 .mastery-row {
@@ -597,6 +617,15 @@ onMounted(loadAll)
 
   .stat-grid {
     grid-template-columns: 1fr;
+  }
+
+  .exam-row {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .exam-row > :last-child {
+    grid-column: 1 / -1;
+    color: var(--lf-text-3);
   }
 }
 </style>

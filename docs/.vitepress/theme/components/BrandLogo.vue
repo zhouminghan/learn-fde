@@ -29,18 +29,14 @@
 }
 
 .brand-logo__bg {
-  fill: var(--lf-navy);
+  fill: var(--lf-brand);
 }
 
 .brand-logo__glyph {
-  fill: #fff;
+  fill: var(--lf-on-brand);
 }
 
 .brand-logo__dot {
-  fill: var(--lf-teal, #2c8f86);
-}
-
-.brand-logo__dot {
-  fill: var(--lf-teal, #2c9a8f);
+  fill: var(--lf-teal);
 }
 </style>

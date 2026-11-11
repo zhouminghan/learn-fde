@@ -30,7 +30,7 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
 import { useData } from 'vitepress'
-import { CheckCircle2, RotateCcw, Star } from 'lucide-vue-next'
+import { CheckCircle2, RotateCcw, Star } from '@lucide/vue'
 import { curriculum } from '@/content'
 import type { LessonMeta } from '@/types'
 
@@ -118,7 +118,7 @@ async function toggleBookmark() {
 }
 
 .lesson-controls__meta {
-  color: var(--vp-c-text-3);
+  color: var(--lf-text-3);
   font-size: 13px;
 }
 
@@ -130,7 +130,7 @@ async function toggleBookmark() {
 .lesson-controls__warn {
   flex-basis: 100%;
   margin: 0;
-  color: var(--vp-c-red);
+  color: var(--lf-danger);
   font-size: 13px;
 }
 
@@ -172,21 +172,22 @@ async function toggleBookmark() {
 }
 
 .btn--primary {
-  color: #fff;
-  background: var(--vp-c-brand-1);
+  color: var(--lf-on-brand);
+  background: var(--lf-brand);
 }
 
 .btn--primary:hover {
-  background: var(--vp-c-brand-2);
+  background: var(--lf-brand-hover);
 }
 
 .btn--ghost {
   color: var(--vp-c-text-1);
   background: var(--vp-c-bg-elv);
-  border-color: var(--vp-c-divider);
+  border-color: var(--lf-border-control);
 }
 
 .btn--ghost:hover {
-  border-color: var(--vp-c-brand-1);
+  border-color: var(--lf-brand);
+  background: var(--lf-hover-bg);
 }
 </style>

@@ -80,7 +80,7 @@
 
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
-import { BookPlus, Star } from 'lucide-vue-next'
+import { BookPlus, Star } from '@lucide/vue'
 import { curriculum, examBlueprint, loadPublishedQuestions } from '@/content'
 import type { Difficulty, Question, QuestionType, SourceType } from '@/types'
 
@@ -176,6 +176,7 @@ onMounted(async () => {
   max-width: 900px;
   margin: 0 auto;
   padding: 40px 24px 80px;
+  min-width: 0;
 }
 
 .page-head h1 {
@@ -205,10 +206,15 @@ onMounted(async () => {
   margin: 24px 0 12px;
 }
 
+.toolbar > * {
+  min-width: 0;
+  width: 100%;
+}
+
 .search,
 .toolbar select {
   padding: 9px 11px;
-  border: 1px solid var(--vp-c-divider);
+  border: 1px solid var(--lf-border-control);
   border-radius: 8px;
   background: var(--vp-c-bg-elv);
   color: var(--vp-c-text-1);
@@ -231,12 +237,16 @@ onMounted(async () => {
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
   background: var(--vp-c-bg-elv);
+  box-shadow: var(--lf-shadow-card);
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .question-card__head {
   display: flex;
   justify-content: space-between;
   gap: 10px;
+  min-width: 0;
 }
 
 .tags {
@@ -260,8 +270,8 @@ onMounted(async () => {
 }
 
 .tag--score {
-  color: var(--lf-accent);
-  background: var(--lf-accent-soft);
+  color: var(--lf-brand-soft-text);
+  background: var(--lf-brand-soft);
 }
 
 .tag--id {
@@ -286,7 +296,7 @@ onMounted(async () => {
   justify-content: center;
   width: 30px;
   height: 30px;
-  border: 1px solid var(--vp-c-divider);
+  border: 1px solid var(--lf-border-control);
   border-radius: 8px;
   color: var(--vp-c-text-2);
   background: var(--vp-c-bg-elv);
@@ -294,8 +304,9 @@ onMounted(async () => {
 }
 
 .icon-btn:hover {
-  color: var(--vp-c-brand-1);
-  border-color: var(--vp-c-brand-1);
+  color: var(--lf-brand-soft-text);
+  border-color: var(--lf-brand);
+  background: var(--lf-hover-bg);
 }
 
 .question-card__stem {
@@ -315,6 +326,8 @@ onMounted(async () => {
   gap: 8px;
   color: var(--vp-c-text-2);
   font-size: 14px;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .opt__id {
@@ -343,7 +356,7 @@ onMounted(async () => {
 
 .question-card__explain summary {
   cursor: pointer;
-  color: var(--vp-c-brand-1);
+  color: var(--lf-link);
   font-weight: 600;
 }
 
@@ -387,15 +400,19 @@ onMounted(async () => {
 .btn--ghost {
   color: var(--vp-c-text-1);
   background: var(--vp-c-bg-elv);
-  border-color: var(--vp-c-divider);
+  border-color: var(--lf-border-control);
 }
 
 .btn--ghost:hover:not(:disabled) {
-  border-color: var(--vp-c-brand-1);
+  border-color: var(--lf-brand);
+  background: var(--lf-hover-bg);
 }
 
 .btn--ghost:disabled {
-  opacity: 0.5;
+  color: var(--lf-text-disabled);
+  background: var(--lf-disabled-bg);
+  border-color: var(--lf-disabled-border);
+  opacity: 1;
   cursor: not-allowed;
 }
 
@@ -405,7 +422,11 @@ onMounted(async () => {
   }
 
   .toolbar {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .question-card__head {
+    flex-wrap: wrap;
   }
 }
 </style>

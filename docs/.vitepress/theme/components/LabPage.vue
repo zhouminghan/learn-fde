@@ -98,18 +98,25 @@
               v-for="(s, i) in caseDef.steps"
               :key="s.id"
               class="lab__node"
-              :class="nodeStateClass(s, i)"
-              @click="selected = s"
+              :class="[nodeStateClass(s, i), { 'lab__node--selected': selected?.id === s.id }]"
             >
-              <span class="lab__node-dot"></span>
-              <div class="lab__node-body">
-                <p class="lab__node-title">
-                  <span class="lab__node-index">{{ i + 1 }}</span>
-                  {{ s.title }}
-                  <span class="lab__node-kind">{{ kindLabel(s.kind) }}</span>
-                </p>
-                <p v-if="isRevealed(s, i)" class="lab__node-summary">{{ s.summary }}</p>
-              </div>
+              <button
+                type="button"
+                class="lab__node-button"
+                :aria-pressed="selected?.id === s.id"
+                @click="selected = s"
+              >
+                <span class="lab__node-dot"></span>
+                <span class="lab__node-body">
+                  <span class="lab__node-title">
+                    <span class="lab__node-index">{{ i + 1 }}</span>
+                    {{ s.title }}
+                    <span class="lab__node-kind">{{ kindLabel(s.kind) }}</span>
+                    <span class="lab__node-status">{{ nodeStateLabel(s, i) }}</span>
+                  </span>
+                  <span v-if="isRevealed(s, i)" class="lab__node-summary">{{ s.summary }}</span>
+                </span>
+              </button>
             </li>
           </ol>
 
@@ -158,7 +165,7 @@
         <aside class="lab__pane lab__pane--right">
           <section class="lab__block">
             <h2>执行日志</h2>
-            <ol class="lab__logs">
+            <ol class="lab__logs" tabindex="0" aria-label="执行日志">
               <li v-for="(line, i) in run.logs" :key="i">{{ line }}</li>
             </ol>
           </section>
@@ -186,7 +193,7 @@
 
 <script setup lang="ts">
 import { computed, ref } from 'vue'
-import { Check, Pause, Play, RotateCcw, StepForward, X } from 'lucide-vue-next'
+import { Check, Pause, Play, RotateCcw, StepForward, X } from '@lucide/vue'
 import { labCases } from '@/content/labs'
 import {
   choose as engineChoose,
@@ -269,6 +276,14 @@ function nodeStateClass(step: LabStep, index: number) {
     return 'lab__node--active'
   }
   return 'lab__node--pending'
+}
+
+function nodeStateLabel(step: LabStep, index: number) {
+  if (run.value?.completedStepIds.includes(step.id)) return '已完成'
+  if (index !== run.value?.stepIndex) return '待执行'
+  if (run.value.status === 'awaiting_approval') return '待审批'
+  if (run.value.status === 'awaiting_choice') return '待选择'
+  return '当前'
 }
 
 function pause() {
@@ -368,10 +383,12 @@ function choose(choiceId: string) {
   background: var(--vp-c-bg-elv);
   color: var(--vp-c-text-1);
   cursor: pointer;
+  box-shadow: var(--lf-shadow-card);
 }
 
 .lab__case-card:hover {
-  border-color: var(--lf-accent);
+  border-color: var(--lf-brand);
+  background: var(--lf-hover-bg);
 }
 
 .lab__case-title {
@@ -400,6 +417,7 @@ function choose(choiceId: string) {
   border-radius: 8px;
   background: var(--vp-c-bg-elv);
   padding: 16px;
+  box-shadow: var(--lf-shadow-card);
 }
 
 .lab__block + .lab__block {
@@ -472,7 +490,7 @@ function choose(choiceId: string) {
   align-items: center;
   gap: 6px;
   padding: 8px 13px;
-  border: 1px solid var(--vp-c-divider);
+  border: 1px solid var(--lf-border-control);
   border-radius: 7px;
   background: var(--vp-c-bg-elv);
   color: var(--vp-c-text-1);
@@ -482,26 +500,46 @@ function choose(choiceId: string) {
 }
 
 .lab__btn:disabled {
-  opacity: 0.45;
+  color: var(--lf-text-disabled);
+  background: var(--lf-disabled-bg);
+  border-color: var(--lf-disabled-border);
+  opacity: 1;
   cursor: not-allowed;
 }
 
 .lab__btn--primary {
-  color: #fff;
-  background: var(--lf-navy);
-  border-color: var(--lf-navy);
+  color: var(--lf-on-brand);
+  background: var(--lf-brand);
+  border-color: var(--lf-brand);
 }
 
 .lab__btn--approve {
-  color: #fff;
+  color: var(--lf-on-teal);
   background: var(--lf-teal);
   border-color: var(--lf-teal);
 }
 
 .lab__btn--reject {
-  color: #fff;
-  background: var(--lf-red);
-  border-color: var(--lf-red);
+  color: var(--lf-on-danger);
+  background: var(--lf-danger);
+  border-color: var(--lf-danger);
+}
+
+.lab__btn:not(:disabled):hover {
+  border-color: var(--lf-brand);
+  background: var(--lf-hover-bg);
+}
+
+.lab__btn--primary:not(:disabled):hover {
+  background: var(--lf-brand-hover);
+}
+
+.lab__btn--approve:not(:disabled):hover {
+  background: var(--lf-teal-hover);
+}
+
+.lab__btn--reject:not(:disabled):hover {
+  background: var(--lf-danger-hover);
 }
 
 .lab__progress {
@@ -532,11 +570,8 @@ function choose(choiceId: string) {
 }
 
 .lab__node {
-  display: flex;
-  gap: 10px;
-  padding: 10px 8px;
   border-left: 3px solid transparent;
-  cursor: pointer;
+  border-radius: 6px;
 }
 
 .lab__node + .lab__node {
@@ -574,6 +609,28 @@ function choose(choiceId: string) {
   border-left-color: var(--lf-yellow);
 }
 
+.lab__node--selected {
+  background: var(--lf-selected-bg);
+  color: var(--lf-selected-text);
+}
+
+.lab__node-button {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 8px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.lab__node-button:hover {
+  background: var(--lf-hover-bg);
+}
+
 .lab__node--blocked .lab__node-dot {
   border-color: var(--lf-yellow);
   background: var(--lf-yellow);
@@ -585,13 +642,13 @@ function choose(choiceId: string) {
 }
 
 .lab__node-title {
-  margin: 0;
   display: flex;
   align-items: center;
   gap: 7px;
   flex-wrap: wrap;
   font-weight: 600;
   font-size: 14px;
+  line-height: 1.45;
 }
 
 .lab__node-index {
@@ -615,8 +672,19 @@ function choose(choiceId: string) {
   font-weight: 600;
 }
 
+.lab__node-status {
+  padding: 1px 7px;
+  border: 1px solid var(--lf-border-control);
+  border-radius: 999px;
+  color: var(--lf-text-2);
+  background: var(--vp-c-bg-elv);
+  font-size: 11px;
+  font-weight: 600;
+}
+
 .lab__node-summary {
-  margin: 5px 0 0;
+  display: block;
+  margin-top: 5px;
   color: var(--vp-c-text-2);
   font-size: 13px;
   line-height: 1.6;
@@ -657,7 +725,7 @@ function choose(choiceId: string) {
 .lab__choice {
   margin-top: 16px;
   padding: 14px;
-  border: 1px solid var(--lf-blue);
+  border: 1px solid var(--lf-info);
   border-radius: 8px;
   background: var(--lf-blue-soft);
 }
@@ -678,7 +746,7 @@ function choose(choiceId: string) {
 .lab__approval {
   margin-top: 16px;
   padding: 14px;
-  border: 1px solid var(--lf-yellow);
+  border: 1px solid var(--lf-warning);
   border-radius: 8px;
   background: var(--lf-yellow-soft);
 }
@@ -727,12 +795,12 @@ function choose(choiceId: string) {
 
 .lab__eval-icon {
   flex: none;
-  color: var(--lf-red);
+  color: var(--lf-danger);
   font-weight: 700;
 }
 
 .lab__eval--pass .lab__eval-icon {
-  color: var(--lf-teal);
+  color: var(--lf-success);
 }
 
 .lab__eval-label {

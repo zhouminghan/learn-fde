@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 import { withMermaid } from 'vitepress-plugin-mermaid'
 import curriculumJson from '../../src/content/curriculum.json'
 import type { Curriculum, LessonMeta, ModuleMeta } from '../../src/types'
+import { createThemeBootScript } from './theme/theme-preference'
 
 const curriculum = curriculumJson as unknown as Curriculum
 
@@ -22,13 +23,7 @@ function moduleSidebar(module: ModuleMeta): { text: string; items: { text: strin
 const courseSidebar = curriculum.modules
   .map(moduleSidebar)
 
-const themeScript = `(function(){
-  try {
-    var saved = localStorage.getItem('learn-fde-theme');
-    var dark = saved === 'dark' || (saved !== 'light' && window.matchMedia('(prefers-color-scheme: dark)').matches);
-    document.documentElement.classList.toggle('dark', dark);
-  } catch (e) {}
-})()`
+const themeScript = createThemeBootScript()
 
 export default withMermaid(
   defineConfig({
@@ -40,7 +35,7 @@ export default withMermaid(
     appearance: false,
     lastUpdated: true,
     head: [
-      ['meta', { name: 'theme-color', content: '#f7f4ef' }],
+      ['meta', { name: 'theme-color', content: '#f7f6f3' }],
       ['link', { rel: 'icon', type: 'image/svg+xml', href: `${base}favicon.svg` }],
       ['link', { rel: 'icon', type: 'image/png', href: `${base}favicon.png` }],
       ['script', {}, themeScript]
@@ -77,7 +72,10 @@ export default withMermaid(
         provider: 'local',
         options: {
           translations: {
-            button: { buttonText: '搜索文档', buttonAriaLabel: '搜索文档' },
+              button: {
+                buttonText: '搜索文档',
+                buttonAriaLabel: '搜索文档 K'
+              },
             modal: {
               noResultsText: '没有找到相关结果',
               resetButtonTitle: '清除查询',
@@ -97,17 +95,17 @@ export default withMermaid(
           '@': fileURLToPath(new URL('../../src', import.meta.url))
         }
       },
+      build: {
+        // Mermaid core is preloaded and diagram chunks are lazy; keep the threshold above the intentional peak.
+        chunkSizeWarningLimit: 750
+      },
       ssr: {
-        noExternal: ['lucide-vue-next', 'dexie']
+        noExternal: ['@lucide/vue', 'dexie']
       }
     },
     mermaid: {
       theme: 'base',
       themeVariables: {
-        primaryColor: '#FDF4EC',
-        primaryBorderColor: '#E7C3A6',
-        primaryTextColor: '#3A3028',
-        lineColor: '#B8A99A',
         fontFamily: 'Inter, "PingFang SC", "Microsoft YaHei", sans-serif',
         fontSize: '16px'
       }

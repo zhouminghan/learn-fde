@@ -135,7 +135,7 @@ onMounted(async () => {
   display: block;
   height: 100%;
   border-radius: 999px;
-  background: var(--vp-c-brand-1);
+  background: var(--lf-brand);
 }
 
 .module {
@@ -193,11 +193,12 @@ onMounted(async () => {
   background: var(--vp-c-bg-elv);
   text-decoration: none;
   color: var(--vp-c-text-1);
+  box-shadow: var(--lf-shadow-card);
   transition: border-color 0.15s ease, transform 0.15s ease;
 }
 
 .lesson-card:hover {
-  border-color: var(--vp-c-brand-1);
+  border-color: var(--lf-brand);
   transform: translateY(-1px);
 }
 
