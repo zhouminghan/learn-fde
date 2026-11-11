@@ -13,7 +13,8 @@
   <img src="https://img.shields.io/badge/TypeScript-5-3178c6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/IndexedDB-Dexie-10b981?style=flat-square" alt="Dexie" />
   <img src="https://img.shields.io/badge/GitHub_Pages-Live-22272e?style=flat-square&logo=githubpages&logoColor=white" alt="GitHub Pages" />
-  <img src="https://img.shields.io/badge/License-MIT-lightgrey?style=flat-square" alt="MIT License" />
+  <img src="https://img.shields.io/badge/Code-MIT-lightgrey?style=flat-square" alt="MIT License" />
+  <img src="https://img.shields.io/badge/Content-CC_BY_4.0-green?style=flat-square" alt="CC BY 4.0" />
 </p>
 
 <p align="center">
@@ -42,6 +43,7 @@
 - [技术栈](#技术栈)
 - [项目结构](#项目结构)
 - [如何组织](#如何组织)
+- [许可证](#许可证)
 - [免责声明](#免责声明)
 
 ## 为什么有这个项目
@@ -293,6 +295,12 @@ scripts/               # 内容校验脚本
 - 案例数据与执行逻辑解耦：`src/content/labs/` 定义案例，`src/domain/lab/` 实现纯函数模拟引擎。
 - 内容以 Git 为事实来源，发布前通过 `content:validate` 校验题目结构与考试蓝图。
 - 用户学习数据只存本地，历史考试快照与题库更新互不影响。
+
+## 许可证
+
+- 项目源代码采用 [MIT License](./LICENSE)。
+- 原创课程正文、原创题目、原创解析与原创教学资料采用 [CC BY 4.0](./LICENSE-CONTENT.md)。
+- 腾讯云官方文档、第三方图片/图标/字体/素材、商标及其他外部授权内容不自动纳入本项目许可证，遵循各自原始授权。
 
 ## 免责声明
 

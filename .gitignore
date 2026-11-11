@@ -3,8 +3,10 @@ docs/.vitepress/dist/
 docs/.vitepress/cache/
 .DS_Store
 *.log
+*.tmp
 playwright-report/
 test-results/
+coverage/
 dist/
 .idea/
 .vscode/
