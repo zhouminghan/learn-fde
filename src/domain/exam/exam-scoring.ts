@@ -12,7 +12,7 @@ export interface QuestionResult {
  * 判分口径：
  * - 单选：所选答案与标准答案完全一致得 questionScores.single 分。
  * - 多选：blueprint.multipleScoring === 'exact_match' 时完全匹配得
- *   questionScores.multiple 分，否则 0 分。该口径为 learn-FDE 本地模拟规则，
+ *   questionScores.multiple 分，否则 0 分。该口径为 Learning FDE 本地模拟规则，
  *   不代表腾讯云官方判分细则。
  */
 export function scoreQuestion(

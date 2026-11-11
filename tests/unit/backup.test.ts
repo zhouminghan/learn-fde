@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { BACKUP_VERSION, exportToJson, parseBackup } from '@/storage/backup'
 
 describe('parseBackup', () => {
-  it('拒绝非 learn-FDE 数据', () => {
+  it('拒绝非 Learning FDE 数据', () => {
     const result = parseBackup(JSON.stringify({ foo: 'bar' }))
     expect(result.ok).toBe(false)
   })

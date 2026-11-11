@@ -42,7 +42,7 @@ export function exportToJson(bundle: ExportBundle): string {
 export function parseBackup(json: string): { ok: true; bundle: ExportBundle } | { ok: false; error: string } {
   try {
     const parsed = JSON.parse(json) as ExportBundle
-    if (parsed.schema !== BACKUP_SCHEMA) return { ok: false, error: '文件不是 learn-FDE 学习数据备份' }
+    if (parsed.schema !== BACKUP_SCHEMA) return { ok: false, error: '文件不是 Learning FDE 学习数据备份' }
     if (parsed.version !== BACKUP_VERSION) return { ok: false, error: `备份版本 ${parsed.version} 与当前版本 ${BACKUP_VERSION} 不兼容` }
     if (!parsed.data || typeof parsed.data !== 'object') return { ok: false, error: '备份缺少数据内容' }
     return { ok: true, bundle: parsed }
