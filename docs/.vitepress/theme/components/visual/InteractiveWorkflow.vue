@@ -79,6 +79,7 @@ function stepClass(i: number) {
 }
 
 function play() {
+  pause()
   if (index.value >= props.steps.length - 1) index.value = -1
   playing.value = true
   timer = setInterval(() => {

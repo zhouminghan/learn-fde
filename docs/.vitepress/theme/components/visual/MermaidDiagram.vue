@@ -30,7 +30,7 @@ async function renderDiagram() {
 
   mermaid.initialize({
     startOnLoad: false,
-    securityLevel: 'loose',
+    securityLevel: 'strict',
     theme: 'base',
     fontFamily: 'Inter, "PingFang SC", "Microsoft YaHei", sans-serif',
     themeVariables: dark

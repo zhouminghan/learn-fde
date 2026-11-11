@@ -44,7 +44,7 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref } from 'vue'
+import { computed, ref, useId } from 'vue'
 import DiagramFrame from './DiagramFrame.vue'
 
 export interface ArchNode {
@@ -75,7 +75,7 @@ const props = withDefaults(
 const selected = ref<ArchNode | null>(null)
 const nodeWidth = 174
 const nodeHeight = 52
-const markerId = `arch-arrow-${Math.random().toString(36).slice(2, 8)}`
+const markerId = `arch-arrow-${useId()}`
 
 const columns = computed(() => Math.max(...props.nodes.map((n) => n.col)) + 1)
 
