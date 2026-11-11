@@ -97,7 +97,7 @@
       "3.3"
     ],
     "type": "single",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "stem": "判断一个需求应该用“知识助手”还是“工作流”模式，最关键的区分依据是什么？",
     "options": [
       {
@@ -132,7 +132,7 @@
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
-    "updatedAt": "2026-11-10"
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "D4-S4",
@@ -1821,7 +1821,7 @@
       "3.1"
     ],
     "type": "single",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "stem": "方案设计中的“约束条件”通常指？",
     "options": [
       {

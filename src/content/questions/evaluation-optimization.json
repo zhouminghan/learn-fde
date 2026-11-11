@@ -94,7 +94,7 @@
       "4.1"
     ],
     "type": "single",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "stem": "回归验证在智能体迭代中的主要目的是什么？",
     "options": [
       {
@@ -129,7 +129,7 @@
     "authorNote": "根据官方课程公开主题整理的原创练习。",
     "status": "published",
     "createdAt": "2026-11-10",
-    "updatedAt": "2026-11-10"
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "D6-S4",
@@ -182,7 +182,7 @@
       "4.3"
     ],
     "type": "single",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "stem": "知识库数据清洗的首要目标是什么？",
     "options": [
       {
@@ -217,7 +217,7 @@
     "authorNote": "根据官方课程公开主题整理的原创练习。",
     "status": "published",
     "createdAt": "2026-11-10",
-    "updatedAt": "2026-11-10"
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "D6-S6",
@@ -1446,7 +1446,7 @@
       "2.3"
     ],
     "type": "single",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "stem": "持续监控中“效果劣化”通常指？",
     "options": [
       {

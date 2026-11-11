@@ -94,7 +94,7 @@
       "1.2"
     ],
     "type": "single",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "stem": "预训练与微调（SFT/指令微调）的主要区别是什么？",
     "options": [
       {
@@ -130,7 +130,7 @@
     "authorNote": "根据官方课程公开主题整理的基础概念题。",
     "status": "published",
     "createdAt": "2026-11-10",
-    "updatedAt": "2026-11-10"
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "D1-S4",
@@ -139,7 +139,7 @@
       "1.2"
     ],
     "type": "single",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "stem": "模型的上下文窗口（Context Window）最准确的含义是什么？",
     "options": [
       {
@@ -174,7 +174,7 @@
     "authorNote": "根据官方课程公开主题整理的基础概念题。",
     "status": "published",
     "createdAt": "2026-11-10",
-    "updatedAt": "2026-11-10"
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "D1-S5",
@@ -470,7 +470,7 @@
       "1.2"
     ],
     "type": "single",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "stem": "大语言模型“幻觉”通常指什么？",
     "options": [
       {
@@ -871,7 +871,7 @@
       "1.1"
     ],
     "type": "single",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "stem": "多模态模型与纯文本模型的主要区别是？",
     "options": [
       {

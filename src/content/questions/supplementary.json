@@ -228,7 +228,7 @@
       "S2"
     ],
     "type": "single",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "stem": "不同行业智能体方案出现差异的根源主要是什么？",
     "options": [
       {
@@ -263,7 +263,7 @@
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
-    "updatedAt": "2026-11-10"
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "D5-S7",
@@ -711,7 +711,7 @@
       "S4"
     ],
     "type": "single",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "stem": "保留智能体应用的审计日志，主要作用是什么？",
     "options": [
       {
@@ -746,7 +746,7 @@
     "authorNote": "根据公开知识点整理的原创练习。",
     "status": "published",
     "createdAt": "2026-11-10",
-    "updatedAt": "2026-11-10"
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "D7-S5",
@@ -1927,51 +1927,6 @@
     "updatedAt": "2026-11-11"
   },
   {
-    "id": "D5-M8",
-    "domainId": "D5",
-    "lessonIds": [
-      "S2"
-    ],
-    "type": "multiple",
-    "difficulty": "medium",
-    "stem": "各行业智能助手的共性需求通常包括？",
-    "options": [
-      {
-        "id": "A",
-        "text": "知识问答"
-      },
-      {
-        "id": "B",
-        "text": "流程引导"
-      },
-      {
-        "id": "C",
-        "text": "可追溯与审计"
-      },
-      {
-        "id": "D",
-        "text": "完全取消安全约束"
-      }
-    ],
-    "answerIds": [
-      "A",
-      "B",
-      "C"
-    ],
-    "explanation": "知识问答、流程引导与可追溯是共性需求，安全约束也普遍存在。",
-    "tags": [
-      "行业方案"
-    ],
-    "sourceType": "knowledge_based",
-    "sourceUrls": [
-      "https://cloud.tencent.com/document/product/658/137832"
-    ],
-    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
-    "status": "published",
-    "createdAt": "2026-11-11",
-    "updatedAt": "2026-11-11"
-  },
-  {
     "id": "D5-M9",
     "domainId": "D5",
     "lessonIds": [
@@ -2113,7 +2068,7 @@
       "S4"
     ],
     "type": "single",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "stem": "最小权限原则的含义是？",
     "options": [
       {
@@ -2399,51 +2354,6 @@
     "explanation": "安全合规需要权限、隐私与审计等体系化设计。",
     "tags": [
       "安全合规"
-    ],
-    "sourceType": "knowledge_based",
-    "sourceUrls": [
-      "https://cloud.tencent.com/document/product/658/137832"
-    ],
-    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
-    "status": "published",
-    "createdAt": "2026-11-11",
-    "updatedAt": "2026-11-11"
-  },
-  {
-    "id": "D7-M8",
-    "domainId": "D7",
-    "lessonIds": [
-      "S4"
-    ],
-    "type": "multiple",
-    "difficulty": "medium",
-    "stem": "负责任 AI 的建设要点包括？",
-    "options": [
-      {
-        "id": "A",
-        "text": "内容安全与偏见治理"
-      },
-      {
-        "id": "B",
-        "text": "幻觉风险控制"
-      },
-      {
-        "id": "C",
-        "text": "人工兜底与审计"
-      },
-      {
-        "id": "D",
-        "text": "只追求响应速度"
-      }
-    ],
-    "answerIds": [
-      "A",
-      "B",
-      "C"
-    ],
-    "explanation": "责任 AI 关注安全、幻觉、兜底与审计等治理要点。",
-    "tags": [
-      "责任 AI"
     ],
     "sourceType": "knowledge_based",
     "sourceUrls": [
@@ -3316,49 +3226,6 @@
     "explanation": "内容安全关注违规、偏见与不当输出。",
     "tags": [
       "内容安全"
-    ],
-    "sourceType": "knowledge_based",
-    "sourceUrls": [
-      "https://cloud.tencent.com/document/product/658/137832"
-    ],
-    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
-    "status": "published",
-    "createdAt": "2026-11-11",
-    "updatedAt": "2026-11-11"
-  },
-  {
-    "id": "D7-S20",
-    "domainId": "D7",
-    "lessonIds": [
-      "S4"
-    ],
-    "type": "single",
-    "difficulty": "medium",
-    "stem": "人工兜底最适用于？",
-    "options": [
-      {
-        "id": "A",
-        "text": "高风险或不确定的关键环节"
-      },
-      {
-        "id": "B",
-        "text": "所有普通问答"
-      },
-      {
-        "id": "C",
-        "text": "只用于界面"
-      },
-      {
-        "id": "D",
-        "text": "完全不需要人工"
-      }
-    ],
-    "answerIds": [
-      "A"
-    ],
-    "explanation": "关键环节保留人工兜底，保障安全可控。",
-    "tags": [
-      "人工兜底"
     ],
     "sourceType": "knowledge_based",
     "sourceUrls": [

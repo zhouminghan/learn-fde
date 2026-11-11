@@ -371,7 +371,7 @@
       "2.2-A"
     ],
     "type": "single",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "stem": "变量与长期记忆在智能体应用中的典型区别是什么？",
     "options": [
       {
@@ -407,7 +407,7 @@
     "authorNote": "根据官方课程公开主题整理的原创练习。",
     "status": "published",
     "createdAt": "2026-11-10",
-    "updatedAt": "2026-11-10"
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "D3-S4",
@@ -461,7 +461,7 @@
       "2.2-B"
     ],
     "type": "single",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "stem": "Skills（技能）在智能体开发中的主要价值是什么？",
     "options": [
       {
@@ -496,7 +496,7 @@
     "authorNote": "根据官方课程公开主题整理的原创练习。",
     "status": "published",
     "createdAt": "2026-11-10",
-    "updatedAt": "2026-11-10"
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "D3-S6",
@@ -505,7 +505,7 @@
       "2.2-C"
     ],
     "type": "single",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "stem": "Workflow（工作流）在智能体应用中的核心作用是什么？",
     "options": [
       {
@@ -540,7 +540,7 @@
     "authorNote": "根据官方课程公开主题整理的原创练习。",
     "status": "published",
     "createdAt": "2026-11-10",
-    "updatedAt": "2026-11-10"
+    "updatedAt": "2026-11-11"
   },
   {
     "id": "D3-S7",
@@ -1397,7 +1397,7 @@
       "2.2-A"
     ],
     "type": "single",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "stem": "角色指令（System Prompt）的主要作用是什么？",
     "options": [
       {
@@ -1527,7 +1527,7 @@
       "2.2-B"
     ],
     "type": "single",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "stem": "连接器与工具的主要区别是？",
     "options": [
       {
@@ -2670,7 +2670,7 @@
       "2.2-A"
     ],
     "type": "single",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "stem": "长期记忆与短期上下文的主要区别是？",
     "options": [
       {
@@ -2886,7 +2886,7 @@
       "2.2-C"
     ],
     "type": "single",
-    "difficulty": "medium",
+    "difficulty": "easy",
     "stem": "Workflow 与单次问答的主要区别是？",
     "options": [
       {
