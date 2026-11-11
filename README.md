@@ -101,16 +101,13 @@ Learning FDE 把这三件事收拢到一个学习闭环里：
 
 建议按以下顺序学习，每阶段建立在上一阶段之上：
 
-```text
-    第一阶段                 第二阶段                 第三阶段
-    AI 与 Agent 基础  ──>    ADP 产品能力     ──>    使用 ADP 开发智能体
-    （概念与边界）           （平台能力与功能）       （方案设计与实战）
-                                  │
-                                  v
-    第五阶段                 第四阶段
-    FDE 实验室 + 模拟考试    评测与优化智能体
-    （交付与能力评估）  <──   （调试、评测与调优）
-```
+| 顺序 | 阶段 | 学习重点 |
+|---|---|---|
+| 1 | AI 与 Agent 基础 | 概念与边界 |
+| 2 | ADP 产品能力 | 平台能力与功能 |
+| 3 | 使用 ADP 开发智能体 | 方案设计与实战 |
+| 4 | 评测与优化智能体 | 调试、评测与调优 |
+| 5 | FDE 实验室 + 模拟考试 | 交付与能力评估 |
 
 补充训练专题（场景理解、行业方案、交付运维、安全合规、方案表达）穿插在课程学习之后，用于覆盖考试蓝图与实际交付能力。
 
@@ -274,7 +271,13 @@ npm run content:validate
 
 ## 技术栈
 
-VitePress · Vue 3 · TypeScript · Markdown/JSON · IndexedDB（Dexie） · Mermaid · Vitest · Playwright · GitHub Actions · GitHub Pages。
+| 分类 | 技术 |
+|---|---|
+| 站点与框架 | VitePress · Vue 3 · TypeScript |
+| 内容与数据 | Markdown/JSON · IndexedDB（Dexie） |
+| 可视化 | Mermaid |
+| 测试 | Vitest · Playwright |
+| 部署 | GitHub Actions · GitHub Pages |
 
 ## 项目结构
 
