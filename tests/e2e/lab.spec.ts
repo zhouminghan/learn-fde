@@ -4,6 +4,8 @@ test('FDE 实验室可完整执行 IT 服务台案例', async ({ page }) => {
   await page.goto('lab/')
   await page.waitForSelector('html[data-app-hydrated="true"]')
 
+  await expect(page.getByRole('heading', { name: '选择案例' })).toBeVisible()
+  await page.getByRole('button', { name: /企业 IT 服务台智能助手/ }).click()
   await expect(page.getByRole('heading', { name: '企业 IT 服务台智能助手' })).toBeVisible()
   await expect(page.getByText('案例背景')).toBeVisible()
 

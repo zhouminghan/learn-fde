@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
-import { createRun, decide, step, computeEvaluation } from '@/domain/lab/engine'
+import { createRun, decide, step, choose, computeEvaluation } from '@/domain/lab/engine'
 import { itServiceDeskCase } from '@/content/labs/it-service-desk'
+import { customerServiceCase } from '@/content/labs/customer-service'
 
 describe('lab 模拟引擎', () => {
   it('初始状态为空闲且未完成任何步骤', () => {
@@ -53,5 +54,18 @@ describe('lab 模拟引擎', () => {
 
     const evaluation = computeEvaluation(run, itServiceDeskCase)
     expect(evaluation.every((e) => e.pass)).toBe(true)
+  })
+
+  it('choice 节点暂停并可按选择跳转分支', () => {
+    let run = createRun(customerServiceCase)
+    run = step(run, customerServiceCase)
+    run = step(run, customerServiceCase)
+    expect(run.status).toBe('awaiting_choice')
+    expect(customerServiceCase.steps[run.stepIndex].id).toBe('intent')
+
+    run = choose(run, customerServiceCase, 'c-order')
+    expect(run.completedStepIds).toContain('intent')
+    expect(run.status).toBe('idle')
+    expect(customerServiceCase.steps[run.stepIndex].id).toBe('order-lookup')
   })
 })

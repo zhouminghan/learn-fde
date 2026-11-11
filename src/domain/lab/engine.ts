@@ -7,22 +7,26 @@ const KIND_LABELS: Record<LabStep['kind'], string> = {
   decision: '判断',
   tool: '工具',
   approval: '审批',
+  choice: '选择',
   evaluation: '评测',
   output: '输出'
 }
 
-export function createRun(caseDef: LabCase): LabRunState {
+export function createRun(caseDef: LabCase, inputs?: Record<string, string>): LabRunState {
   return {
     caseId: caseDef.id,
     status: 'idle',
     stepIndex: 0,
     completedStepIds: [],
-    logs: [`已加载案例「${caseDef.title}」。`]
+    logs: [`已加载案例「${caseDef.title}」。`],
+    inputs
   }
 }
 
 export function step(run: LabRunState, caseDef: LabCase): LabRunState {
-  if (run.status === 'finished' || run.status === 'awaiting_approval') return run
+  if (run.status === 'finished' || run.status === 'awaiting_approval' || run.status === 'awaiting_choice') {
+    return run
+  }
 
   const current = caseDef.steps[run.stepIndex]
   if (!current) {
@@ -39,8 +43,16 @@ export function step(run: LabRunState, caseDef: LabCase): LabRunState {
     }
   }
 
+  if (current.kind === 'choice') {
+    return {
+      ...run,
+      status: 'awaiting_choice',
+      logs
+    }
+  }
+
   const completedStepIds = [...run.completedStepIds, current.id]
-  const stepIndex = run.stepIndex + 1
+  const stepIndex = nextIndex(caseDef, current, run.stepIndex)
   const finished = stepIndex >= caseDef.steps.length
   return {
     ...run,
@@ -72,7 +84,7 @@ export function decide(run: LabRunState, caseDef: LabCase, decision: 'approved' 
   }
 
   const completedStepIds = [...run.completedStepIds, current.id]
-  const stepIndex = run.stepIndex + 1
+  const stepIndex = nextIndex(caseDef, current, run.stepIndex)
   const finished = stepIndex >= caseDef.steps.length
   return {
     ...run,
@@ -81,6 +93,24 @@ export function decide(run: LabRunState, caseDef: LabCase, decision: 'approved' 
     completedStepIds,
     approvalDecision: 'approved',
     logs
+  }
+}
+
+export function choose(run: LabRunState, caseDef: LabCase, choiceId: string): LabRunState {
+  if (run.status !== 'awaiting_choice') return run
+  const current = caseDef.steps[run.stepIndex]
+  const choice = current?.choices?.find((c) => c.id === choiceId)
+  if (!choice) return run
+
+  const nextIndex = caseDef.steps.findIndex((s) => s.id === choice.nextStepId)
+  const stepIndex = nextIndex >= 0 ? nextIndex : run.stepIndex + 1
+  const finished = stepIndex >= caseDef.steps.length
+  return {
+    ...run,
+    status: finished ? 'finished' : 'idle',
+    stepIndex,
+    completedStepIds: [...run.completedStepIds, current.id],
+    logs: [...run.logs, `[选择] ${choice.label}`]
   }
 }
 
@@ -112,6 +142,19 @@ export function stepLogs(current: LabStep): string[] {
     return logs
   }
 
+  if (current.kind === 'choice') {
+    logs.push(`[选择] ${current.summary}`)
+    return logs
+  }
+
   logs.push(`[${KIND_LABELS[current.kind]}] ${current.summary}`)
   return logs
+}
+
+function nextIndex(caseDef: LabCase, current: LabStep, fallback: number) {
+  if (current.nextStepId) {
+    const target = caseDef.steps.findIndex((s) => s.id === current.nextStepId)
+    if (target >= 0) return target
+  }
+  return fallback + 1
 }

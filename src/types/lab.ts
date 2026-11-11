@@ -5,8 +5,23 @@ export type LabStepKind =
   | 'decision'
   | 'tool'
   | 'approval'
+  | 'choice'
   | 'evaluation'
   | 'output'
+
+export interface LabChoice {
+  id: string
+  label: string
+  nextStepId: string
+}
+
+export interface LabInput {
+  id: string
+  label: string
+  type: 'text' | 'select'
+  options?: string[]
+  defaultValue?: string
+}
 
 export interface LabToolCall {
   toolId: string
@@ -30,6 +45,8 @@ export interface LabStep {
   details?: string[]
   toolCall?: LabToolCall
   approval?: LabApproval
+  choices?: LabChoice[]
+  nextStepId?: string
 }
 
 export interface LabKnowledgeDoc {
@@ -60,6 +77,9 @@ export interface LabCase {
   summary: string
   scenario: string
   objectives: string[]
+  level?: 'beginner' | 'intermediate' | 'capstone'
+  tags?: string[]
+  inputs?: LabInput[]
   knowledgeDocs: LabKnowledgeDoc[]
   tools: LabToolDefinition[]
   steps: LabStep[]
@@ -68,7 +88,7 @@ export interface LabCase {
   rejectedAnswer: string
 }
 
-export type LabRunStatus = 'idle' | 'running' | 'awaiting_approval' | 'finished'
+export type LabRunStatus = 'idle' | 'running' | 'awaiting_approval' | 'awaiting_choice' | 'finished'
 
 export interface LabRunState {
   caseId: string
@@ -77,4 +97,5 @@ export interface LabRunState {
   completedStepIds: string[]
   logs: string[]
   approvalDecision?: 'approved' | 'rejected'
+  inputs?: Record<string, string>
 }
