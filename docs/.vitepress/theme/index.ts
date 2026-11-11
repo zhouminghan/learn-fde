@@ -12,7 +12,6 @@ import ExamPage from './components/ExamPage.vue'
 import QuestionsPage from './components/QuestionsPage.vue'
 import RecordsPage from './components/RecordsPage.vue'
 import ResourcesPage from './components/ResourcesPage.vue'
-import AboutPage from './components/AboutPage.vue'
 import LabPage from './components/LabPage.vue'
 import DiagramFrame from './components/visual/DiagramFrame.vue'
 import MermaidDiagram from './components/visual/MermaidDiagram.vue'
@@ -34,7 +33,6 @@ const components: Record<string, Component> = {
   QuestionsPage,
   RecordsPage,
   ResourcesPage,
-  AboutPage,
   LabPage,
   DiagramFrame,
   MermaidDiagram,

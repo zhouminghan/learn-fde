@@ -2,12 +2,12 @@
   <DiagramFrame :title="title" :caption="caption" :legend="legend">
     <div class="iw">
       <div class="iw__controls">
-        <button type="button" class="iw__btn" :disabled="index === 0" @click="index = 0">重置</button>
-        <button type="button" class="iw__btn" :disabled="index === 0" @click="index -= 1">上一步</button>
+        <button type="button" class="iw__btn" :disabled="index < 0" @click="reset">重置</button>
+        <button type="button" class="iw__btn" :disabled="index <= 0" @click="prev">上一步</button>
         <button type="button" class="iw__btn iw__btn--primary" @click="playing ? pause() : play()">
           {{ playing ? '暂停' : index >= steps.length - 1 ? '重播' : '播放' }}
         </button>
-        <button type="button" class="iw__btn" :disabled="index >= steps.length - 1" @click="index += 1">下一步</button>
+        <button type="button" class="iw__btn" :disabled="index >= steps.length - 1" @click="next">下一步</button>
       </div>
 
       <ol class="iw__timeline">
@@ -16,7 +16,7 @@
           :key="step.id"
           class="iw__step"
           :class="stepClass(i)"
-          @click="index = i"
+          @click="goTo(i)"
         >
           <span class="iw__dot"></span>
           <div class="iw__step-body">
@@ -96,6 +96,24 @@ function pause() {
   timer = null
 }
 
+function next() {
+  if (index.value < props.steps.length - 1) index.value += 1
+}
+
+function prev() {
+  if (index.value > 0) index.value -= 1
+}
+
+function reset() {
+  pause()
+  index.value = -1
+}
+
+function goTo(i: number) {
+  pause()
+  index.value = i
+}
+
 onBeforeUnmount(pause)
 </script>
 
@@ -139,11 +157,26 @@ onBeforeUnmount(pause)
 }
 
 .iw__step {
+  position: relative;
   display: flex;
   gap: 12px;
   padding: 12px 0;
   border-bottom: 1px solid var(--vp-c-divider);
   cursor: pointer;
+}
+
+.iw__step:not(:last-child)::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 24px;
+  bottom: -14px;
+  width: 2px;
+  background: var(--vp-c-divider);
+}
+
+.iw__step--done:not(:last-child)::before {
+  background: var(--lf-teal);
 }
 
 .iw__step:last-child {

@@ -53,8 +53,7 @@ export default withMermaid(
         { text: 'FDE 实验室', link: '/lab/' },
         { text: '题库浏览', link: '/questions/' },
         { text: '学习记录', link: '/records/' },
-        { text: '资源中心', link: '/resources/' },
-        { text: '关于项目', link: '/about/' }
+        { text: '资源中心', link: '/resources/' }
       ],
       sidebar: {
         '/course/01-ai-agent-basics/': courseSidebar,
