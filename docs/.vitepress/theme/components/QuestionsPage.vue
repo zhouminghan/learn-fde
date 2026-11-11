@@ -3,6 +3,7 @@
     <header class="page-head">
       <h1>题库浏览</h1>
       <p>搜索、筛选和浏览全部已发布题目，可收藏或加入错题本。</p>
+      <p class="page-head__note">本题库均为根据公开知识点编写的原创练习，非腾讯云官方真题；每道题的来源已在题目中标注。</p>
     </header>
 
     <div class="toolbar">
@@ -39,6 +40,8 @@
             <span class="tag">{{ q.type === 'single' ? '单选' : '多选' }}</span>
             <span class="tag tag--domain">{{ domainTitle(q.domainId) }}</span>
             <span class="tag" :class="'tag--' + q.difficulty">{{ difficultyLabel(q.difficulty) }}</span>
+            <span class="tag tag--score">{{ scoreLabel(q) }}</span>
+            <span class="tag tag--id">{{ q.id }}</span>
           </div>
           <div class="question-card__actions">
             <button type="button" class="icon-btn" :title="bookmarked.includes(q.id) ? '取消收藏' : '收藏'" @click="toggleBookmark(q.id)">
@@ -58,6 +61,7 @@
         </div>
         <details class="question-card__explain">
           <summary>查看解析</summary>
+          <p class="question-card__answer">正确答案：{{ q.answerIds.join('、') }}</p>
           <p>{{ q.explanation }}</p>
           <p class="question-card__source">
             来源：{{ sourceLabel(q.sourceType) }} · {{ q.sourceUrls.join(' ') }}
@@ -77,7 +81,7 @@
 <script setup lang="ts">
 import { computed, onMounted, ref } from 'vue'
 import { BookPlus, Star } from 'lucide-vue-next'
-import { curriculum, loadPublishedQuestions } from '@/content'
+import { curriculum, examBlueprint, loadPublishedQuestions } from '@/content'
 import type { Difficulty, Question, QuestionType, SourceType } from '@/types'
 
 const all = loadPublishedQuestions()
@@ -126,6 +130,11 @@ function difficultyLabel(d: Difficulty) {
 
 function sourceLabel(s: SourceType) {
   return s === 'original' ? '原创练习' : s === 'official_doc' ? '官方文档' : '基于官方知识点'
+}
+
+function scoreLabel(q: Question) {
+  const score = q.type === 'single' ? examBlueprint.questionScores.single : examBlueprint.questionScores.multiple
+  return `${score} 分`
 }
 
 async function toggleBookmark(id: string) {
@@ -178,6 +187,15 @@ onMounted(async () => {
 .page-head p {
   margin: 0;
   color: var(--vp-c-text-2);
+}
+
+.page-head__note {
+  margin-top: 8px;
+  padding: 8px 12px;
+  border-radius: 7px;
+  color: var(--lf-yellow);
+  background: var(--lf-yellow-soft);
+  font-size: 13px;
 }
 
 .toolbar {
@@ -239,6 +257,17 @@ onMounted(async () => {
 .tag--domain {
   color: var(--lf-blue);
   background: var(--lf-blue-soft);
+}
+
+.tag--score {
+  color: var(--lf-accent);
+  background: var(--lf-accent-soft);
+}
+
+.tag--id {
+  color: var(--vp-c-text-3);
+  background: var(--vp-c-bg-soft);
+  font-family: var(--vp-font-family-mono);
 }
 
 .tag--hard {
@@ -322,6 +351,11 @@ onMounted(async () => {
   margin: 6px 0;
   color: var(--vp-c-text-2);
   line-height: 1.7;
+}
+
+.question-card__answer {
+  color: var(--vp-c-text-1) !important;
+  font-weight: 600;
 }
 
 .question-card__source {

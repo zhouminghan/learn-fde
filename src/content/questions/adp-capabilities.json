@@ -2,21 +2,42 @@
   {
     "id": "D2-S1",
     "domainId": "D2",
-    "lessonIds": ["2.1"],
+    "lessonIds": [
+      "2.1"
+    ],
     "type": "single",
     "difficulty": "easy",
     "stem": "腾讯云 ADP 的产品定位最准确的是哪一项？",
     "options": [
-      { "id": "A", "text": "面向企业应用交付的企业级智能体开发平台" },
-      { "id": "B", "text": "一款个人聊天软件" },
-      { "id": "C", "text": "一个数据库管理系统" },
-      { "id": "D", "text": "一个视频剪辑工具" }
+      {
+        "id": "A",
+        "text": "面向企业应用交付的企业级智能体开发平台"
+      },
+      {
+        "id": "B",
+        "text": "一款个人聊天软件"
+      },
+      {
+        "id": "C",
+        "text": "一个数据库管理系统"
+      },
+      {
+        "id": "D",
+        "text": "一个视频剪辑工具"
+      }
     ],
-    "answerIds": ["A"],
+    "answerIds": [
+      "A"
+    ],
     "explanation": "ADP 定位为企业级智能体开发平台，帮助把大模型能力落地为可交付的企业智能体应用。",
-    "tags": ["ADP", "产品定位"],
+    "tags": [
+      "ADP",
+      "产品定位"
+    ],
     "sourceType": "knowledge_based",
-    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759"
+    ],
     "authorNote": "根据官方课程公开主题整理的原创练习。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -25,21 +46,42 @@
   {
     "id": "D2-S2",
     "domainId": "D2",
-    "lessonIds": ["2.1"],
+    "lessonIds": [
+      "2.1"
+    ],
     "type": "single",
     "difficulty": "medium",
     "stem": "下列哪一类场景更适合优先采用智能体开发平台来落地？",
     "options": [
-      { "id": "A", "text": "需要结合企业知识、流程和工具的多轮业务对话与自动化场景" },
-      { "id": "B", "text": "只需要做简单静态网页展示的场景" },
-      { "id": "C", "text": "完全不涉及语言理解与流程编排的场景" },
-      { "id": "D", "text": "需要替代企业核心账务系统的场景" }
+      {
+        "id": "A",
+        "text": "需要结合企业知识、流程和工具的多轮业务对话与自动化场景"
+      },
+      {
+        "id": "B",
+        "text": "只需要做简单静态网页展示的场景"
+      },
+      {
+        "id": "C",
+        "text": "完全不涉及语言理解与流程编排的场景"
+      },
+      {
+        "id": "D",
+        "text": "需要替代企业核心账务系统的场景"
+      }
     ],
-    "answerIds": ["A"],
+    "answerIds": [
+      "A"
+    ],
     "explanation": "智能体开发平台适合结合知识、工具与流程的对话和自动化场景；它不替代企业核心业务系统本身。",
-    "tags": ["ADP", "适用场景"],
+    "tags": [
+      "ADP",
+      "适用场景"
+    ],
     "sourceType": "original",
-    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759"
+    ],
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -48,21 +90,42 @@
   {
     "id": "D2-S3",
     "domainId": "D2",
-    "lessonIds": ["2.1"],
+    "lessonIds": [
+      "2.1"
+    ],
     "type": "single",
     "difficulty": "medium",
     "stem": "关于智能体开发平台的能力边界，下列理解最恰当的是？",
     "options": [
-      { "id": "A", "text": "平台解决模型能力落地与编排问题，业务系统与数据仍由企业掌握" },
-      { "id": "B", "text": "平台会自动接管企业全部业务流程，无需集成" },
-      { "id": "C", "text": "平台可以完全消除大模型的不确定性" },
-      { "id": "D", "text": "平台只能用于单一行业，无法通用" }
+      {
+        "id": "A",
+        "text": "平台解决模型能力落地与编排问题，业务系统与数据仍由企业掌握"
+      },
+      {
+        "id": "B",
+        "text": "平台会自动接管企业全部业务流程，无需集成"
+      },
+      {
+        "id": "C",
+        "text": "平台可以完全消除大模型的不确定性"
+      },
+      {
+        "id": "D",
+        "text": "平台只能用于单一行业，无法通用"
+      }
     ],
-    "answerIds": ["A"],
+    "answerIds": [
+      "A"
+    ],
     "explanation": "平台的边界在于能力落地与编排，仍需与企业的数据、系统、流程集成，也无法完全消除模型不确定性。",
-    "tags": ["ADP", "能力边界"],
+    "tags": [
+      "ADP",
+      "能力边界"
+    ],
     "sourceType": "original",
-    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759"
+    ],
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -71,21 +134,42 @@
   {
     "id": "D2-S4",
     "domainId": "D2",
-    "lessonIds": ["2.1"],
+    "lessonIds": [
+      "2.1"
+    ],
     "type": "single",
     "difficulty": "hard",
     "stem": "对企业而言，使用智能体开发平台交付 Agent 应用的核心价值通常是什么？",
     "options": [
-      { "id": "A", "text": "降低构建门槛，统一编排知识与工具，并支持评测、迭代和运维" },
-      { "id": "B", "text": "让企业不再需要任何领域专家" },
-      { "id": "C", "text": "保证应用上线后完全不需要监控" },
-      { "id": "D", "text": "自动解决所有数据安全与合规问题" }
+      {
+        "id": "A",
+        "text": "降低构建门槛，统一编排知识与工具，并支持评测、迭代和运维"
+      },
+      {
+        "id": "B",
+        "text": "让企业不再需要任何领域专家"
+      },
+      {
+        "id": "C",
+        "text": "保证应用上线后完全不需要监控"
+      },
+      {
+        "id": "D",
+        "text": "自动解决所有数据安全与合规问题"
+      }
     ],
-    "answerIds": ["A"],
+    "answerIds": [
+      "A"
+    ],
     "explanation": "平台价值在于降低门槛、统一编排、支撑评测迭代与运维；领域专家、监控与安全合规仍需结合组织能力落实。",
-    "tags": ["ADP", "交付价值"],
+    "tags": [
+      "ADP",
+      "交付价值"
+    ],
     "sourceType": "original",
-    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "sourceUrls": [
+      "https://adp.tencent.com/zh/blog/adp-fde-certification-guide"
+    ],
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -94,25 +178,52 @@
   {
     "id": "D2-M1",
     "domainId": "D2",
-    "lessonIds": ["2.1"],
+    "lessonIds": [
+      "2.1"
+    ],
     "type": "multiple",
     "difficulty": "medium",
     "stem": "下列哪些属于企业级智能体开发平台的典型适用场景？",
     "options": [
-      { "id": "A", "text": "基于企业知识库的智能问答助手" },
-      { "id": "B", "text": "面向客户的智能客服" },
-      { "id": "C", "text": "内容创作与营销文案生成" },
-      { "id": "D", "text": "多步骤业务流程自动化" },
-      { "id": "E", "text": "替代企业全部核心账务处理" }
+      {
+        "id": "A",
+        "text": "基于企业知识库的智能问答助手"
+      },
+      {
+        "id": "B",
+        "text": "面向客户的智能客服"
+      },
+      {
+        "id": "C",
+        "text": "内容创作与营销文案生成"
+      },
+      {
+        "id": "D",
+        "text": "多步骤业务流程自动化"
+      },
+      {
+        "id": "E",
+        "text": "替代企业全部核心账务处理"
+      }
     ],
-    "answerIds": ["A", "B", "C", "D"],
+    "answerIds": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
     "explanation": "知识问答、智能客服、内容创作与流程自动化是典型场景；平台不替代企业核心账务系统。",
     "optionExplanations": {
       "E": "核心账务系统涉及强一致性与合规，不应由大模型直接替代。"
     },
-    "tags": ["ADP", "适用场景"],
+    "tags": [
+      "ADP",
+      "适用场景"
+    ],
     "sourceType": "original",
-    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759"
+    ],
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -121,21 +232,45 @@
   {
     "id": "D2-M2",
     "domainId": "D2",
-    "lessonIds": ["2.1"],
+    "lessonIds": [
+      "2.1"
+    ],
     "type": "multiple",
     "difficulty": "hard",
     "stem": "关于企业级智能体开发平台的正确定位，下列哪些说法合理？",
     "options": [
-      { "id": "A", "text": "它是把大模型能力与企业数据、工具、流程连接起来的开发平台" },
-      { "id": "B", "text": "交付时仍需要关注评测、安全和运维" },
-      { "id": "C", "text": "业务数据与系统集成需要结合企业实际情况设计" },
-      { "id": "D", "text": "只要搭建完成就无需任何后续迭代" }
+      {
+        "id": "A",
+        "text": "它是把大模型能力与企业数据、工具、流程连接起来的开发平台"
+      },
+      {
+        "id": "B",
+        "text": "交付时仍需要关注评测、安全和运维"
+      },
+      {
+        "id": "C",
+        "text": "业务数据与系统集成需要结合企业实际情况设计"
+      },
+      {
+        "id": "D",
+        "text": "只要搭建完成就无需任何后续迭代"
+      }
     ],
-    "answerIds": ["A", "B", "C"],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
     "explanation": "平台连接模型、数据、工具与流程，交付仍需评测、安全、运维与持续迭代；“无需迭代”不符合实际。",
-    "tags": ["ADP", "定位", "交付"],
+    "tags": [
+      "ADP",
+      "定位",
+      "交付"
+    ],
     "sourceType": "original",
-    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "sourceUrls": [
+      "https://adp.tencent.com/zh/blog/adp-fde-certification-guide"
+    ],
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -144,21 +279,42 @@
   {
     "id": "D3-S1",
     "domainId": "D3",
-    "lessonIds": ["2.2-A"],
+    "lessonIds": [
+      "2.2-A"
+    ],
     "type": "single",
     "difficulty": "easy",
     "stem": "在智能体应用配置中，角色指令（系统提示词）的主要作用是什么？",
     "options": [
-      { "id": "A", "text": "设定角色身份、行为规范、回答范围与输出格式" },
-      { "id": "B", "text": "存储业务数据库中的全部记录" },
-      { "id": "C", "text": "负责调用外部硬件设备" },
-      { "id": "D", "text": "替代应用的知识库检索" }
+      {
+        "id": "A",
+        "text": "设定角色身份、行为规范、回答范围与输出格式"
+      },
+      {
+        "id": "B",
+        "text": "存储业务数据库中的全部记录"
+      },
+      {
+        "id": "C",
+        "text": "负责调用外部硬件设备"
+      },
+      {
+        "id": "D",
+        "text": "替代应用的知识库检索"
+      }
     ],
-    "answerIds": ["A"],
+    "answerIds": [
+      "A"
+    ],
     "explanation": "角色指令用于约束模型的行为：定义角色、规则、边界与格式，是应用行为控制的重要入口。",
-    "tags": ["ADP", "角色指令"],
+    "tags": [
+      "ADP",
+      "角色指令"
+    ],
     "sourceType": "knowledge_based",
-    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759"
+    ],
     "authorNote": "根据官方课程公开主题整理的原创练习。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -167,21 +323,42 @@
   {
     "id": "D3-S2",
     "domainId": "D3",
-    "lessonIds": ["2.2-B"],
+    "lessonIds": [
+      "2.2-B"
+    ],
     "type": "single",
     "difficulty": "easy",
     "stem": "为知识助手配置知识库的核心目的是什么？",
     "options": [
-      { "id": "A", "text": "让应用基于企业文档与资料进行有依据的回答" },
-      { "id": "B", "text": "让应用运行得更快" },
-      { "id": "C", "text": "给应用增加更多动画效果" },
-      { "id": "D", "text": "替代用户的登录认证" }
+      {
+        "id": "A",
+        "text": "让应用基于企业文档与资料进行有依据的回答"
+      },
+      {
+        "id": "B",
+        "text": "让应用运行得更快"
+      },
+      {
+        "id": "C",
+        "text": "给应用增加更多动画效果"
+      },
+      {
+        "id": "D",
+        "text": "替代用户的登录认证"
+      }
     ],
-    "answerIds": ["A"],
+    "answerIds": [
+      "A"
+    ],
     "explanation": "知识库提供可检索的企业资料，使回答有据可依，是知识问答场景的基础。",
-    "tags": ["ADP", "知识库"],
+    "tags": [
+      "ADP",
+      "知识库"
+    ],
     "sourceType": "knowledge_based",
-    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759"
+    ],
     "authorNote": "根据官方课程公开主题整理的原创练习。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -190,21 +367,43 @@
   {
     "id": "D3-S3",
     "domainId": "D3",
-    "lessonIds": ["2.2-A"],
+    "lessonIds": [
+      "2.2-A"
+    ],
     "type": "single",
     "difficulty": "medium",
     "stem": "变量与长期记忆在智能体应用中的典型区别是什么？",
     "options": [
-      { "id": "A", "text": "变量常用于会话内的临时状态，长期记忆用于跨会话保留用户信息" },
-      { "id": "B", "text": "变量与长期记忆没有任何区别" },
-      { "id": "C", "text": "变量只能存储数字，长期记忆只能存储文本" },
-      { "id": "D", "text": "长期记忆只存在于服务端，变量只存在于浏览器" }
+      {
+        "id": "A",
+        "text": "变量常用于会话内的临时状态，长期记忆用于跨会话保留用户信息"
+      },
+      {
+        "id": "B",
+        "text": "变量与长期记忆没有任何区别"
+      },
+      {
+        "id": "C",
+        "text": "变量只能存储数字，长期记忆只能存储文本"
+      },
+      {
+        "id": "D",
+        "text": "长期记忆只存在于服务端，变量只存在于浏览器"
+      }
     ],
-    "answerIds": ["A"],
+    "answerIds": [
+      "A"
+    ],
     "explanation": "变量承载会话内的临时状态与流程数据；长期记忆用于跨会话保留关键用户信息，二者作用周期不同。",
-    "tags": ["ADP", "变量", "记忆"],
+    "tags": [
+      "ADP",
+      "变量",
+      "记忆"
+    ],
     "sourceType": "knowledge_based",
-    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759"
+    ],
     "authorNote": "根据官方课程公开主题整理的原创练习。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -213,21 +412,43 @@
   {
     "id": "D3-S4",
     "domainId": "D3",
-    "lessonIds": ["2.2-B"],
+    "lessonIds": [
+      "2.2-B"
+    ],
     "type": "single",
     "difficulty": "medium",
     "stem": "在智能体开发平台中，连接器与工具的关系通常可以理解为？",
     "options": [
-      { "id": "A", "text": "连接器负责接入外部系统或数据源，工具是应用可调用执行的具体能力" },
-      { "id": "B", "text": "连接器和工具是完全相同的概念" },
-      { "id": "C", "text": "连接器只能连接数据库，工具只能连接 API" },
-      { "id": "D", "text": "工具无法被 Workflow 调用" }
+      {
+        "id": "A",
+        "text": "连接器负责接入外部系统或数据源，工具是应用可调用执行的具体能力"
+      },
+      {
+        "id": "B",
+        "text": "连接器和工具是完全相同的概念"
+      },
+      {
+        "id": "C",
+        "text": "连接器只能连接数据库，工具只能连接 API"
+      },
+      {
+        "id": "D",
+        "text": "工具无法被 Workflow 调用"
+      }
     ],
-    "answerIds": ["A"],
+    "answerIds": [
+      "A"
+    ],
     "explanation": "连接器侧重与外部系统/数据源的连通，工具则是可被模型或工作流调用执行的能力，二者配合实现对外交互。",
-    "tags": ["ADP", "连接器", "工具"],
+    "tags": [
+      "ADP",
+      "连接器",
+      "工具"
+    ],
     "sourceType": "knowledge_based",
-    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759"
+    ],
     "authorNote": "根据官方课程公开主题整理的原创练习。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -236,21 +457,42 @@
   {
     "id": "D3-S5",
     "domainId": "D3",
-    "lessonIds": ["2.2-B"],
+    "lessonIds": [
+      "2.2-B"
+    ],
     "type": "single",
     "difficulty": "medium",
     "stem": "Skills（技能）在智能体开发中的主要价值是什么？",
     "options": [
-      { "id": "A", "text": "把可复用的能力封装成技能包，供应用按需调用" },
-      { "id": "B", "text": "替代整个知识库" },
-      { "id": "C", "text": "只用于美化界面" },
-      { "id": "D", "text": "仅用于存储用户账号密码" }
+      {
+        "id": "A",
+        "text": "把可复用的能力封装成技能包，供应用按需调用"
+      },
+      {
+        "id": "B",
+        "text": "替代整个知识库"
+      },
+      {
+        "id": "C",
+        "text": "只用于美化界面"
+      },
+      {
+        "id": "D",
+        "text": "仅用于存储用户账号密码"
+      }
     ],
-    "answerIds": ["A"],
+    "answerIds": [
+      "A"
+    ],
     "explanation": "Skills 将可复用的提示词、工具组合与流程封装为能力单元，提升复用性与一致性。",
-    "tags": ["ADP", "Skills"],
+    "tags": [
+      "ADP",
+      "Skills"
+    ],
     "sourceType": "knowledge_based",
-    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759"
+    ],
     "authorNote": "根据官方课程公开主题整理的原创练习。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -259,21 +501,42 @@
   {
     "id": "D3-S6",
     "domainId": "D3",
-    "lessonIds": ["2.2-C"],
+    "lessonIds": [
+      "2.2-C"
+    ],
     "type": "single",
     "difficulty": "medium",
     "stem": "Workflow（工作流）在智能体应用中的核心作用是什么？",
     "options": [
-      { "id": "A", "text": "将任务拆解为节点，并用条件、循环等方式编排执行顺序" },
-      { "id": "B", "text": "只负责生成图片" },
-      { "id": "C", "text": "替代所有外部系统集成" },
-      { "id": "D", "text": "用于管理用户权限" }
+      {
+        "id": "A",
+        "text": "将任务拆解为节点，并用条件、循环等方式编排执行顺序"
+      },
+      {
+        "id": "B",
+        "text": "只负责生成图片"
+      },
+      {
+        "id": "C",
+        "text": "替代所有外部系统集成"
+      },
+      {
+        "id": "D",
+        "text": "用于管理用户权限"
+      }
     ],
-    "answerIds": ["A"],
+    "answerIds": [
+      "A"
+    ],
     "explanation": "Workflow 通过节点与流程控制把复杂任务编排成可执行、可观测的路径。",
-    "tags": ["ADP", "Workflow"],
+    "tags": [
+      "ADP",
+      "Workflow"
+    ],
     "sourceType": "knowledge_based",
-    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759"
+    ],
     "authorNote": "根据官方课程公开主题整理的原创练习。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -282,21 +545,43 @@
   {
     "id": "D3-S7",
     "domainId": "D3",
-    "lessonIds": ["2.2-C", "3.4"],
+    "lessonIds": [
+      "2.2-C",
+      "3.4"
+    ],
     "type": "single",
     "difficulty": "hard",
     "stem": "Multi-Agent 协作与单一 Agent 相比，最关键的差异通常在于？",
     "options": [
-      { "id": "A", "text": "将任务按角色拆分给多个 Agent，并通过协作协议传递与汇总结果" },
-      { "id": "B", "text": "只需要写更长的提示词" },
-      { "id": "C", "text": "完全不再需要任何人工参与" },
-      { "id": "D", "text": "一定比单一 Agent 更快" }
+      {
+        "id": "A",
+        "text": "将任务按角色拆分给多个 Agent，并通过协作协议传递与汇总结果"
+      },
+      {
+        "id": "B",
+        "text": "只需要写更长的提示词"
+      },
+      {
+        "id": "C",
+        "text": "完全不再需要任何人工参与"
+      },
+      {
+        "id": "D",
+        "text": "一定比单一 Agent 更快"
+      }
     ],
-    "answerIds": ["A"],
+    "answerIds": [
+      "A"
+    ],
     "explanation": "Multi-Agent 的核心是按职责拆分与协作；它不一定更快，也需要清晰的角色边界、协议和终止条件。",
-    "tags": ["ADP", "Multi-Agent"],
+    "tags": [
+      "ADP",
+      "Multi-Agent"
+    ],
     "sourceType": "knowledge_based",
-    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759"
+    ],
     "authorNote": "根据官方课程公开主题整理的原创练习。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -305,21 +590,43 @@
   {
     "id": "D3-S8",
     "domainId": "D3",
-    "lessonIds": ["2.2-C", "3.5"],
+    "lessonIds": [
+      "2.2-C",
+      "3.5"
+    ],
     "type": "single",
     "difficulty": "hard",
     "stem": "Claw 模式的典型特征是什么？",
     "options": [
-      { "id": "A", "text": "由模型自主规划并循环调用工具完成任务，直至达成目标或触发终止" },
-      { "id": "B", "text": "模型完全不调用任何工具" },
-      { "id": "C", "text": "所有步骤都必须人工点击" },
-      { "id": "D", "text": "只能用于生成图片" }
+      {
+        "id": "A",
+        "text": "由模型自主规划并循环调用工具完成任务，直至达成目标或触发终止"
+      },
+      {
+        "id": "B",
+        "text": "模型完全不调用任何工具"
+      },
+      {
+        "id": "C",
+        "text": "所有步骤都必须人工点击"
+      },
+      {
+        "id": "D",
+        "text": "只能用于生成图片"
+      }
     ],
-    "answerIds": ["A"],
+    "answerIds": [
+      "A"
+    ],
     "explanation": "Claw 模式让模型在循环中自主规划与调用工具，适合目标明确、步骤可验证的任务，但需步数、权限与终止条件控制。",
-    "tags": ["ADP", "Claw"],
+    "tags": [
+      "ADP",
+      "Claw"
+    ],
     "sourceType": "knowledge_based",
-    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759"
+    ],
     "authorNote": "根据官方课程公开主题整理的原创练习。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -328,21 +635,43 @@
   {
     "id": "D3-S9",
     "domainId": "D3",
-    "lessonIds": ["2.2-A", "2.3"],
+    "lessonIds": [
+      "2.2-A",
+      "2.3"
+    ],
     "type": "single",
     "difficulty": "medium",
     "stem": "创建一个可用的知识问答智能体应用，通常最先需要明确的要素是？",
     "options": [
-      { "id": "A", "text": "应用目标、角色定位、知识来源与回答边界" },
-      { "id": "B", "text": "界面使用什么字体颜色" },
-      { "id": "C", "text": "服务器放在哪个机房" },
-      { "id": "D", "text": "先写完整的上线回滚方案" }
+      {
+        "id": "A",
+        "text": "应用目标、角色定位、知识来源与回答边界"
+      },
+      {
+        "id": "B",
+        "text": "界面使用什么字体颜色"
+      },
+      {
+        "id": "C",
+        "text": "服务器放在哪个机房"
+      },
+      {
+        "id": "D",
+        "text": "先写完整的上线回滚方案"
+      }
     ],
-    "answerIds": ["A"],
+    "answerIds": [
+      "A"
+    ],
     "explanation": "先明确目标、角色、知识与边界，才能正确配置模型、指令和知识库。",
-    "tags": ["ADP", "应用搭建"],
+    "tags": [
+      "ADP",
+      "应用搭建"
+    ],
     "sourceType": "original",
-    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759"
+    ],
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -351,21 +680,44 @@
   {
     "id": "D3-S10",
     "domainId": "D3",
-    "lessonIds": ["2.2-B", "3.2"],
+    "lessonIds": [
+      "2.2-B",
+      "3.2"
+    ],
     "type": "single",
     "difficulty": "hard",
     "stem": "检索增强生成（RAG）在企业知识问答中的核心优势是什么？",
     "options": [
-      { "id": "A", "text": "让回答基于可检索、可溯源的知识片段，降低凭空编造的风险" },
-      { "id": "B", "text": "完全不需要准备任何文档" },
-      { "id": "C", "text": "可以替代所有数据库" },
-      { "id": "D", "text": "保证回答一定 100% 正确" }
+      {
+        "id": "A",
+        "text": "让回答基于可检索、可溯源的知识片段，降低凭空编造的风险"
+      },
+      {
+        "id": "B",
+        "text": "完全不需要准备任何文档"
+      },
+      {
+        "id": "C",
+        "text": "可以替代所有数据库"
+      },
+      {
+        "id": "D",
+        "text": "保证回答一定 100% 正确"
+      }
     ],
-    "answerIds": ["A"],
+    "answerIds": [
+      "A"
+    ],
     "explanation": "RAG 先检索再生成，使回答有据可依、可溯源，但检索质量和文档质量仍会影响最终正确性。",
-    "tags": ["ADP", "RAG", "知识库"],
+    "tags": [
+      "ADP",
+      "RAG",
+      "知识库"
+    ],
     "sourceType": "knowledge_based",
-    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759"
+    ],
     "authorNote": "根据官方课程公开主题整理的原创练习。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -374,25 +726,54 @@
   {
     "id": "D3-M1",
     "domainId": "D3",
-    "lessonIds": ["2.2-B", "4.3"],
+    "lessonIds": [
+      "2.2-B",
+      "4.3"
+    ],
     "type": "multiple",
     "difficulty": "medium",
     "stem": "构建基于知识库的检索问答，通常包括哪些关键环节？",
     "options": [
-      { "id": "A", "text": "文档解析与切分" },
-      { "id": "B", "text": "向量化或建立索引" },
-      { "id": "C", "text": "根据问题检索相关内容" },
-      { "id": "D", "text": "基于检索结果生成回答" },
-      { "id": "E", "text": "删除所有原始文档" }
+      {
+        "id": "A",
+        "text": "文档解析与切分"
+      },
+      {
+        "id": "B",
+        "text": "向量化或建立索引"
+      },
+      {
+        "id": "C",
+        "text": "根据问题检索相关内容"
+      },
+      {
+        "id": "D",
+        "text": "基于检索结果生成回答"
+      },
+      {
+        "id": "E",
+        "text": "删除所有原始文档"
+      }
     ],
-    "answerIds": ["A", "B", "C", "D"],
+    "answerIds": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
     "explanation": "知识问答通常包含解析切分、索引、检索与生成四个环节；原始文档是需要长期维护的数据源。",
     "optionExplanations": {
       "E": "原始文档是知识来源，应保留并持续维护。"
     },
-    "tags": ["ADP", "知识库", "RAG"],
+    "tags": [
+      "ADP",
+      "知识库",
+      "RAG"
+    ],
     "sourceType": "knowledge_based",
-    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759"
+    ],
     "authorNote": "根据官方课程公开主题整理的原创练习。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -401,21 +782,43 @@
   {
     "id": "D3-M2",
     "domainId": "D3",
-    "lessonIds": ["2.2-A"],
+    "lessonIds": [
+      "2.2-A"
+    ],
     "type": "multiple",
     "difficulty": "medium",
     "stem": "智能体应用中的变量通常适合用于哪些场景？",
     "options": [
-      { "id": "A", "text": "保存会话中的用户输入与中间结果" },
-      { "id": "B", "text": "在 Workflow 节点之间传递数据" },
-      { "id": "C", "text": "记录需要跨会话保留的用户偏好" },
-      { "id": "D", "text": "存储应用的静态代码文件" }
+      {
+        "id": "A",
+        "text": "保存会话中的用户输入与中间结果"
+      },
+      {
+        "id": "B",
+        "text": "在 Workflow 节点之间传递数据"
+      },
+      {
+        "id": "C",
+        "text": "记录需要跨会话保留的用户偏好"
+      },
+      {
+        "id": "D",
+        "text": "存储应用的静态代码文件"
+      }
     ],
-    "answerIds": ["A", "B"],
+    "answerIds": [
+      "A",
+      "B"
+    ],
     "explanation": "变量主要用于会话内临时状态与节点间数据传递；跨会话偏好更适合长期记忆；变量不用于存储代码文件。",
-    "tags": ["ADP", "变量"],
+    "tags": [
+      "ADP",
+      "变量"
+    ],
     "sourceType": "original",
-    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759"
+    ],
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -424,25 +827,54 @@
   {
     "id": "D3-M3",
     "domainId": "D3",
-    "lessonIds": ["2.2-C", "3.3"],
+    "lessonIds": [
+      "2.2-C",
+      "3.3"
+    ],
     "type": "multiple",
     "difficulty": "medium",
     "stem": "一个客服类 Workflow 通常可能包含哪些类型的节点？",
     "options": [
-      { "id": "A", "text": "开始与结束节点" },
-      { "id": "B", "text": "条件分支节点" },
-      { "id": "C", "text": "调用知识库或工具节点" },
-      { "id": "D", "text": "循环处理节点" },
-      { "id": "E", "text": "只能有一个开始节点且不能有任何分支" }
+      {
+        "id": "A",
+        "text": "开始与结束节点"
+      },
+      {
+        "id": "B",
+        "text": "条件分支节点"
+      },
+      {
+        "id": "C",
+        "text": "调用知识库或工具节点"
+      },
+      {
+        "id": "D",
+        "text": "循环处理节点"
+      },
+      {
+        "id": "E",
+        "text": "只能有一个开始节点且不能有任何分支"
+      }
     ],
-    "answerIds": ["A", "B", "C", "D"],
+    "answerIds": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
     "explanation": "客服工作流通常包含开始/结束、条件分支、知识库/工具调用与循环等节点，分支与循环是常见能力。",
     "optionExplanations": {
       "E": "工作流支持条件分支，不是只能线性执行。"
     },
-    "tags": ["ADP", "Workflow", "客服"],
+    "tags": [
+      "ADP",
+      "Workflow",
+      "客服"
+    ],
     "sourceType": "original",
-    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759"
+    ],
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -451,25 +883,54 @@
   {
     "id": "D3-M4",
     "domainId": "D3",
-    "lessonIds": ["2.2-C", "3.4", "4.5"],
+    "lessonIds": [
+      "2.2-C",
+      "3.4",
+      "4.5"
+    ],
     "type": "multiple",
     "difficulty": "hard",
     "stem": "设计 Multi-Agent 系统时，下列哪些是需要重点考虑的要点？",
     "options": [
-      { "id": "A", "text": "各 Agent 的角色边界清晰" },
-      { "id": "B", "text": "定义协作协议与消息传递方式" },
-      { "id": "C", "text": "设置明确的终止条件" },
-      { "id": "D", "text": "控制 Agent 间的通信成本" },
-      { "id": "E", "text": "让所有 Agent 共享完全相同的职责" }
+      {
+        "id": "A",
+        "text": "各 Agent 的角色边界清晰"
+      },
+      {
+        "id": "B",
+        "text": "定义协作协议与消息传递方式"
+      },
+      {
+        "id": "C",
+        "text": "设置明确的终止条件"
+      },
+      {
+        "id": "D",
+        "text": "控制 Agent 间的通信成本"
+      },
+      {
+        "id": "E",
+        "text": "让所有 Agent 共享完全相同的职责"
+      }
     ],
-    "answerIds": ["A", "B", "C", "D"],
+    "answerIds": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
     "explanation": "角色边界、协作协议、终止条件与通信成本都是 Multi-Agent 设计的核心；“职责完全相同”会失去拆分意义。",
     "optionExplanations": {
       "E": "Multi-Agent 的价值正在于职责拆分。"
     },
-    "tags": ["ADP", "Multi-Agent"],
+    "tags": [
+      "ADP",
+      "Multi-Agent"
+    ],
     "sourceType": "knowledge_based",
-    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759"
+    ],
     "authorNote": "根据官方课程公开主题整理的原创练习。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -478,25 +939,54 @@
   {
     "id": "D3-M5",
     "domainId": "D3",
-    "lessonIds": ["2.2-C", "3.5"],
+    "lessonIds": [
+      "2.2-C",
+      "3.5"
+    ],
     "type": "multiple",
     "difficulty": "hard",
     "stem": "使用 Claw 模式等自主执行能力时，合理的风险控制手段包括哪些？",
     "options": [
-      { "id": "A", "text": "按最小权限原则授予工具能力" },
-      { "id": "B", "text": "设置最大步数与超时限制" },
-      { "id": "C", "text": "对高风险操作增加人工审批" },
-      { "id": "D", "text": "记录执行日志以便审计与回放" },
-      { "id": "E", "text": "授予无限权限以提升效率" }
+      {
+        "id": "A",
+        "text": "按最小权限原则授予工具能力"
+      },
+      {
+        "id": "B",
+        "text": "设置最大步数与超时限制"
+      },
+      {
+        "id": "C",
+        "text": "对高风险操作增加人工审批"
+      },
+      {
+        "id": "D",
+        "text": "记录执行日志以便审计与回放"
+      },
+      {
+        "id": "E",
+        "text": "授予无限权限以提升效率"
+      }
     ],
-    "answerIds": ["A", "B", "C", "D"],
+    "answerIds": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
     "explanation": "最小权限、步数/超时限制、人工审批与日志审计都是自主执行的风险控制手段；无限权限会显著放大风险。",
     "optionExplanations": {
       "E": "无限权限会放大误操作与越权风险。"
     },
-    "tags": ["ADP", "Claw", "安全"],
+    "tags": [
+      "ADP",
+      "Claw",
+      "安全"
+    ],
     "sourceType": "original",
-    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759"
+    ],
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -505,24 +995,2989 @@
   {
     "id": "D3-M6",
     "domainId": "D3",
-    "lessonIds": ["2.2-B"],
+    "lessonIds": [
+      "2.2-B"
+    ],
     "type": "multiple",
     "difficulty": "medium",
     "stem": "关于 Skills 与工具、连接器的协作关系，下列哪些说法合理？",
     "options": [
-      { "id": "A", "text": "Skills 可以封装多个工具或提示词以形成可复用能力" },
-      { "id": "B", "text": "连接器用于接入外部系统，工具用于执行具体操作" },
-      { "id": "C", "text": "Skills 可以提升能力复用的一致性与效率" },
-      { "id": "D", "text": "Skills 与知识库是完全相同的能力" }
+      {
+        "id": "A",
+        "text": "Skills 可以封装多个工具或提示词以形成可复用能力"
+      },
+      {
+        "id": "B",
+        "text": "连接器用于接入外部系统，工具用于执行具体操作"
+      },
+      {
+        "id": "C",
+        "text": "Skills 可以提升能力复用的一致性与效率"
+      },
+      {
+        "id": "D",
+        "text": "Skills 与知识库是完全相同的能力"
+      }
     ],
-    "answerIds": ["A", "B", "C"],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
     "explanation": "Skills 封装可复用能力，连接器负责连通外部系统，工具执行具体操作；Skills 与知识库定位不同。",
-    "tags": ["ADP", "Skills", "工具", "连接器"],
+    "tags": [
+      "ADP",
+      "Skills",
+      "工具",
+      "连接器"
+    ],
     "sourceType": "original",
-    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759"
+    ],
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
     "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D2-S5",
+    "domainId": "D2",
+    "lessonIds": [
+      "2.1"
+    ],
+    "type": "single",
+    "difficulty": "easy",
+    "stem": "ADP 的产品定位更接近下列哪一项？",
+    "options": [
+      {
+        "id": "A",
+        "text": "企业级智能体开发平台"
+      },
+      {
+        "id": "B",
+        "text": "纯代码编译器"
+      },
+      {
+        "id": "C",
+        "text": "个人网盘"
+      },
+      {
+        "id": "D",
+        "text": "视频剪辑软件"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "ADP 面向企业场景，提供应用搭建、知识库、工具与编排等智能体开发能力。",
+    "tags": [
+      "ADP 定位"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D2-S6",
+    "domainId": "D2",
+    "lessonIds": [
+      "2.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "判断一个需求是否适合用 ADP 构建智能体时，更应优先关注？",
+    "options": [
+      {
+        "id": "A",
+        "text": "是否存在可定义的知识、工具与交付边界"
+      },
+      {
+        "id": "B",
+        "text": "是否只能使用单一编程语言"
+      },
+      {
+        "id": "C",
+        "text": "是否完全不需要任何数据"
+      },
+      {
+        "id": "D",
+        "text": "是否必须离线且无网络"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "适合智能体的场景通常有明确的知识来源、可调用的工具与可验收的交付边界。",
+    "tags": [
+      "场景判断"
+    ],
+    "sourceType": "original",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "原创情境练习题，基于公开知识点设计，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D2-S7",
+    "domainId": "D2",
+    "lessonIds": [
+      "2.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "关于 ADP 平台能力边界，下列说法正确的是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "平台提供组件化能力，但真实业务效果仍需结合数据与设计"
+      },
+      {
+        "id": "B",
+        "text": "平台会自动保证所有回答都正确"
+      },
+      {
+        "id": "C",
+        "text": "平台无需任何配置即可上线"
+      },
+      {
+        "id": "D",
+        "text": "平台只支持文字问答，不支持工具调用"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "平台能力有边界：知识质量、权限设计、流程编排与验收仍需要工程化工作。",
+    "tags": [
+      "能力边界"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D2-S8",
+    "domainId": "D2",
+    "lessonIds": [
+      "2.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "ADP 对企业的核心交付价值主要体现在？",
+    "options": [
+      {
+        "id": "A",
+        "text": "缩短智能体应用的构建与迭代周期"
+      },
+      {
+        "id": "B",
+        "text": "替代全部业务系统"
+      },
+      {
+        "id": "C",
+        "text": "消除所有人工参与"
+      },
+      {
+        "id": "D",
+        "text": "保证零运维成本"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "ADP 的价值是降低智能体应用构建门槛、加速交付；它不替代所有系统，也不保证零运维。",
+    "tags": [
+      "交付价值"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D2-S9",
+    "domainId": "D2",
+    "lessonIds": [
+      "2.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "下列哪类任务通常不适合完全交给当前智能体自动执行？",
+    "options": [
+      {
+        "id": "A",
+        "text": "涉及资金转账且缺乏人工审批的高风险操作"
+      },
+      {
+        "id": "B",
+        "text": "按模板生成一段说明文字"
+      },
+      {
+        "id": "C",
+        "text": "根据知识库检索并回答常见问题"
+      },
+      {
+        "id": "D",
+        "text": "把结构化请求转换成标准格式"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "高风险、不可逆且缺少授权边界的操作需要人工审批，不宜完全自动执行。",
+    "tags": [
+      "场景判断"
+    ],
+    "sourceType": "original",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "原创情境练习题，基于公开知识点设计，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D2-M3",
+    "domainId": "D2",
+    "lessonIds": [
+      "2.1"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "ADP 作为企业级智能体开发平台，通常具备哪些能力形态？",
+    "options": [
+      {
+        "id": "A",
+        "text": "知识库与检索"
+      },
+      {
+        "id": "B",
+        "text": "工具与连接器"
+      },
+      {
+        "id": "C",
+        "text": "Workflow 与 Multi-Agent 编排"
+      },
+      {
+        "id": "D",
+        "text": "替代企业全部安全制度"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "ADP 提供知识、连接、编排等能力；安全制度仍需企业自身配套。",
+    "tags": [
+      "ADP 能力"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D2-M4",
+    "domainId": "D2",
+    "lessonIds": [
+      "2.1"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "评价一个 ADP 应用是否达到交付标准，可以关注哪些方面？",
+    "options": [
+      {
+        "id": "A",
+        "text": "回答是否基于有效知识来源"
+      },
+      {
+        "id": "B",
+        "text": "工具调用是否遵循权限约束"
+      },
+      {
+        "id": "C",
+        "text": "关键流程是否有兜底与可观测性"
+      },
+      {
+        "id": "D",
+        "text": "是否完全没有人工参与"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "交付标准关注依据、权限、兜底与可观测；完全无人参与并非必要标准。",
+    "tags": [
+      "交付标准"
+    ],
+    "sourceType": "original",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "原创情境练习题，基于公开知识点设计，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D2-M5",
+    "domainId": "D2",
+    "lessonIds": [
+      "2.1"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "企业引入智能体应用时，常见的落地收益包括？",
+    "options": [
+      {
+        "id": "A",
+        "text": "提升常见问题处理效率"
+      },
+      {
+        "id": "B",
+        "text": "统一知识口径"
+      },
+      {
+        "id": "C",
+        "text": "沉淀可复用的业务流程"
+      },
+      {
+        "id": "D",
+        "text": "保证所有回答零错误"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "智能体能提升效率、统一口径并沉淀流程，但无法保证零错误。",
+    "tags": [
+      "落地价值"
+    ],
+    "sourceType": "original",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "原创情境练习题，基于公开知识点设计，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S11",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-A"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "角色指令（System Prompt）的主要作用是什么？",
+    "options": [
+      {
+        "id": "A",
+        "text": "定义助手的角色、行为边界与输出规范"
+      },
+      {
+        "id": "B",
+        "text": "代替数据库存储"
+      },
+      {
+        "id": "C",
+        "text": "决定显卡型号"
+      },
+      {
+        "id": "D",
+        "text": "自动生成业务数据"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "角色指令为模型设定身份、职责、语气与约束，是应用行为的基础。",
+    "tags": [
+      "角色指令"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S12",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-A"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "在 ADP 应用中使用变量，通常可以实现什么？",
+    "options": [
+      {
+        "id": "A",
+        "text": "在对话与流程间传递动态信息"
+      },
+      {
+        "id": "B",
+        "text": "让模型离线运行"
+      },
+      {
+        "id": "C",
+        "text": "替代知识库"
+      },
+      {
+        "id": "D",
+        "text": "永久固定用户输入"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "变量用于保存和传递会话中的动态值，支撑流程分支与上下文传递。",
+    "tags": [
+      "变量"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S13",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-B"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "知识库检索的核心目标是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "从知识库中找到与问题最相关的内容片段"
+      },
+      {
+        "id": "B",
+        "text": "把所有文档逐字返回"
+      },
+      {
+        "id": "C",
+        "text": "替代模型推理"
+      },
+      {
+        "id": "D",
+        "text": "删除低质量数据"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "检索的作用是召回相关片段作为生成依据，而不是返回全部文档。",
+    "tags": [
+      "知识库",
+      "检索"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S14",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-B"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "连接器与工具的主要区别是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "连接器侧重接入外部系统，工具侧重执行具体操作"
+      },
+      {
+        "id": "B",
+        "text": "两者完全一样"
+      },
+      {
+        "id": "C",
+        "text": "连接器只能处理文本"
+      },
+      {
+        "id": "D",
+        "text": "工具不需要任何输入"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "连接器解决“如何连上”外部系统，工具解决“做什么”具体操作。",
+    "tags": [
+      "连接器",
+      "工具"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S15",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-C"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "Workflow 中“条件分支”节点的作用是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "根据条件把流程路由到不同路径"
+      },
+      {
+        "id": "B",
+        "text": "永远只执行第一条路径"
+      },
+      {
+        "id": "C",
+        "text": "只能做文本拼接"
+      },
+      {
+        "id": "D",
+        "text": "代替知识库检索"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "条件分支依据输入或中间结果决定后续执行路径，是流程控制的基础。",
+    "tags": [
+      "Workflow"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-M7",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-A"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "搭建一个 ADP 应用通常需要完成哪些工作？",
+    "options": [
+      {
+        "id": "A",
+        "text": "配置模型与角色指令"
+      },
+      {
+        "id": "B",
+        "text": "准备并接入知识或工具"
+      },
+      {
+        "id": "C",
+        "text": "设计并调试交互流程"
+      },
+      {
+        "id": "D",
+        "text": "忽略测试直接上线"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "应用搭建包括模型与角色配置、知识/工具接入和流程调试，上线前需要测试。",
+    "tags": [
+      "应用搭建"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-M8",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-B"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "建设高质量企业知识库，通常需要注意？",
+    "options": [
+      {
+        "id": "A",
+        "text": "清洗重复与过时内容"
+      },
+      {
+        "id": "B",
+        "text": "合理切分文档"
+      },
+      {
+        "id": "C",
+        "text": "建立答案来源标注"
+      },
+      {
+        "id": "D",
+        "text": "把所有文档原样堆进一个文件"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "高质量知识库需要清洗、合理切分与可溯源；简单堆叠会降低检索质量。",
+    "tags": [
+      "知识库"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-M9",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-C"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "Multi-Agent 协作设计中需要明确哪些内容？",
+    "options": [
+      {
+        "id": "A",
+        "text": "各 Agent 的职责边界"
+      },
+      {
+        "id": "B",
+        "text": "Agent 间的信息传递方式"
+      },
+      {
+        "id": "C",
+        "text": "冲突处理与终止条件"
+      },
+      {
+        "id": "D",
+        "text": "取消所有日志"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "多 Agent 需要明确职责、通信与终止条件；日志与可观测性反而更重要。",
+    "tags": [
+      "Multi-Agent"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D2-S10",
+    "domainId": "D2",
+    "lessonIds": [
+      "2.1"
+    ],
+    "type": "single",
+    "difficulty": "easy",
+    "stem": "ADP 应用通常以什么形态交付给用户？",
+    "options": [
+      {
+        "id": "A",
+        "text": "可交互的智能体应用"
+      },
+      {
+        "id": "B",
+        "text": "只能离线运行的脚本"
+      },
+      {
+        "id": "C",
+        "text": "纯数据库"
+      },
+      {
+        "id": "D",
+        "text": "无界面的命令行"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "ADP 产出可交互的智能体应用，供终端用户使用。",
+    "tags": [
+      "ADP 应用"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D2-S11",
+    "domainId": "D2",
+    "lessonIds": [
+      "2.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "关于 ADP 各能力组件的协作关系，正确的是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "知识库提供依据，工具提供操作，Workflow 编排执行顺序"
+      },
+      {
+        "id": "B",
+        "text": "每个组件只能单独使用"
+      },
+      {
+        "id": "C",
+        "text": "工具只能输出文本"
+      },
+      {
+        "id": "D",
+        "text": "知识库不能与其他组件协作"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "知识、工具与编排相互协作，才能形成完整应用。",
+    "tags": [
+      "组件协作"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D2-S12",
+    "domainId": "D2",
+    "lessonIds": [
+      "2.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "下列哪类项目更适合优先采用 ADP 构建？",
+    "options": [
+      {
+        "id": "A",
+        "text": "有明确知识文档与重复咨询流程的客服助手"
+      },
+      {
+        "id": "B",
+        "text": "需要长期离线运行的单机游戏"
+      },
+      {
+        "id": "C",
+        "text": "纯数学定理证明"
+      },
+      {
+        "id": "D",
+        "text": "无需任何外部数据的画板应用"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "知识文档清晰、流程重复度高的场景，最适合平台化智能体方案。",
+    "tags": [
+      "场景适配"
+    ],
+    "sourceType": "original",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "原创情境练习题，基于公开知识点设计，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D2-S13",
+    "domainId": "D2",
+    "lessonIds": [
+      "2.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "下列哪类风险不宜完全交由智能体自动处理？",
+    "options": [
+      {
+        "id": "A",
+        "text": "大额资金转账且缺少审批机制"
+      },
+      {
+        "id": "B",
+        "text": "生成标准格式报告"
+      },
+      {
+        "id": "C",
+        "text": "按知识库回答常见问题"
+      },
+      {
+        "id": "D",
+        "text": "把用户输入归一化"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "大额、不可逆且无审批的高风险操作必须保留人工控制。",
+    "tags": [
+      "风险边界"
+    ],
+    "sourceType": "original",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "原创情境练习题，基于公开知识点设计，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D2-S14",
+    "domainId": "D2",
+    "lessonIds": [
+      "2.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "衡量 ADP 应用的业务价值，更合理的指标是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "人工处理时长下降与准确率提升"
+      },
+      {
+        "id": "B",
+        "text": "页面打开速度"
+      },
+      {
+        "id": "C",
+        "text": "模型参数数量"
+      },
+      {
+        "id": "D",
+        "text": "图标数量"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "业务价值看效率与质量改善，而非技术表象。",
+    "tags": [
+      "交付价值"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D2-S15",
+    "domainId": "D2",
+    "lessonIds": [
+      "2.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "ADP 通过连接器与工具生态主要解决什么问题？",
+    "options": [
+      {
+        "id": "A",
+        "text": "接入外部系统与扩展执行能力"
+      },
+      {
+        "id": "B",
+        "text": "替代企业内部全部系统"
+      },
+      {
+        "id": "C",
+        "text": "保证零成本"
+      },
+      {
+        "id": "D",
+        "text": "只处理静态文本"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "连接器与工具生态扩展了平台对外部系统的接入与执行能力。",
+    "tags": [
+      "生态"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D2-M6",
+    "domainId": "D2",
+    "lessonIds": [
+      "2.1"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "ADP 平台能力通常包括？",
+    "options": [
+      {
+        "id": "A",
+        "text": "知识库与检索"
+      },
+      {
+        "id": "B",
+        "text": "工具与连接器"
+      },
+      {
+        "id": "C",
+        "text": "Workflow 与 Multi-Agent"
+      },
+      {
+        "id": "D",
+        "text": "自动替代企业全部业务系统"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "平台提供知识、连接与编排能力，不替代全部业务系统。",
+    "tags": [
+      "ADP 能力"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D2-M7",
+    "domainId": "D2",
+    "lessonIds": [
+      "2.1"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "对 ADP 能力边界保持清醒认知，应该明白？",
+    "options": [
+      {
+        "id": "A",
+        "text": "平台不能保证回答绝对正确"
+      },
+      {
+        "id": "B",
+        "text": "数据与设计质量影响最终效果"
+      },
+      {
+        "id": "C",
+        "text": "高风险操作仍需人工兜底"
+      },
+      {
+        "id": "D",
+        "text": "平台可以零配置自动上线"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "平台能力有边界，正确性、数据质量与人工兜底仍需工程化保障。",
+    "tags": [
+      "能力边界"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D2-M8",
+    "domainId": "D2",
+    "lessonIds": [
+      "2.1"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "企业智能体项目成功落地的关键因素包括？",
+    "options": [
+      {
+        "id": "A",
+        "text": "清晰的需求与验收口径"
+      },
+      {
+        "id": "B",
+        "text": "高质量的知识与数据"
+      },
+      {
+        "id": "C",
+        "text": "合理的权限与兜底设计"
+      },
+      {
+        "id": "D",
+        "text": "只关注界面美观"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "需求、数据、权限与兜底是关键；界面美观是加分项而非核心。",
+    "tags": [
+      "落地"
+    ],
+    "sourceType": "original",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "原创情境练习题，基于公开知识点设计，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D2-M9",
+    "domainId": "D2",
+    "lessonIds": [
+      "2.1"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "与完全自建相比，采用平台化方案的优势通常包括？",
+    "options": [
+      {
+        "id": "A",
+        "text": "缩短搭建周期"
+      },
+      {
+        "id": "B",
+        "text": "复用平台已有组件"
+      },
+      {
+        "id": "C",
+        "text": "降低部分工程成本"
+      },
+      {
+        "id": "D",
+        "text": "完全不需要任何配置"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "平台化缩短周期、复用组件、降低成本，但仍需配置与设计。",
+    "tags": [
+      "选型"
+    ],
+    "sourceType": "original",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "原创情境练习题，基于公开知识点设计，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S16",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-A"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "编写角色指令时，更推荐的做法是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "明确角色、职责、边界与输出规范"
+      },
+      {
+        "id": "B",
+        "text": "只写一句“你是助手”"
+      },
+      {
+        "id": "C",
+        "text": "越模糊越好"
+      },
+      {
+        "id": "D",
+        "text": "不写任何约束"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "角色指令越清晰，模型行为越稳定可控。",
+    "tags": [
+      "角色指令"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S17",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-A"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "会话变量的主要用途是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "在对话与流程中保存并传递动态值"
+      },
+      {
+        "id": "B",
+        "text": "永久固定用户输入"
+      },
+      {
+        "id": "C",
+        "text": "替代知识库"
+      },
+      {
+        "id": "D",
+        "text": "降低模型能力"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "变量用于保存会话内动态状态，支撑流程分支与上下文传递。",
+    "tags": [
+      "变量"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S18",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-B"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "为提高知识库召回质量，较合理的做法是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "清洗数据并合理切分"
+      },
+      {
+        "id": "B",
+        "text": "把所有文档拼成一段"
+      },
+      {
+        "id": "C",
+        "text": "删除全部来源"
+      },
+      {
+        "id": "D",
+        "text": "不建立索引"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "数据清洗与合理切分能显著提升召回质量。",
+    "tags": [
+      "知识库",
+      "召回"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S19",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-B"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "调用工具前进行参数校验，主要目的是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "避免无效或越权的工具调用"
+      },
+      {
+        "id": "B",
+        "text": "让工具执行更慢"
+      },
+      {
+        "id": "C",
+        "text": "增加模型幻觉"
+      },
+      {
+        "id": "D",
+        "text": "隐藏错误信息"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "参数校验降低无效调用与越权风险，提升执行可靠性。",
+    "tags": [
+      "工具",
+      "校验"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S20",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-C"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "Workflow 中的循环节点适合处理什么场景？",
+    "options": [
+      {
+        "id": "A",
+        "text": "需要重复执行直到满足条件的任务"
+      },
+      {
+        "id": "B",
+        "text": "一次性线性任务"
+      },
+      {
+        "id": "C",
+        "text": "完全不需要条件判断的任务"
+      },
+      {
+        "id": "D",
+        "text": "只适合展示文本"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "循环节点用于需要重复执行直到满足条件的场景。",
+    "tags": [
+      "Workflow"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S21",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-C"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "Multi-Agent 中角色边界不清晰会带来什么问题？",
+    "options": [
+      {
+        "id": "A",
+        "text": "职责重叠、互相推诿与重复工作"
+      },
+      {
+        "id": "B",
+        "text": "提升整体效率"
+      },
+      {
+        "id": "C",
+        "text": "减少通信成本"
+      },
+      {
+        "id": "D",
+        "text": "保证结果一致"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "角色边界不清会导致职责重叠与协作混乱。",
+    "tags": [
+      "Multi-Agent"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-M10",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-A"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "应用搭建阶段通常需要完成？",
+    "options": [
+      {
+        "id": "A",
+        "text": "配置模型与角色指令"
+      },
+      {
+        "id": "B",
+        "text": "准备知识或工具"
+      },
+      {
+        "id": "C",
+        "text": "设计并调试交互流程"
+      },
+      {
+        "id": "D",
+        "text": "跳过所有测试"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "搭建需要配置、知识与流程设计，并配合测试验证。",
+    "tags": [
+      "应用搭建"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-M11",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-B"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "建设企业知识库的合理步骤包括？",
+    "options": [
+      {
+        "id": "A",
+        "text": "清洗重复与过时内容"
+      },
+      {
+        "id": "B",
+        "text": "按业务语义切分"
+      },
+      {
+        "id": "C",
+        "text": "建立索引与来源标注"
+      },
+      {
+        "id": "D",
+        "text": "只保留一个超大文件"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "知识库需要清洗、切分、索引与溯源，不能简单堆叠。",
+    "tags": [
+      "知识库"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-M12",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-C"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "设计 Workflow 时需要注意？",
+    "options": [
+      {
+        "id": "A",
+        "text": "节点职责单一"
+      },
+      {
+        "id": "B",
+        "text": "异常分支有兜底"
+      },
+      {
+        "id": "C",
+        "text": "关键节点可观测"
+      },
+      {
+        "id": "D",
+        "text": "所有分支都必须无限循环"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Workflow 需要职责单一、异常兜底与可观测性。",
+    "tags": [
+      "Workflow"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-M13",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-B"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "Skills 的价值主要体现在？",
+    "options": [
+      {
+        "id": "A",
+        "text": "封装可复用能力"
+      },
+      {
+        "id": "B",
+        "text": "统一执行口径"
+      },
+      {
+        "id": "C",
+        "text": "降低重复配置成本"
+      },
+      {
+        "id": "D",
+        "text": "替代所有模型"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Skills 封装可复用能力、统一口径并降低重复成本。",
+    "tags": [
+      "Skills"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S22",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-A"
+    ],
+    "type": "single",
+    "difficulty": "easy",
+    "stem": "角色指令中“输出格式”通常用于？",
+    "options": [
+      {
+        "id": "A",
+        "text": "约束回答的结构与字段"
+      },
+      {
+        "id": "B",
+        "text": "设置显卡型号"
+      },
+      {
+        "id": "C",
+        "text": "决定模型品牌"
+      },
+      {
+        "id": "D",
+        "text": "删除用户输入"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "输出格式约束回答的结构、字段与风格。",
+    "tags": [
+      "角色指令"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S23",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-A"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "长期记忆与短期上下文的主要区别是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "长期记忆跨会话保留，短期上下文随会话变化"
+      },
+      {
+        "id": "B",
+        "text": "两者完全一样"
+      },
+      {
+        "id": "C",
+        "text": "长期记忆只保存一天"
+      },
+      {
+        "id": "D",
+        "text": "短期上下文永久保存"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "长期记忆跨会话保留，短期上下文只在当前会话内有效。",
+    "tags": [
+      "记忆"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S24",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-A"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "应用里使用变量的好处是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "避免把动态值硬编码在提示词里"
+      },
+      {
+        "id": "B",
+        "text": "让模型无法理解输入"
+      },
+      {
+        "id": "C",
+        "text": "增加代码体积"
+      },
+      {
+        "id": "D",
+        "text": "替代知识库"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "变量让动态值在流程间传递，降低硬编码与重复。",
+    "tags": [
+      "变量"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S25",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-B"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "知识库切分粒度过大会导致？",
+    "options": [
+      {
+        "id": "A",
+        "text": "片段包含过多无关信息，检索精度下降"
+      },
+      {
+        "id": "B",
+        "text": "片段无法被检索"
+      },
+      {
+        "id": "C",
+        "text": "模型参数增加"
+      },
+      {
+        "id": "D",
+        "text": "上下文窗口变大"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "切分过大让片段信息杂糅，检索与生成质量下降。",
+    "tags": [
+      "知识库"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S26",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-B"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "检索结果进行重排（Rerank）的目的是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "把最相关的片段排到前面"
+      },
+      {
+        "id": "B",
+        "text": "删除所有片段"
+      },
+      {
+        "id": "C",
+        "text": "增加无关内容"
+      },
+      {
+        "id": "D",
+        "text": "只保留最长片段"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "重排对候选片段按相关性排序，提升上下文质量。",
+    "tags": [
+      "检索",
+      "重排"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S27",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-B"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "工具返回结构不完整时，Agent 更合理的处理是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "校验结果并提示缺失字段"
+      },
+      {
+        "id": "B",
+        "text": "直接当作成功"
+      },
+      {
+        "id": "C",
+        "text": "忽略用户问题"
+      },
+      {
+        "id": "D",
+        "text": "随机生成数据"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "工具结果需要校验，发现缺失时明确提示，不能当作成功。",
+    "tags": [
+      "工具"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S28",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-C"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "Workflow 与单次问答的主要区别是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "Workflow 显式编排多步骤执行与分支"
+      },
+      {
+        "id": "B",
+        "text": "两者完全一样"
+      },
+      {
+        "id": "C",
+        "text": "Workflow 不能调用工具"
+      },
+      {
+        "id": "D",
+        "text": "Workflow 只能处理文本"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "Workflow 显式定义节点、分支与执行顺序。",
+    "tags": [
+      "Workflow"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S29",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-C"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "Multi-Agent 协作中“汇总节点”的作用是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "合并各 Agent 的结果并做一致性检查"
+      },
+      {
+        "id": "B",
+        "text": "删除所有 Agent"
+      },
+      {
+        "id": "C",
+        "text": "只执行一个分支"
+      },
+      {
+        "id": "D",
+        "text": "忽略冲突"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "汇总节点合并结果并检查一致性，输出最终结论。",
+    "tags": [
+      "Multi-Agent"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S30",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-C"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "Claw 模式更适用于什么场景？",
+    "options": [
+      {
+        "id": "A",
+        "text": "需要持续规划与调用工具直到完成目标的复杂任务"
+      },
+      {
+        "id": "B",
+        "text": "一次性简单问答"
+      },
+      {
+        "id": "C",
+        "text": "纯静态展示"
+      },
+      {
+        "id": "D",
+        "text": "无需任何工具的任务"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "Claw 模式适合需要自主循环、多轮工具调用的复杂任务。",
+    "tags": [
+      "Claw"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S31",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-B"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "连接器与 Skills 的关系更接近？",
+    "options": [
+      {
+        "id": "A",
+        "text": "连接器接入外部系统，Skills 封装可复用能力"
+      },
+      {
+        "id": "B",
+        "text": "两者是同一个东西"
+      },
+      {
+        "id": "C",
+        "text": "Skills 只能处理文本"
+      },
+      {
+        "id": "D",
+        "text": "连接器不能与 Skills 配合"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "连接器解决接入，Skills 解决能力复用，二者可协作。",
+    "tags": [
+      "连接器",
+      "Skills"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S32",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.3"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "应用发布前的冒烟测试主要验证？",
+    "options": [
+      {
+        "id": "A",
+        "text": "核心链路能否基本跑通"
+      },
+      {
+        "id": "B",
+        "text": "所有边缘情况"
+      },
+      {
+        "id": "C",
+        "text": "页面配色"
+      },
+      {
+        "id": "D",
+        "text": "代码注释是否完整"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "冒烟测试快速验证核心链路可用，不是全面测试。",
+    "tags": [
+      "发布",
+      "测试"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S33",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-A"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "设计多轮对话时，最需要管理什么？",
+    "options": [
+      {
+        "id": "A",
+        "text": "对话上下文的组织与截断"
+      },
+      {
+        "id": "B",
+        "text": "显卡型号"
+      },
+      {
+        "id": "C",
+        "text": "页面字体"
+      },
+      {
+        "id": "D",
+        "text": "模型文件路径"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "多轮对话需要管理上下文窗口与信息组织。",
+    "tags": [
+      "对话"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S34",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-B"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "知识库需要定期更新的原因是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "保证检索到现行有效内容"
+      },
+      {
+        "id": "B",
+        "text": "让文件变大"
+      },
+      {
+        "id": "C",
+        "text": "增加重复内容"
+      },
+      {
+        "id": "D",
+        "text": "减少检索"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "定期更新保证知识时效性，避免过时内容误导回答。",
+    "tags": [
+      "知识库"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S35",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-C"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "工作流中的“异常处理”节点主要应对？",
+    "options": [
+      {
+        "id": "A",
+        "text": "工具失败、超时与边界情况"
+      },
+      {
+        "id": "B",
+        "text": "正常流程"
+      },
+      {
+        "id": "C",
+        "text": "只处理成功路径"
+      },
+      {
+        "id": "D",
+        "text": "与流程无关的错误"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "异常处理覆盖失败、超时等边界情况，保证流程可兜底。",
+    "tags": [
+      "Workflow"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S36",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-B"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "工具调用返回超时，首选处理是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "按策略重试并设置上限"
+      },
+      {
+        "id": "B",
+        "text": "无限重试"
+      },
+      {
+        "id": "C",
+        "text": "直接删除工具"
+      },
+      {
+        "id": "D",
+        "text": "忽略错误继续"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "超时应按策略有限次重试，避免无限重试与卡死。",
+    "tags": [
+      "工具"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S37",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-A"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "角色指令写得过于宽泛会导致？",
+    "options": [
+      {
+        "id": "A",
+        "text": "模型行为不稳定、边界不清"
+      },
+      {
+        "id": "B",
+        "text": "输出更精准"
+      },
+      {
+        "id": "C",
+        "text": "成本降低"
+      },
+      {
+        "id": "D",
+        "text": "上下文变短"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "指令宽泛会让模型难以稳定遵循边界与规范。",
+    "tags": [
+      "角色指令"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S38",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.3"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "应用上线后持续迭代的依据主要来自？",
+    "options": [
+      {
+        "id": "A",
+        "text": "真实使用数据与用户反馈"
+      },
+      {
+        "id": "B",
+        "text": "个人直觉"
+      },
+      {
+        "id": "C",
+        "text": "只靠发布前测试"
+      },
+      {
+        "id": "D",
+        "text": "不观察运行情况"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "持续迭代应基于真实使用数据与反馈。",
+    "tags": [
+      "迭代"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S39",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-C"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "多 Agent 方案相比单 Agent，主要优势是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "职责拆分后各自处理更聚焦的任务"
+      },
+      {
+        "id": "B",
+        "text": "一定更快"
+      },
+      {
+        "id": "C",
+        "text": "一定更省成本"
+      },
+      {
+        "id": "D",
+        "text": "不需要任何协作协议"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "多 Agent 通过职责拆分聚焦各自任务，但需要协作设计。",
+    "tags": [
+      "Multi-Agent"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-S40",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-B"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "答案溯源的价值是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "让回答可验证、可回溯"
+      },
+      {
+        "id": "B",
+        "text": "增加回答长度"
+      },
+      {
+        "id": "C",
+        "text": "隐藏来源"
+      },
+      {
+        "id": "D",
+        "text": "降低准确性"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "溯源让回答有依据、可验证、可回溯。",
+    "tags": [
+      "溯源"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-M14",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-A"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "高质量角色指令通常包含？",
+    "options": [
+      {
+        "id": "A",
+        "text": "角色与职责"
+      },
+      {
+        "id": "B",
+        "text": "行为边界"
+      },
+      {
+        "id": "C",
+        "text": "输出规范"
+      },
+      {
+        "id": "D",
+        "text": "完全不写约束"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "角色指令需要角色职责、边界与输出规范。",
+    "tags": [
+      "角色指令"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-M15",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-B"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "知识库检索质量受哪些因素影响？",
+    "options": [
+      {
+        "id": "A",
+        "text": "数据清洗程度"
+      },
+      {
+        "id": "B",
+        "text": "切分粒度"
+      },
+      {
+        "id": "C",
+        "text": "检索与重排策略"
+      },
+      {
+        "id": "D",
+        "text": "页面主题颜色"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "清洗、切分与检索策略影响质量，与主题颜色无关。",
+    "tags": [
+      "知识库"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-M16",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-C"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "Workflow 中常见的节点类型包括？",
+    "options": [
+      {
+        "id": "A",
+        "text": "条件分支"
+      },
+      {
+        "id": "B",
+        "text": "循环"
+      },
+      {
+        "id": "C",
+        "text": "工具调用"
+      },
+      {
+        "id": "D",
+        "text": "只在内存里执行的隐藏节点"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "条件、循环与工具调用是常见节点类型。",
+    "tags": [
+      "Workflow"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-M17",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-C"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "Multi-Agent 协作需要明确？",
+    "options": [
+      {
+        "id": "A",
+        "text": "角色边界"
+      },
+      {
+        "id": "B",
+        "text": "通信协议"
+      },
+      {
+        "id": "C",
+        "text": "冲突处理"
+      },
+      {
+        "id": "D",
+        "text": "取消所有日志"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "多 Agent 需要角色、通信与冲突处理设计。",
+    "tags": [
+      "Multi-Agent"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-M18",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-B"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "工具设计时需要考虑？",
+    "options": [
+      {
+        "id": "A",
+        "text": "输入 Schema"
+      },
+      {
+        "id": "B",
+        "text": "输出 Schema"
+      },
+      {
+        "id": "C",
+        "text": "异常返回"
+      },
+      {
+        "id": "D",
+        "text": "工具名称越长越好"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "工具需要定义输入、输出与异常返回。",
+    "tags": [
+      "工具"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-M19",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.3"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "应用上线前需要完成？",
+    "options": [
+      {
+        "id": "A",
+        "text": "核心流程测试"
+      },
+      {
+        "id": "B",
+        "text": "权限确认"
+      },
+      {
+        "id": "C",
+        "text": "回滚预案"
+      },
+      {
+        "id": "D",
+        "text": "完全跳过验证"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "上线前需要测试、权限确认与回滚预案。",
+    "tags": [
+      "上线"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-M20",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-B"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "Skills 封装通常包含？",
+    "options": [
+      {
+        "id": "A",
+        "text": "提示词"
+      },
+      {
+        "id": "B",
+        "text": "工具组合"
+      },
+      {
+        "id": "C",
+        "text": "流程步骤"
+      },
+      {
+        "id": "D",
+        "text": "无任何内容"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "Skills 封装提示词、工具组合与流程步骤。",
+    "tags": [
+      "Skills"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-M21",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-A"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "应用配置模型时通常需要关注？",
+    "options": [
+      {
+        "id": "A",
+        "text": "模型能力与任务匹配"
+      },
+      {
+        "id": "B",
+        "text": "上下文长度"
+      },
+      {
+        "id": "C",
+        "text": "输出格式支持"
+      },
+      {
+        "id": "D",
+        "text": "只关注模型名称"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "选型要关注能力、上下文与格式支持。",
+    "tags": [
+      "模型配置"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-M22",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-B"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "知识库建设中的数据清洗包括？",
+    "options": [
+      {
+        "id": "A",
+        "text": "去除重复内容"
+      },
+      {
+        "id": "B",
+        "text": "删除过时内容"
+      },
+      {
+        "id": "C",
+        "text": "纠正明显错误"
+      },
+      {
+        "id": "D",
+        "text": "保留全部历史版本不作区分"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "清洗需去重、去旧、纠错；保留所有版本不作区分会降低质量。",
+    "tags": [
+      "知识库"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-M23",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-C"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "流程可观测性通常通过哪些手段实现？",
+    "options": [
+      {
+        "id": "A",
+        "text": "记录节点执行状态"
+      },
+      {
+        "id": "B",
+        "text": "记录工具调用日志"
+      },
+      {
+        "id": "C",
+        "text": "记录错误信息"
+      },
+      {
+        "id": "D",
+        "text": "删除所有日志"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "可观测性依赖节点状态、调用与错误日志。",
+    "tags": [
+      "Workflow"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-M24",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.3"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "应用迭代需要关注？",
+    "options": [
+      {
+        "id": "A",
+        "text": "用户反馈"
+      },
+      {
+        "id": "B",
+        "text": "运行指标"
+      },
+      {
+        "id": "C",
+        "text": "回归验证"
+      },
+      {
+        "id": "D",
+        "text": "上线后不再改动"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "迭代需要反馈、指标与回归验证。",
+    "tags": [
+      "迭代"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D3-M25",
+    "domainId": "D3",
+    "lessonIds": [
+      "2.2-B"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "连接器的价值包括？",
+    "options": [
+      {
+        "id": "A",
+        "text": "接入外部系统"
+      },
+      {
+        "id": "B",
+        "text": "统一数据访问方式"
+      },
+      {
+        "id": "C",
+        "text": "复用连接配置"
+      },
+      {
+        "id": "D",
+        "text": "替代全部工具"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "连接器接入外部系统、统一访问并复用配置。",
+    "tags": [
+      "连接器"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
   }
 ]

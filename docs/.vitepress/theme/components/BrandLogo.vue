@@ -10,12 +10,11 @@
     role="img"
     aria-label="Learning FDE"
   >
-    <rect x="2" y="2" width="28" height="28" rx="7" class="brand-logo__bg" />
-    <path
-      d="M9 23V10h5.2c3.1 0 4.9 1.6 4.9 4.05 0 1.75-1.05 3.05-2.7 3.55 2 .45 3.15 1.9 3.15 4C19.55 24.05 17.7 25 14.6 25H9v-2zm5.05-6.1c1.7 0 2.6-.65 2.6-1.85 0-1.1-.9-1.7-2.55-1.7h-2.7v3.55h2.65zm.1 6.1c1.85 0 2.8-.7 2.8-1.95 0-1.25-1-1.9-2.85-1.9h-2.7V23h2.75z"
-      class="brand-logo__glyph"
-    />
-    <circle cx="23.5" cy="8.5" r="2.4" class="brand-logo__dot" />
+    <rect x="1.5" y="1.5" width="29" height="29" rx="7" class="brand-logo__bg" />
+    <rect x="9" y="9" width="3.5" height="14" rx="1.2" class="brand-logo__glyph" />
+    <rect x="9" y="9" width="8.5" height="3.5" rx="1.2" class="brand-logo__glyph" />
+    <rect x="9" y="14.25" width="6" height="3.5" rx="1.2" class="brand-logo__glyph" />
+    <circle cx="24" cy="8.5" r="2.7" class="brand-logo__dot" />
   </svg>
 </template>
 
@@ -35,6 +34,10 @@
 
 .brand-logo__glyph {
   fill: #fff;
+}
+
+.brand-logo__dot {
+  fill: var(--lf-teal, #2c8f86);
 }
 
 .brand-logo__dot {

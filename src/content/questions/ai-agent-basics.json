@@ -2,21 +2,42 @@
   {
     "id": "D1-S1",
     "domainId": "D1",
-    "lessonIds": ["1.1"],
+    "lessonIds": [
+      "1.1"
+    ],
     "type": "single",
     "difficulty": "easy",
     "stem": "关于人工智能（AI）与机器学习、深度学习的关系，下列哪一项说法最准确？",
     "options": [
-      { "id": "A", "text": "机器学习是人工智能的一个分支，深度学习是机器学习的一个分支" },
-      { "id": "B", "text": "人工智能是机器学习的一个分支" },
-      { "id": "C", "text": "深度学习与机器学习是两个互不相干的领域" },
-      { "id": "D", "text": "人工智能只包含深度学习，不包含机器学习" }
+      {
+        "id": "A",
+        "text": "机器学习是人工智能的一个分支，深度学习是机器学习的一个分支"
+      },
+      {
+        "id": "B",
+        "text": "人工智能是机器学习的一个分支"
+      },
+      {
+        "id": "C",
+        "text": "深度学习与机器学习是两个互不相干的领域"
+      },
+      {
+        "id": "D",
+        "text": "人工智能只包含深度学习，不包含机器学习"
+      }
     ],
-    "answerIds": ["A"],
+    "answerIds": [
+      "A"
+    ],
     "explanation": "人工智能是让机器表现出智能行为的总体领域；机器学习是其中通过数据学习规律的方法；深度学习是使用多层神经网络的机器学习方法。三者是包含关系。",
-    "tags": ["AI 基础", "概念"],
+    "tags": [
+      "AI 基础",
+      "概念"
+    ],
     "sourceType": "knowledge_based",
-    "sourceUrls": ["https://cloud.tencent.com/edu/training/cert/detail?type=CFD"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/edu/training/cert/detail?type=CFD"
+    ],
     "authorNote": "根据官方课程公开主题整理的基础概念题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -25,21 +46,42 @@
   {
     "id": "D1-S2",
     "domainId": "D1",
-    "lessonIds": ["1.2"],
+    "lessonIds": [
+      "1.2"
+    ],
     "type": "single",
     "difficulty": "easy",
     "stem": "在大语言模型中，Token（词元）通常指什么？",
     "options": [
-      { "id": "A", "text": "模型输出的一段完整回答" },
-      { "id": "B", "text": "模型处理文本的最小单元，可能是字、子词或词" },
-      { "id": "C", "text": "模型训练时使用的显卡数量" },
-      { "id": "D", "text": "用户向模型提出的问题" }
+      {
+        "id": "A",
+        "text": "模型输出的一段完整回答"
+      },
+      {
+        "id": "B",
+        "text": "模型处理文本的最小单元，可能是字、子词或词"
+      },
+      {
+        "id": "C",
+        "text": "模型训练时使用的显卡数量"
+      },
+      {
+        "id": "D",
+        "text": "用户向模型提出的问题"
+      }
     ],
-    "answerIds": ["B"],
+    "answerIds": [
+      "B"
+    ],
     "explanation": "Token 是模型对文本进行编码和计算的基本单位，通常由分词器将文本切分为字、子词或词。",
-    "tags": ["大语言模型", "Token"],
+    "tags": [
+      "大语言模型",
+      "Token"
+    ],
     "sourceType": "knowledge_based",
-    "sourceUrls": ["https://cloud.tencent.com/edu/training/cert/detail?type=CFD"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/edu/training/cert/detail?type=CFD"
+    ],
     "authorNote": "根据官方课程公开主题整理的基础概念题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -48,21 +90,43 @@
   {
     "id": "D1-S3",
     "domainId": "D1",
-    "lessonIds": ["1.2"],
+    "lessonIds": [
+      "1.2"
+    ],
     "type": "single",
     "difficulty": "medium",
     "stem": "预训练与微调（SFT/指令微调）的主要区别是什么？",
     "options": [
-      { "id": "A", "text": "预训练在通用语料上学习通用能力，微调在特定数据上适配具体任务" },
-      { "id": "B", "text": "预训练用于推理，微调用于训练" },
-      { "id": "C", "text": "两者完全相同，只是叫法不同" },
-      { "id": "D", "text": "微调不需要任何数据" }
+      {
+        "id": "A",
+        "text": "预训练在通用语料上学习通用能力，微调在特定数据上适配具体任务"
+      },
+      {
+        "id": "B",
+        "text": "预训练用于推理，微调用于训练"
+      },
+      {
+        "id": "C",
+        "text": "两者完全相同，只是叫法不同"
+      },
+      {
+        "id": "D",
+        "text": "微调不需要任何数据"
+      }
     ],
-    "answerIds": ["A"],
+    "answerIds": [
+      "A"
+    ],
     "explanation": "预训练阶段在海量通用语料上学习语言与知识表征；微调阶段用更聚焦的数据让模型适配特定任务、指令或领域。",
-    "tags": ["大语言模型", "预训练", "微调"],
+    "tags": [
+      "大语言模型",
+      "预训练",
+      "微调"
+    ],
     "sourceType": "knowledge_based",
-    "sourceUrls": ["https://cloud.tencent.com/edu/training/cert/detail?type=CFD"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/edu/training/cert/detail?type=CFD"
+    ],
     "authorNote": "根据官方课程公开主题整理的基础概念题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -71,21 +135,42 @@
   {
     "id": "D1-S4",
     "domainId": "D1",
-    "lessonIds": ["1.2"],
+    "lessonIds": [
+      "1.2"
+    ],
     "type": "single",
     "difficulty": "medium",
     "stem": "模型的上下文窗口（Context Window）最准确的含义是什么？",
     "options": [
-      { "id": "A", "text": "模型一次处理时可接收的最大 Token 数量，决定可参考的历史长度" },
-      { "id": "B", "text": "模型运行所占用的内存大小" },
-      { "id": "C", "text": "模型单次回答的最大字数" },
-      { "id": "D", "text": "模型服务器的在线时间" }
+      {
+        "id": "A",
+        "text": "模型一次处理时可接收的最大 Token 数量，决定可参考的历史长度"
+      },
+      {
+        "id": "B",
+        "text": "模型运行所占用的内存大小"
+      },
+      {
+        "id": "C",
+        "text": "模型单次回答的最大字数"
+      },
+      {
+        "id": "D",
+        "text": "模型服务器的在线时间"
+      }
     ],
-    "answerIds": ["A"],
+    "answerIds": [
+      "A"
+    ],
     "explanation": "上下文窗口是模型一次可接收的输入与输出的最大 Token 总量，超出后需要截断、压缩或检索等策略。",
-    "tags": ["大语言模型", "上下文"],
+    "tags": [
+      "大语言模型",
+      "上下文"
+    ],
     "sourceType": "knowledge_based",
-    "sourceUrls": ["https://cloud.tencent.com/edu/training/cert/detail?type=CFD"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/edu/training/cert/detail?type=CFD"
+    ],
     "authorNote": "根据官方课程公开主题整理的基础概念题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -94,21 +179,44 @@
   {
     "id": "D1-S5",
     "domainId": "D1",
-    "lessonIds": ["1.1", "1.2"],
+    "lessonIds": [
+      "1.1",
+      "1.2"
+    ],
     "type": "single",
     "difficulty": "hard",
     "stem": "关于生成式 AI 的“幻觉（Hallucination）”，下列理解最准确的是哪一项？",
     "options": [
-      { "id": "A", "text": "模型可能生成表面通顺但与事实不符的内容，需要校验与兜底" },
-      { "id": "B", "text": "模型只会输出完全错误的内容" },
-      { "id": "C", "text": "幻觉只发生在图像生成模型中" },
-      { "id": "D", "text": "只要使用更大的模型就绝不会产生幻觉" }
+      {
+        "id": "A",
+        "text": "模型可能生成表面通顺但与事实不符的内容，需要校验与兜底"
+      },
+      {
+        "id": "B",
+        "text": "模型只会输出完全错误的内容"
+      },
+      {
+        "id": "C",
+        "text": "幻觉只发生在图像生成模型中"
+      },
+      {
+        "id": "D",
+        "text": "只要使用更大的模型就绝不会产生幻觉"
+      }
     ],
-    "answerIds": ["A"],
+    "answerIds": [
+      "A"
+    ],
     "explanation": "幻觉指模型生成看似合理但缺乏事实依据的内容，与模型规模无必然关系；通过检索增强、来源引用、人工审核等方式可降低风险。",
-    "tags": ["生成式 AI", "幻觉", "风险"],
+    "tags": [
+      "生成式 AI",
+      "幻觉",
+      "风险"
+    ],
     "sourceType": "knowledge_based",
-    "sourceUrls": ["https://cloud.tencent.com/edu/training/cert/detail?type=CFD"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/edu/training/cert/detail?type=CFD"
+    ],
     "authorNote": "根据官方课程公开主题整理的基础概念题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -117,25 +225,52 @@
   {
     "id": "D1-M1",
     "domainId": "D1",
-    "lessonIds": ["1.3"],
+    "lessonIds": [
+      "1.3"
+    ],
     "type": "multiple",
     "difficulty": "medium",
     "stem": "一个典型的智能体（Agent）通常包含哪些核心组成部分？",
     "options": [
-      { "id": "A", "text": "感知与理解" },
-      { "id": "B", "text": "规划与决策" },
-      { "id": "C", "text": "工具执行" },
-      { "id": "D", "text": "记忆与反馈" },
-      { "id": "E", "text": "必须依赖云端大模型才能运行" }
+      {
+        "id": "A",
+        "text": "感知与理解"
+      },
+      {
+        "id": "B",
+        "text": "规划与决策"
+      },
+      {
+        "id": "C",
+        "text": "工具执行"
+      },
+      {
+        "id": "D",
+        "text": "记忆与反馈"
+      },
+      {
+        "id": "E",
+        "text": "必须依赖云端大模型才能运行"
+      }
     ],
-    "answerIds": ["A", "B", "C", "D"],
+    "answerIds": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
     "explanation": "智能体的典型组成包括感知、规划、记忆、工具使用与反馈循环；“必须依赖云端大模型”不是必要条件。",
     "optionExplanations": {
       "E": "Agent 的核心是感知—规划—执行—反馈的循环，并非必须以云端大模型为实现前提。"
     },
-    "tags": ["Agent", "组成"],
+    "tags": [
+      "Agent",
+      "组成"
+    ],
     "sourceType": "knowledge_based",
-    "sourceUrls": ["https://cloud.tencent.com/edu/training/cert/detail?type=CFD"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/edu/training/cert/detail?type=CFD"
+    ],
     "authorNote": "根据官方课程公开主题整理的原创练习。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -144,21 +279,45 @@
   {
     "id": "D1-M2",
     "domainId": "D1",
-    "lessonIds": ["1.2", "1.3"],
+    "lessonIds": [
+      "1.2",
+      "1.3"
+    ],
     "type": "multiple",
     "difficulty": "medium",
     "stem": "关于大语言模型能力的下列描述，哪些是合理的？",
     "options": [
-      { "id": "A", "text": "可以通过提示词引导模型改变输出风格与结构" },
-      { "id": "B", "text": "模型的上下文长度是有限的，需要相应管理" },
-      { "id": "C", "text": "模型具备一定涌现能力，但输出并非绝对可靠" },
-      { "id": "D", "text": "模型一旦训练完成就永远不需要重新验证输出" }
+      {
+        "id": "A",
+        "text": "可以通过提示词引导模型改变输出风格与结构"
+      },
+      {
+        "id": "B",
+        "text": "模型的上下文长度是有限的，需要相应管理"
+      },
+      {
+        "id": "C",
+        "text": "模型具备一定涌现能力，但输出并非绝对可靠"
+      },
+      {
+        "id": "D",
+        "text": "模型一旦训练完成就永远不需要重新验证输出"
+      }
     ],
-    "answerIds": ["A", "B", "C"],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
     "explanation": "提示词可以影响输出；上下文有限；模型能力虽强但存在幻觉与不确定，需要持续验证。“永远不需要验证”是错误认知。",
-    "tags": ["大语言模型", "能力与局限"],
+    "tags": [
+      "大语言模型",
+      "能力与局限"
+    ],
     "sourceType": "knowledge_based",
-    "sourceUrls": ["https://cloud.tencent.com/edu/training/cert/detail?type=CFD"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/edu/training/cert/detail?type=CFD"
+    ],
     "authorNote": "根据官方课程公开主题整理的原创练习。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -167,25 +326,1025 @@
   {
     "id": "D1-M3",
     "domainId": "D1",
-    "lessonIds": ["1.1", "1.2"],
+    "lessonIds": [
+      "1.1",
+      "1.2"
+    ],
     "type": "multiple",
     "difficulty": "hard",
     "stem": "在企业应用中降低生成式 AI 幻觉风险，通常可以采用哪些做法？",
     "options": [
-      { "id": "A", "text": "检索增强生成（RAG），让回答基于可溯源资料" },
-      { "id": "B", "text": "要求模型回答时标注来源" },
-      { "id": "C", "text": "对高风险结论引入人工审核" },
-      { "id": "D", "text": "限制模型只能基于给定知识范围作答" },
-      { "id": "E", "text": "完全取消所有验证环节以提高效率" }
+      {
+        "id": "A",
+        "text": "检索增强生成（RAG），让回答基于可溯源资料"
+      },
+      {
+        "id": "B",
+        "text": "要求模型回答时标注来源"
+      },
+      {
+        "id": "C",
+        "text": "对高风险结论引入人工审核"
+      },
+      {
+        "id": "D",
+        "text": "限制模型只能基于给定知识范围作答"
+      },
+      {
+        "id": "E",
+        "text": "完全取消所有验证环节以提高效率"
+      }
     ],
-    "answerIds": ["A", "B", "C", "D"],
+    "answerIds": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
     "explanation": "检索增强、来源标注、人工审核与范围约束都能降低幻觉风险；取消验证会放大风险，不可取。",
-    "tags": ["生成式 AI", "幻觉", "风险控制"],
+    "tags": [
+      "生成式 AI",
+      "幻觉",
+      "风险控制"
+    ],
     "sourceType": "original",
-    "sourceUrls": ["https://cloud.tencent.com/edu/training/cert/detail?type=CFD"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/edu/training/cert/detail?type=CFD"
+    ],
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
     "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D1-S6",
+    "domainId": "D1",
+    "lessonIds": [
+      "1.1"
+    ],
+    "type": "single",
+    "difficulty": "easy",
+    "stem": "监督学习与无监督学习的主要区别是什么？",
+    "options": [
+      {
+        "id": "A",
+        "text": "监督学习使用带标签数据，无监督学习使用未标注数据"
+      },
+      {
+        "id": "B",
+        "text": "监督学习只能处理文本"
+      },
+      {
+        "id": "C",
+        "text": "无监督学习需要人工标注所有样本"
+      },
+      {
+        "id": "D",
+        "text": "两者没有任何区别"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "监督学习依赖输入与标签的配对来学习映射关系；无监督学习在无标签数据中发现结构。",
+    "tags": [
+      "AI 基础",
+      "机器学习"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D1-S7",
+    "domainId": "D1",
+    "lessonIds": [
+      "1.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "下列哪一项最能体现生成式 AI 的特点？",
+    "options": [
+      {
+        "id": "A",
+        "text": "根据输入生成新的文本、图像等内容"
+      },
+      {
+        "id": "B",
+        "text": "只能对已有内容进行分类"
+      },
+      {
+        "id": "C",
+        "text": "只能做数值回归预测"
+      },
+      {
+        "id": "D",
+        "text": "必须由人工逐字编写输出"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "生成式 AI 通过学习数据分布生成新内容，而判别式方法侧重于分类或预测。",
+    "tags": [
+      "生成式 AI"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D1-S8",
+    "domainId": "D1",
+    "lessonIds": [
+      "1.2"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "大语言模型“幻觉”通常指什么？",
+    "options": [
+      {
+        "id": "A",
+        "text": "模型生成看似合理但与事实不符的内容"
+      },
+      {
+        "id": "B",
+        "text": "模型训练速度突然下降"
+      },
+      {
+        "id": "C",
+        "text": "模型无法处理中文"
+      },
+      {
+        "id": "D",
+        "text": "模型拒绝回答所有问题"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "幻觉指模型输出内容流畅但缺少事实依据或与真实情况不符。",
+    "tags": [
+      "大语言模型",
+      "幻觉"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D1-S9",
+    "domainId": "D1",
+    "lessonIds": [
+      "1.2"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "关于上下文窗口，下列说法正确的是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "它限制了模型单次处理的信息量"
+      },
+      {
+        "id": "B",
+        "text": "它只影响图像生成"
+      },
+      {
+        "id": "C",
+        "text": "窗口越大意味着模型永远更准确"
+      },
+      {
+        "id": "D",
+        "text": "上下文窗口与输入输出无关"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "上下文窗口决定模型一次能处理的 token 数量上限，直接影响能塞入多少背景信息。",
+    "tags": [
+      "大语言模型",
+      "上下文"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D1-S10",
+    "domainId": "D1",
+    "lessonIds": [
+      "1.2"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "提高生成温度（temperature）通常会带来什么影响？",
+    "options": [
+      {
+        "id": "A",
+        "text": "输出随机性增强，更具多样性"
+      },
+      {
+        "id": "B",
+        "text": "输出完全不可变"
+      },
+      {
+        "id": "C",
+        "text": "模型参数数量增加"
+      },
+      {
+        "id": "D",
+        "text": "上下文窗口扩大"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "温度控制采样随机性：温度越高，输出越多样但可能不稳定。",
+    "tags": [
+      "大语言模型",
+      "采样"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D1-M4",
+    "domainId": "D1",
+    "lessonIds": [
+      "1.3"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "智能体的核心组成通常包括哪些？",
+    "options": [
+      {
+        "id": "A",
+        "text": "感知与规划"
+      },
+      {
+        "id": "B",
+        "text": "工具执行"
+      },
+      {
+        "id": "C",
+        "text": "记忆"
+      },
+      {
+        "id": "D",
+        "text": "反馈"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "explanation": "智能体通过感知理解环境、规划拆解任务、调用工具执行并依据反馈调整，记忆保存上下文。",
+    "tags": [
+      "智能体"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D1-M5",
+    "domainId": "D1",
+    "lessonIds": [
+      "1.3"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "让 Agent 具备工具调用能力，通常能带来哪些价值？",
+    "options": [
+      {
+        "id": "A",
+        "text": "执行查询等外部操作"
+      },
+      {
+        "id": "B",
+        "text": "扩展模型本身不具备的能力"
+      },
+      {
+        "id": "C",
+        "text": "减少对实时外部数据的依赖盲区"
+      },
+      {
+        "id": "D",
+        "text": "完全消除模型幻觉"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "工具调用让 Agent 能访问和操作外部系统；但它不能完全消除幻觉。",
+    "tags": [
+      "智能体",
+      "工具"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D1-M6",
+    "domainId": "D1",
+    "lessonIds": [
+      "1.3"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "为降低 Agent 幻觉带来的风险，可采用哪些措施？",
+    "options": [
+      {
+        "id": "A",
+        "text": "要求回答附带来源"
+      },
+      {
+        "id": "B",
+        "text": "对关键结论进行人工复核"
+      },
+      {
+        "id": "C",
+        "text": "限制高风险操作的自动执行"
+      },
+      {
+        "id": "D",
+        "text": "完全关闭模型输出"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "来源标注、人工复核与权限约束都能降低幻觉风险；完全关闭输出不现实。",
+    "tags": [
+      "智能体",
+      "幻觉"
+    ],
+    "sourceType": "original",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "原创情境练习题，基于公开知识点设计，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D1-S11",
+    "domainId": "D1",
+    "lessonIds": [
+      "1.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "强化学习的核心学习信号来自哪里？",
+    "options": [
+      {
+        "id": "A",
+        "text": "环境给予的奖励或惩罚"
+      },
+      {
+        "id": "B",
+        "text": "人工提供的全部标准答案"
+      },
+      {
+        "id": "C",
+        "text": "无标签数据的聚类结构"
+      },
+      {
+        "id": "D",
+        "text": "固定的语法规则"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "强化学习通过与环境的交互获得奖励信号，目标是最大化长期回报。",
+    "tags": [
+      "机器学习",
+      "强化学习"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D1-S12",
+    "domainId": "D1",
+    "lessonIds": [
+      "1.2"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "预训练与微调的关系，下列描述最准确的是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "预训练在大规模数据上学习通用能力，微调在特定任务上进一步适配"
+      },
+      {
+        "id": "B",
+        "text": "两者完全一样"
+      },
+      {
+        "id": "C",
+        "text": "微调必须先删除预训练权重"
+      },
+      {
+        "id": "D",
+        "text": "预训练只适合图像任务"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "预训练建立通用底座，微调利用较小规模任务数据做适配。",
+    "tags": [
+      "大语言模型",
+      "训练"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D1-S13",
+    "domainId": "D1",
+    "lessonIds": [
+      "1.2"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "一个结构清晰的 Prompt 通常至少包含哪些要素？",
+    "options": [
+      {
+        "id": "A",
+        "text": "任务指令、上下文与输出格式"
+      },
+      {
+        "id": "B",
+        "text": "只有语气词"
+      },
+      {
+        "id": "C",
+        "text": "只有一行问题"
+      },
+      {
+        "id": "D",
+        "text": "完全依赖系统自动补全"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "清晰的任务、必要的上下文与明确的输出格式，能显著提升输出稳定性。",
+    "tags": [
+      "Prompt"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D1-S14",
+    "domainId": "D1",
+    "lessonIds": [
+      "1.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "多模态模型与纯文本模型的主要区别是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "多模态模型可以处理文本、图像、音频等多种输入"
+      },
+      {
+        "id": "B",
+        "text": "多模态模型只能处理视频"
+      },
+      {
+        "id": "C",
+        "text": "纯文本模型参数量一定更大"
+      },
+      {
+        "id": "D",
+        "text": "两者没有任何区别"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "多模态模型统一处理多种模态信息，能力边界更宽。",
+    "tags": [
+      "多模态"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D1-S15",
+    "domainId": "D1",
+    "lessonIds": [
+      "1.2"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "Few-shot 提示的主要思路是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "在提示中给出少量示例，帮助模型理解任务格式"
+      },
+      {
+        "id": "B",
+        "text": "完全不给任何说明"
+      },
+      {
+        "id": "C",
+        "text": "只依赖模型随机输出"
+      },
+      {
+        "id": "D",
+        "text": "把所有训练数据塞进提示"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "Few-shot 通过少量示例引导模型按期望格式完成任务。",
+    "tags": [
+      "Prompt",
+      "Few-shot"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D1-S16",
+    "domainId": "D1",
+    "lessonIds": [
+      "1.2"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "Chain-of-Thought（思维链）提示通常能带来什么改善？",
+    "options": [
+      {
+        "id": "A",
+        "text": "让模型逐步推理，提升复杂问题的稳定性"
+      },
+      {
+        "id": "B",
+        "text": "让模型输出变短"
+      },
+      {
+        "id": "C",
+        "text": "完全消除幻觉"
+      },
+      {
+        "id": "D",
+        "text": "替代工具调用"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "思维链引导分步推理，对需要多步逻辑的任务通常更稳定，但不能完全消除幻觉。",
+    "tags": [
+      "推理"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D1-M7",
+    "domainId": "D1",
+    "lessonIds": [
+      "1.2"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "大语言模型相对传统方法的典型能力包括？",
+    "options": [
+      {
+        "id": "A",
+        "text": "从自然语言指令理解任务"
+      },
+      {
+        "id": "B",
+        "text": "按上下文生成新内容"
+      },
+      {
+        "id": "C",
+        "text": "在提示中完成少量示例学习"
+      },
+      {
+        "id": "D",
+        "text": "保证每个答案都绝对正确"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "大模型具备指令理解、内容生成与少样本学习能力，但不保证绝对正确。",
+    "tags": [
+      "大语言模型"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D1-M8",
+    "domainId": "D1",
+    "lessonIds": [
+      "1.3"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "为 Agent 选择工具时，通常应考虑？",
+    "options": [
+      {
+        "id": "A",
+        "text": "工具是否覆盖任务所需能力"
+      },
+      {
+        "id": "B",
+        "text": "工具输入输出是否可校验"
+      },
+      {
+        "id": "C",
+        "text": "工具权限是否符合最小必要原则"
+      },
+      {
+        "id": "D",
+        "text": "工具数量越多越好"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "工具选择看覆盖度、可校验性与权限边界，不是数量越多越好。",
+    "tags": [
+      "智能体",
+      "工具"
+    ],
+    "sourceType": "original",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "原创情境练习题，基于公开知识点设计，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D1-M9",
+    "domainId": "D1",
+    "lessonIds": [
+      "1.2"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "可能导致模型产生幻觉的因素包括？",
+    "options": [
+      {
+        "id": "A",
+        "text": "训练数据本身存在错误"
+      },
+      {
+        "id": "B",
+        "text": "问题超出模型可靠知识范围"
+      },
+      {
+        "id": "C",
+        "text": "缺少来源约束"
+      },
+      {
+        "id": "D",
+        "text": "显卡品牌不同"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "数据错误、知识边界与缺少来源约束都可能诱发幻觉，与硬件品牌无关。",
+    "tags": [
+      "幻觉"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D1-M10",
+    "domainId": "D1",
+    "lessonIds": [
+      "1.1"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "生成式 AI 的常见应用形态包括？",
+    "options": [
+      {
+        "id": "A",
+        "text": "文本生成"
+      },
+      {
+        "id": "B",
+        "text": "图像生成"
+      },
+      {
+        "id": "C",
+        "text": "代码生成"
+      },
+      {
+        "id": "D",
+        "text": "替代所有人类决策"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "文本、图像、代码生成是常见形态；它不替代所有人类决策。",
+    "tags": [
+      "生成式 AI"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D1-S17",
+    "domainId": "D1",
+    "lessonIds": [
+      "1.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "判别式模型与生成式模型的核心区别是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "判别式学习条件分布，生成式学习数据分布"
+      },
+      {
+        "id": "B",
+        "text": "两者完全相同"
+      },
+      {
+        "id": "C",
+        "text": "生成式只能处理图像"
+      },
+      {
+        "id": "D",
+        "text": "判别式只能处理音频"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "判别式模型建模 P(y|x)，生成式模型建模数据分布 P(x)。",
+    "tags": [
+      "机器学习"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D1-S18",
+    "domainId": "D1",
+    "lessonIds": [
+      "1.2"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "上下文窗口过小会直接影响什么？",
+    "options": [
+      {
+        "id": "A",
+        "text": "模型一次能利用的背景信息量"
+      },
+      {
+        "id": "B",
+        "text": "显卡散热"
+      },
+      {
+        "id": "C",
+        "text": "输出语言种类"
+      },
+      {
+        "id": "D",
+        "text": "模型文件体积"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "上下文窗口决定一次能放入多少 token 背景信息。",
+    "tags": [
+      "大语言模型"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D1-S19",
+    "domainId": "D1",
+    "lessonIds": [
+      "1.3"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "Agent 的“规划”环节最核心的任务是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "把目标拆解为可执行步骤"
+      },
+      {
+        "id": "B",
+        "text": "只输出语气词"
+      },
+      {
+        "id": "C",
+        "text": "跳过所有工具"
+      },
+      {
+        "id": "D",
+        "text": "忽略任务约束"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "规划把复杂目标拆解为有序、可执行的步骤。",
+    "tags": [
+      "智能体"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D1-S20",
+    "domainId": "D1",
+    "lessonIds": [
+      "1.2"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "降低采样温度（temperature）通常会带来？",
+    "options": [
+      {
+        "id": "A",
+        "text": "输出更确定但可能更保守"
+      },
+      {
+        "id": "B",
+        "text": "输出完全随机"
+      },
+      {
+        "id": "C",
+        "text": "上下文窗口扩大"
+      },
+      {
+        "id": "D",
+        "text": "模型参数变多"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "低温降低随机性，输出更确定但多样性下降。",
+    "tags": [
+      "大语言模型"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
   }
 ]

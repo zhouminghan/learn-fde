@@ -5,6 +5,8 @@
         <span class="qview__type">{{ question.type === 'single' ? '单选题' : '多选题' }}</span>
         <span class="qview__difficulty" :class="'diff--' + question.difficulty">{{ difficultyLabel }}</span>
         <span class="qview__domain">{{ domainTitle }}</span>
+        <span class="qview__score">{{ questionScore }} 分</span>
+        <span class="qview__id">题号 {{ question.id }}</span>
       </div>
       <button
         type="button"
@@ -36,19 +38,28 @@
     </div>
 
     <div v-if="showResult" class="qview__result">
-      <p class="qview__verdict" :class="correct ? 'is-correct' : 'is-wrong'">
-        {{ correct ? '回答正确' : '回答错误' }}
-      </p>
-      <p class="qview__answer">正确答案：{{ question.answerIds.join('、') }}</p>
+      <div class="qview__result-head">
+        <p class="qview__verdict" :class="correct ? 'is-correct' : 'is-wrong'">
+          {{ correct ? '回答正确' : '回答错误' }}
+        </p>
+        <p class="qview__your">你的答案：{{ selectedText }}</p>
+      </div>
+      <p class="qview__answer">正确答案：{{ answerText }}</p>
       <div class="qview__explanation">
+        <p class="qview__explain-label">解析</p>
         <p>{{ question.explanation }}</p>
         <p v-if="question.optionExplanations" class="qview__opt-explain">
           <template v-for="(text, id) in question.optionExplanations" :key="id">
-            <span v-if="question.answerIds.includes(id) || selected.includes(id)">
+            <span v-if="question.answerIds.includes(id)">
               <strong>{{ id }}</strong>：{{ text }}
             </span>
           </template>
         </p>
+      </div>
+      <div class="qview__meta">
+        <span>知识域：{{ fullDomainTitle }}</span>
+        <span v-if="question.tags.length">考点：{{ question.tags.join('、') }}</span>
+        <span>来源：{{ sourceLabel(question.sourceType) }}</span>
       </div>
     </div>
   </div>
@@ -57,8 +68,8 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { Check, Star } from 'lucide-vue-next'
-import { curriculum } from '@/content'
-import type { Question } from '@/types'
+import { curriculum, examBlueprint } from '@/content'
+import type { Question, SourceType } from '@/types'
 
 const props = withDefaults(defineProps<{
   question: Question
@@ -87,6 +98,26 @@ const difficultyLabel = computed(() =>
 const domainTitle = computed(
   () => curriculum.domains.find((d) => d.id === props.question.domainId)?.shortTitle ?? props.question.domainId
 )
+
+const fullDomainTitle = computed(
+  () => curriculum.domains.find((d) => d.id === props.question.domainId)?.title ?? props.question.domainId
+)
+
+const questionScore = computed(() =>
+  props.question.type === 'single'
+    ? examBlueprint.questionScores.single
+    : examBlueprint.questionScores.multiple
+)
+
+const answerText = computed(() => props.question.answerIds.join('、'))
+
+const selectedText = computed(() =>
+  props.selected.length ? props.selected.join('、') : '未作答'
+)
+
+function sourceLabel(s: SourceType) {
+  return s === 'original' ? '原创练习' : s === 'official_doc' ? '官方文档' : '基于官方知识点'
+}
 
 const correct = computed(() => {
   const expected = [...props.question.answerIds].sort()
@@ -172,6 +203,17 @@ function optionClass(id: string) {
 .qview__domain {
   color: var(--lf-blue);
   background: var(--lf-blue-soft);
+}
+
+.qview__score {
+  color: var(--lf-accent);
+  background: var(--lf-accent-soft);
+}
+
+.qview__id {
+  color: var(--vp-c-text-3);
+  background: var(--vp-c-bg-soft);
+  font-family: var(--vp-font-family-mono);
 }
 
 .qview__bookmark {
@@ -274,6 +316,14 @@ function optionClass(id: string) {
   background: var(--vp-c-bg-alt);
 }
 
+.qview__result-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 .qview__verdict {
   margin: 0 0 6px;
   font-weight: 700;
@@ -292,9 +342,20 @@ function optionClass(id: string) {
   font-weight: 600;
 }
 
+.qview__your {
+  margin: 0;
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+}
+
 .qview__explanation p {
   margin: 0;
   line-height: 1.7;
+}
+
+.qview__explain-label {
+  font-weight: 700;
+  color: var(--lf-navy-text);
 }
 
 .qview__opt-explain {
@@ -302,5 +363,16 @@ function optionClass(id: string) {
   display: grid;
   gap: 4px;
   color: var(--vp-c-text-2);
+}
+
+.qview__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--vp-c-divider);
+  color: var(--vp-c-text-3);
+  font-size: 12px;
 }
 </style>

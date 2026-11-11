@@ -42,5 +42,5 @@ GitHub Actions             42807345206：build 33s + deploy 3m55s，成功
 
 ## 下一步
 
-- 按 `CONTENT_MAINTENANCE.md` 定期核验官方考试参数。
+- 按 `README.md` 的“内容维护”章节定期核验官方考试参数。
 - 逐步扩充题库规模，降低重复抽题概率。

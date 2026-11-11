@@ -2,21 +2,43 @@
   {
     "id": "D4-S1",
     "domainId": "D4",
-    "lessonIds": ["3.1", "S1"],
+    "lessonIds": [
+      "3.1",
+      "S1"
+    ],
     "type": "single",
     "difficulty": "easy",
     "stem": "接到一个智能体项目需求后，方案设计的第一步通常是什么？",
     "options": [
-      { "id": "A", "text": "澄清业务目标、用户角色、现状流程与核心痛点" },
-      { "id": "B", "text": "直接开始编写提示词" },
-      { "id": "C", "text": "先确定服务器型号" },
-      { "id": "D", "text": "先设计界面配色" }
+      {
+        "id": "A",
+        "text": "澄清业务目标、用户角色、现状流程与核心痛点"
+      },
+      {
+        "id": "B",
+        "text": "直接开始编写提示词"
+      },
+      {
+        "id": "C",
+        "text": "先确定服务器型号"
+      },
+      {
+        "id": "D",
+        "text": "先设计界面配色"
+      }
     ],
-    "answerIds": ["A"],
+    "answerIds": [
+      "A"
+    ],
     "explanation": "需求澄清是方案设计起点，需先明确目标、角色、流程与痛点，再谈技术方案。",
-    "tags": ["方案设计", "需求澄清"],
+    "tags": [
+      "方案设计",
+      "需求澄清"
+    ],
     "sourceType": "original",
-    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "sourceUrls": [
+      "https://adp.tencent.com/zh/blog/adp-fde-certification-guide"
+    ],
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -25,21 +47,43 @@
   {
     "id": "D4-S2",
     "domainId": "D4",
-    "lessonIds": ["3.1", "3.2"],
+    "lessonIds": [
+      "3.1",
+      "3.2"
+    ],
     "type": "single",
     "difficulty": "easy",
     "stem": "以下哪类需求最适合优先采用“标准知识助手”模式？",
     "options": [
-      { "id": "A", "text": "基于已有文档库进行检索式问答" },
-      { "id": "B", "text": "需要严格按审批流执行的多步业务" },
-      { "id": "C", "text": "需要实时控制工业设备的场景" },
-      { "id": "D", "text": "纯静态内容展示" }
+      {
+        "id": "A",
+        "text": "基于已有文档库进行检索式问答"
+      },
+      {
+        "id": "B",
+        "text": "需要严格按审批流执行的多步业务"
+      },
+      {
+        "id": "C",
+        "text": "需要实时控制工业设备的场景"
+      },
+      {
+        "id": "D",
+        "text": "纯静态内容展示"
+      }
     ],
-    "answerIds": ["A"],
+    "answerIds": [
+      "A"
+    ],
     "explanation": "知识助手适合以文档检索问答为主的场景；严格审批流更适合 Workflow；实时设备控制需结合专业系统。",
-    "tags": ["方案设计", "知识助手"],
+    "tags": [
+      "方案设计",
+      "知识助手"
+    ],
     "sourceType": "original",
-    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759"
+    ],
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -48,21 +92,43 @@
   {
     "id": "D4-S3",
     "domainId": "D4",
-    "lessonIds": ["3.1", "3.3"],
+    "lessonIds": [
+      "3.1",
+      "3.3"
+    ],
     "type": "single",
     "difficulty": "medium",
     "stem": "判断一个需求应该用“知识助手”还是“工作流”模式，最关键的区分依据是什么？",
     "options": [
-      { "id": "A", "text": "任务是否需要严格的步骤顺序、条件分支与系统集成" },
-      { "id": "B", "text": "界面是否好看" },
-      { "id": "C", "text": "部署在哪个机房" },
-      { "id": "D", "text": "团队人数多少" }
+      {
+        "id": "A",
+        "text": "任务是否需要严格的步骤顺序、条件分支与系统集成"
+      },
+      {
+        "id": "B",
+        "text": "界面是否好看"
+      },
+      {
+        "id": "C",
+        "text": "部署在哪个机房"
+      },
+      {
+        "id": "D",
+        "text": "团队人数多少"
+      }
     ],
-    "answerIds": ["A"],
+    "answerIds": [
+      "A"
+    ],
     "explanation": "需要确定性的步骤、分支与集成时用 Workflow；以开放式检索问答为主时用知识助手。",
-    "tags": ["方案设计", "模式选择"],
+    "tags": [
+      "方案设计",
+      "模式选择"
+    ],
     "sourceType": "original",
-    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759"
+    ],
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -71,21 +137,42 @@
   {
     "id": "D4-S4",
     "domainId": "D4",
-    "lessonIds": ["3.1"],
+    "lessonIds": [
+      "3.1"
+    ],
     "type": "single",
     "difficulty": "medium",
     "stem": "进行技术选型时，下列哪个维度最需要优先考虑？",
     "options": [
-      { "id": "A", "text": "业务目标、数据与系统现状、团队能力和长期运维成本" },
-      { "id": "B", "text": "哪个方案名字最好听" },
-      { "id": "C", "text": "哪个方案代码最少，不看是否契合场景" },
-      { "id": "D", "text": "是否必须使用最新硬件" }
+      {
+        "id": "A",
+        "text": "业务目标、数据与系统现状、团队能力和长期运维成本"
+      },
+      {
+        "id": "B",
+        "text": "哪个方案名字最好听"
+      },
+      {
+        "id": "C",
+        "text": "哪个方案代码最少，不看是否契合场景"
+      },
+      {
+        "id": "D",
+        "text": "是否必须使用最新硬件"
+      }
     ],
-    "answerIds": ["A"],
+    "answerIds": [
+      "A"
+    ],
     "explanation": "选型要围绕业务目标、现状、能力与运维成本综合判断，而不是追求名称或代码量。",
-    "tags": ["方案设计", "技术选型"],
+    "tags": [
+      "方案设计",
+      "技术选型"
+    ],
     "sourceType": "original",
-    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "sourceUrls": [
+      "https://adp.tencent.com/zh/blog/adp-fde-certification-guide"
+    ],
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -94,21 +181,42 @@
   {
     "id": "D4-S5",
     "domainId": "D4",
-    "lessonIds": ["3.1"],
+    "lessonIds": [
+      "3.1"
+    ],
     "type": "single",
     "difficulty": "medium",
     "stem": "一个典型的企业智能体应用架构，通常可以划分为哪些层次？",
     "options": [
-      { "id": "A", "text": "接入层、智能体编排层、知识/工具层、数据与系统层" },
-      { "id": "B", "text": "只有前端一个层次" },
-      { "id": "C", "text": "只有数据库一个层次" },
-      { "id": "D", "text": "只有提示词一个层次" }
+      {
+        "id": "A",
+        "text": "接入层、智能体编排层、知识/工具层、数据与系统层"
+      },
+      {
+        "id": "B",
+        "text": "只有前端一个层次"
+      },
+      {
+        "id": "C",
+        "text": "只有数据库一个层次"
+      },
+      {
+        "id": "D",
+        "text": "只有提示词一个层次"
+      }
     ],
-    "answerIds": ["A"],
+    "answerIds": [
+      "A"
+    ],
     "explanation": "典型架构包含接入、编排、知识/工具与数据系统等层次，便于解耦、扩展与治理。",
-    "tags": ["方案设计", "架构"],
+    "tags": [
+      "方案设计",
+      "架构"
+    ],
     "sourceType": "original",
-    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "sourceUrls": [
+      "https://adp.tencent.com/zh/blog/adp-fde-certification-guide"
+    ],
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -117,21 +225,42 @@
   {
     "id": "D4-S6",
     "domainId": "D4",
-    "lessonIds": ["3.1"],
+    "lessonIds": [
+      "3.1"
+    ],
     "type": "single",
     "difficulty": "medium",
     "stem": "制定智能体项目的验收标准时，下列哪项做法最合理？",
     "options": [
-      { "id": "A", "text": "使用可量化、可复现的指标，并约定测试集与通过阈值" },
-      { "id": "B", "text": "只写“效果很好”作为验收依据" },
-      { "id": "C", "text": "验收时不看任何数据" },
-      { "id": "D", "text": "只要页面能打开就算通过" }
+      {
+        "id": "A",
+        "text": "使用可量化、可复现的指标，并约定测试集与通过阈值"
+      },
+      {
+        "id": "B",
+        "text": "只写“效果很好”作为验收依据"
+      },
+      {
+        "id": "C",
+        "text": "验收时不看任何数据"
+      },
+      {
+        "id": "D",
+        "text": "只要页面能打开就算通过"
+      }
     ],
-    "answerIds": ["A"],
+    "answerIds": [
+      "A"
+    ],
     "explanation": "验收标准应可量化、可复现，结合测试集与阈值，才能客观判断方案是否达标。",
-    "tags": ["方案设计", "验收"],
+    "tags": [
+      "方案设计",
+      "验收"
+    ],
     "sourceType": "original",
-    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "sourceUrls": [
+      "https://adp.tencent.com/zh/blog/adp-fde-certification-guide"
+    ],
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -140,21 +269,43 @@
   {
     "id": "D4-S7",
     "domainId": "D4",
-    "lessonIds": ["3.3"],
+    "lessonIds": [
+      "3.3"
+    ],
     "type": "single",
     "difficulty": "hard",
     "stem": "客服助手工作流中，设计“人工兜底”环节的主要目的是什么？",
     "options": [
-      { "id": "A", "text": "在模型无法可靠处理或出现异常时，将请求转交人工处理" },
-      { "id": "B", "text": "让所有问题都必须由人工回答" },
-      { "id": "C", "text": "删除所有自动回复" },
-      { "id": "D", "text": "让模型无限重试" }
+      {
+        "id": "A",
+        "text": "在模型无法可靠处理或出现异常时，将请求转交人工处理"
+      },
+      {
+        "id": "B",
+        "text": "让所有问题都必须由人工回答"
+      },
+      {
+        "id": "C",
+        "text": "删除所有自动回复"
+      },
+      {
+        "id": "D",
+        "text": "让模型无限重试"
+      }
     ],
-    "answerIds": ["A"],
+    "answerIds": [
+      "A"
+    ],
     "explanation": "人工兜底用于处理低置信度、异常或敏感场景，保证服务可靠性和用户体验。",
-    "tags": ["Workflow", "客服", "兜底"],
+    "tags": [
+      "Workflow",
+      "客服",
+      "兜底"
+    ],
     "sourceType": "original",
-    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759"
+    ],
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -163,21 +314,42 @@
   {
     "id": "D4-S8",
     "domainId": "D4",
-    "lessonIds": ["3.4"],
+    "lessonIds": [
+      "3.4"
+    ],
     "type": "single",
     "difficulty": "hard",
     "stem": "用 Multi-Agent 构建内容创作助手，下列角色拆分最合理的是？",
     "options": [
-      { "id": "A", "text": "策划、撰写、审校、汇总，各司其职并依次传递" },
-      { "id": "B", "text": "所有 Agent 都做完全相同的撰写工作" },
-      { "id": "C", "text": "只设置一个 Agent 且不做任何协作" },
-      { "id": "D", "text": "让审校 Agent 负责所有策划工作" }
+      {
+        "id": "A",
+        "text": "策划、撰写、审校、汇总，各司其职并依次传递"
+      },
+      {
+        "id": "B",
+        "text": "所有 Agent 都做完全相同的撰写工作"
+      },
+      {
+        "id": "C",
+        "text": "只设置一个 Agent 且不做任何协作"
+      },
+      {
+        "id": "D",
+        "text": "让审校 Agent 负责所有策划工作"
+      }
     ],
-    "answerIds": ["A"],
+    "answerIds": [
+      "A"
+    ],
     "explanation": "内容创作可按策划、撰写、审校、汇总拆分角色，形成清晰流水线，提升质量与可控性。",
-    "tags": ["Multi-Agent", "内容创作"],
+    "tags": [
+      "Multi-Agent",
+      "内容创作"
+    ],
     "sourceType": "original",
-    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759"
+    ],
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -186,21 +358,42 @@
   {
     "id": "D4-S9",
     "domainId": "D4",
-    "lessonIds": ["3.5"],
+    "lessonIds": [
+      "3.5"
+    ],
     "type": "single",
     "difficulty": "hard",
     "stem": "下列哪类任务更适合采用 Claw 模式（自主规划调用工具）？",
     "options": [
-      { "id": "A", "text": "目标明确、步骤可验证、需要多次调用工具才能完成的任务" },
-      { "id": "B", "text": "只需要一句静态回复的任务" },
-      { "id": "C", "text": "完全不需要任何外部操作的任务" },
-      { "id": "D", "text": "结果完全不可验证的任务" }
+      {
+        "id": "A",
+        "text": "目标明确、步骤可验证、需要多次调用工具才能完成的任务"
+      },
+      {
+        "id": "B",
+        "text": "只需要一句静态回复的任务"
+      },
+      {
+        "id": "C",
+        "text": "完全不需要任何外部操作的任务"
+      },
+      {
+        "id": "D",
+        "text": "结果完全不可验证的任务"
+      }
     ],
-    "answerIds": ["A"],
+    "answerIds": [
+      "A"
+    ],
     "explanation": "Claw 模式适合目标明确、可验证且需要多次工具调用的任务；无外部操作或不可验证时收益有限。",
-    "tags": ["Claw", "场景选择"],
+    "tags": [
+      "Claw",
+      "场景选择"
+    ],
     "sourceType": "original",
-    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759"
+    ],
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -209,21 +402,42 @@
   {
     "id": "D4-S10",
     "domainId": "D4",
-    "lessonIds": ["3.2"],
+    "lessonIds": [
+      "3.2"
+    ],
     "type": "single",
     "difficulty": "medium",
     "stem": "验收知识助手效果时，最应关注的核心指标组合是？",
     "options": [
-      { "id": "A", "text": "回答准确率、答案来源可溯性与拒绝回答的合理性" },
-      { "id": "B", "text": "页面加载速度是否为全场最快" },
-      { "id": "C", "text": "Logo 是否足够大" },
-      { "id": "D", "text": "对话窗口使用了多少种颜色" }
+      {
+        "id": "A",
+        "text": "回答准确率、答案来源可溯性与拒绝回答的合理性"
+      },
+      {
+        "id": "B",
+        "text": "页面加载速度是否为全场最快"
+      },
+      {
+        "id": "C",
+        "text": "Logo 是否足够大"
+      },
+      {
+        "id": "D",
+        "text": "对话窗口使用了多少种颜色"
+      }
     ],
-    "answerIds": ["A"],
+    "answerIds": [
+      "A"
+    ],
     "explanation": "知识助手应重点评估准确率、可溯源性，以及在无依据时是否合理拒绝而不是编造。",
-    "tags": ["知识助手", "验收"],
+    "tags": [
+      "知识助手",
+      "验收"
+    ],
     "sourceType": "original",
-    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759"
+    ],
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -232,21 +446,42 @@
   {
     "id": "D4-S11",
     "domainId": "D4",
-    "lessonIds": ["S1"],
+    "lessonIds": [
+      "S1"
+    ],
     "type": "single",
     "difficulty": "medium",
     "stem": "对多个需求进行优先级排序时，通常应优先考虑什么？",
     "options": [
-      { "id": "A", "text": "业务价值、紧急程度、实现成本与风险的平衡" },
-      { "id": "B", "text": "只按提出者的职位高低" },
-      { "id": "C", "text": "只按实现难度从高到低" },
-      { "id": "D", "text": "随机排序" }
+      {
+        "id": "A",
+        "text": "业务价值、紧急程度、实现成本与风险的平衡"
+      },
+      {
+        "id": "B",
+        "text": "只按提出者的职位高低"
+      },
+      {
+        "id": "C",
+        "text": "只按实现难度从高到低"
+      },
+      {
+        "id": "D",
+        "text": "随机排序"
+      }
     ],
-    "answerIds": ["A"],
+    "answerIds": [
+      "A"
+    ],
     "explanation": "需求优先级应综合业务价值、紧急度、成本与风险，而非单一维度。",
-    "tags": ["需求分析", "优先级"],
+    "tags": [
+      "需求分析",
+      "优先级"
+    ],
     "sourceType": "original",
-    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "sourceUrls": [
+      "https://adp.tencent.com/zh/blog/adp-fde-certification-guide"
+    ],
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -255,21 +490,42 @@
   {
     "id": "D4-S12",
     "domainId": "D4",
-    "lessonIds": ["3.1"],
+    "lessonIds": [
+      "3.1"
+    ],
     "type": "single",
     "difficulty": "hard",
     "stem": "方案设计阶段识别出关键风险后，正确的处理方式是？",
     "options": [
-      { "id": "A", "text": "记录风险、评估影响并制定应对与回退措施" },
-      { "id": "B", "text": "忽略风险，直接上线" },
-      { "id": "C", "text": "只口头告知，不做记录" },
-      { "id": "D", "text": "等上线失败后再处理" }
+      {
+        "id": "A",
+        "text": "记录风险、评估影响并制定应对与回退措施"
+      },
+      {
+        "id": "B",
+        "text": "忽略风险，直接上线"
+      },
+      {
+        "id": "C",
+        "text": "只口头告知，不做记录"
+      },
+      {
+        "id": "D",
+        "text": "等上线失败后再处理"
+      }
     ],
-    "answerIds": ["A"],
+    "answerIds": [
+      "A"
+    ],
     "explanation": "风险需要被记录、评估并配套应对与回退措施，前置管理比事后补救成本更低。",
-    "tags": ["方案设计", "风险管理"],
+    "tags": [
+      "方案设计",
+      "风险管理"
+    ],
     "sourceType": "original",
-    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "sourceUrls": [
+      "https://adp.tencent.com/zh/blog/adp-fde-certification-guide"
+    ],
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -278,25 +534,51 @@
   {
     "id": "D4-M1",
     "domainId": "D4",
-    "lessonIds": ["S1"],
+    "lessonIds": [
+      "S1"
+    ],
     "type": "multiple",
     "difficulty": "medium",
     "stem": "进行客户需求澄清时，通常需要收集哪些信息？",
     "options": [
-      { "id": "A", "text": "业务目标与成功指标" },
-      { "id": "B", "text": "用户角色与使用场景" },
-      { "id": "C", "text": "现状流程与核心痛点" },
-      { "id": "D", "text": "约束条件与数据现状" },
-      { "id": "E", "text": "办公室的装修风格" }
+      {
+        "id": "A",
+        "text": "业务目标与成功指标"
+      },
+      {
+        "id": "B",
+        "text": "用户角色与使用场景"
+      },
+      {
+        "id": "C",
+        "text": "现状流程与核心痛点"
+      },
+      {
+        "id": "D",
+        "text": "约束条件与数据现状"
+      },
+      {
+        "id": "E",
+        "text": "办公室的装修风格"
+      }
     ],
-    "answerIds": ["A", "B", "C", "D"],
+    "answerIds": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
     "explanation": "需求澄清关注目标、角色、场景、流程、痛点、约束与数据；“装修风格”与需求无关。",
     "optionExplanations": {
       "E": "与智能体项目需求无关。"
     },
-    "tags": ["需求分析"],
+    "tags": [
+      "需求分析"
+    ],
     "sourceType": "original",
-    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "sourceUrls": [
+      "https://adp.tencent.com/zh/blog/adp-fde-certification-guide"
+    ],
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -305,25 +587,52 @@
   {
     "id": "D4-M2",
     "domainId": "D4",
-    "lessonIds": ["3.1"],
+    "lessonIds": [
+      "3.1"
+    ],
     "type": "multiple",
     "difficulty": "medium",
     "stem": "判断一个业务需求是否适合用智能体方案解决，通常需要满足哪些条件？",
     "options": [
-      { "id": "A", "text": "问题涉及语言理解、知识检索或灵活决策" },
-      { "id": "B", "text": "有可用的数据、文档或系统接口" },
-      { "id": "C", "text": "可以定义可验证的效果目标" },
-      { "id": "D", "text": "不确定性可被评测、兜底与治理" },
-      { "id": "E", "text": "问题完全不涉及语言与流程" }
+      {
+        "id": "A",
+        "text": "问题涉及语言理解、知识检索或灵活决策"
+      },
+      {
+        "id": "B",
+        "text": "有可用的数据、文档或系统接口"
+      },
+      {
+        "id": "C",
+        "text": "可以定义可验证的效果目标"
+      },
+      {
+        "id": "D",
+        "text": "不确定性可被评测、兜底与治理"
+      },
+      {
+        "id": "E",
+        "text": "问题完全不涉及语言与流程"
+      }
     ],
-    "answerIds": ["A", "B", "C", "D"],
+    "answerIds": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
     "explanation": "适合智能体的场景通常涉及语言理解/决策，有数据与接口支撑，且效果可验证、不确定性可治理。",
     "optionExplanations": {
       "E": "完全不涉及语言与流程时，智能体方案收益有限。"
     },
-    "tags": ["方案设计", "场景判断"],
+    "tags": [
+      "方案设计",
+      "场景判断"
+    ],
     "sourceType": "original",
-    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "sourceUrls": [
+      "https://adp.tencent.com/zh/blog/adp-fde-certification-guide"
+    ],
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -332,25 +641,52 @@
   {
     "id": "D4-M3",
     "domainId": "D4",
-    "lessonIds": ["3.1"],
+    "lessonIds": [
+      "3.1"
+    ],
     "type": "multiple",
     "difficulty": "medium",
     "stem": "一份完整的智能体解决方案设计文档，通常应包含哪些内容？",
     "options": [
-      { "id": "A", "text": "需求与目标" },
-      { "id": "B", "text": "架构与技术选型" },
-      { "id": "C", "text": "数据与集成方案" },
-      { "id": "D", "text": "验收标准与风险应对" },
-      { "id": "E", "text": "团队成员的星座" }
+      {
+        "id": "A",
+        "text": "需求与目标"
+      },
+      {
+        "id": "B",
+        "text": "架构与技术选型"
+      },
+      {
+        "id": "C",
+        "text": "数据与集成方案"
+      },
+      {
+        "id": "D",
+        "text": "验收标准与风险应对"
+      },
+      {
+        "id": "E",
+        "text": "团队成员的星座"
+      }
     ],
-    "answerIds": ["A", "B", "C", "D"],
+    "answerIds": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
     "explanation": "方案文档应覆盖需求、架构、选型、数据集成、验收与风险；“星座”不属于方案内容。",
     "optionExplanations": {
       "E": "与方案设计无关。"
     },
-    "tags": ["方案设计", "文档"],
+    "tags": [
+      "方案设计",
+      "文档"
+    ],
     "sourceType": "original",
-    "sourceUrls": ["https://adp.tencent.com/zh/blog/adp-fde-certification-guide"],
+    "sourceUrls": [
+      "https://adp.tencent.com/zh/blog/adp-fde-certification-guide"
+    ],
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -359,25 +695,53 @@
   {
     "id": "D4-M4",
     "domainId": "D4",
-    "lessonIds": ["3.3"],
+    "lessonIds": [
+      "3.3"
+    ],
     "type": "multiple",
     "difficulty": "hard",
     "stem": "客服助手工作流中，需要重点设计的异常路径包括哪些？",
     "options": [
-      { "id": "A", "text": "知识库检索不到答案时的处理" },
-      { "id": "B", "text": "用户输入意图不明确时的澄清" },
-      { "id": "C", "text": "工具或接口调用失败时的重试与兜底" },
-      { "id": "D", "text": "超出机器人处理范围时的转人工" },
-      { "id": "E", "text": "任何异常都静默忽略" }
+      {
+        "id": "A",
+        "text": "知识库检索不到答案时的处理"
+      },
+      {
+        "id": "B",
+        "text": "用户输入意图不明确时的澄清"
+      },
+      {
+        "id": "C",
+        "text": "工具或接口调用失败时的重试与兜底"
+      },
+      {
+        "id": "D",
+        "text": "超出机器人处理范围时的转人工"
+      },
+      {
+        "id": "E",
+        "text": "任何异常都静默忽略"
+      }
     ],
-    "answerIds": ["A", "B", "C", "D"],
+    "answerIds": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
     "explanation": "检索无结果、意图不清、调用失败与转人工都是常见异常路径；静默忽略会破坏体验。",
     "optionExplanations": {
       "E": "静默忽略异常会让用户失去反馈。"
     },
-    "tags": ["Workflow", "客服", "异常处理"],
+    "tags": [
+      "Workflow",
+      "客服",
+      "异常处理"
+    ],
     "sourceType": "original",
-    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759"
+    ],
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -386,25 +750,52 @@
   {
     "id": "D4-M5",
     "domainId": "D4",
-    "lessonIds": ["3.2"],
+    "lessonIds": [
+      "3.2"
+    ],
     "type": "multiple",
     "difficulty": "hard",
     "stem": "验收一个企业知识问答助手时，下列哪些指标是合理的？",
     "options": [
-      { "id": "A", "text": "回答准确率" },
-      { "id": "B", "text": "答案来源可溯性" },
-      { "id": "C", "text": "无依据时是否合理拒答" },
-      { "id": "D", "text": "关键问题的用户满意度" },
-      { "id": "E", "text": "界面使用了多少种动画" }
+      {
+        "id": "A",
+        "text": "回答准确率"
+      },
+      {
+        "id": "B",
+        "text": "答案来源可溯性"
+      },
+      {
+        "id": "C",
+        "text": "无依据时是否合理拒答"
+      },
+      {
+        "id": "D",
+        "text": "关键问题的用户满意度"
+      },
+      {
+        "id": "E",
+        "text": "界面使用了多少种动画"
+      }
     ],
-    "answerIds": ["A", "B", "C", "D"],
+    "answerIds": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
     "explanation": "准确率、可溯源、合理拒答与满意度是知识助手的关键验收指标；动画数量与效果无关。",
     "optionExplanations": {
       "E": "与知识助手效果无关。"
     },
-    "tags": ["知识助手", "验收"],
+    "tags": [
+      "知识助手",
+      "验收"
+    ],
     "sourceType": "original",
-    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759"
+    ],
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
@@ -413,28 +804,2544 @@
   {
     "id": "D4-M6",
     "domainId": "D4",
-    "lessonIds": ["3.6"],
+    "lessonIds": [
+      "3.6"
+    ],
     "type": "multiple",
     "difficulty": "medium",
     "stem": "智能工作台在交付场景中的典型价值包括哪些？",
     "options": [
-      { "id": "A", "text": "集中管理与编排多个智能体能力" },
-      { "id": "B", "text": "统一展示任务状态与结果" },
-      { "id": "C", "text": "沉淀可复用的工作流程" },
-      { "id": "D", "text": "提升团队协作与交付效率" },
-      { "id": "E", "text": "替代所有企业员工" }
+      {
+        "id": "A",
+        "text": "集中管理与编排多个智能体能力"
+      },
+      {
+        "id": "B",
+        "text": "统一展示任务状态与结果"
+      },
+      {
+        "id": "C",
+        "text": "沉淀可复用的工作流程"
+      },
+      {
+        "id": "D",
+        "text": "提升团队协作与交付效率"
+      },
+      {
+        "id": "E",
+        "text": "替代所有企业员工"
+      }
     ],
-    "answerIds": ["A", "B", "C", "D"],
+    "answerIds": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
     "explanation": "智能工作台通过集中管理、统一展示、流程沉淀提升效率，不替代人的判断与责任。",
     "optionExplanations": {
       "E": "工作台是协作工具，不替代员工。"
     },
-    "tags": ["智能工作台"],
+    "tags": [
+      "智能工作台"
+    ],
     "sourceType": "original",
-    "sourceUrls": ["https://cloud.tencent.com/document/product/1759"],
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/1759"
+    ],
     "authorNote": "根据公开知识点设计的原创情境题。",
     "status": "published",
     "createdAt": "2026-11-10",
     "updatedAt": "2026-11-10"
+  },
+  {
+    "id": "D4-S13",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "需求澄清阶段最重要的事情是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "确认业务目标、现状流程、痛点与约束"
+      },
+      {
+        "id": "B",
+        "text": "立即开始写代码"
+      },
+      {
+        "id": "C",
+        "text": "只关注界面颜色"
+      },
+      {
+        "id": "D",
+        "text": "忽略验收标准"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "需求澄清要先理解目标、现状、痛点与约束，才能形成可验收的方案。",
+    "tags": [
+      "需求澄清"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S14",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "判断一个业务需求是否适合 Agent 方案，关键依据是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "是否存在重复性任务、可获取的知识与明确交付标准"
+      },
+      {
+        "id": "B",
+        "text": "需求是否足够模糊"
+      },
+      {
+        "id": "C",
+        "text": "是否不需要任何工具"
+      },
+      {
+        "id": "D",
+        "text": "是否只能靠人工完成"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "适合 Agent 的需求通常有重复性、可获取知识与明确交付标准。",
+    "tags": [
+      "场景适配"
+    ],
+    "sourceType": "original",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "原创情境练习题，基于公开知识点设计，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S15",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "进行技术选型时，更合理的做法是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "基于需求、数据与约束选择能力组合"
+      },
+      {
+        "id": "B",
+        "text": "永远选择最复杂的模型"
+      },
+      {
+        "id": "C",
+        "text": "复制他人方案不做调整"
+      },
+      {
+        "id": "D",
+        "text": "忽略成本与可维护性"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "技术选型应结合需求、数据、成本与可维护性做权衡。",
+    "tags": [
+      "技术选型"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S16",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "一个可执行的验收标准通常应具备什么特征？",
+    "options": [
+      {
+        "id": "A",
+        "text": "可度量、可复现并与业务目标一致"
+      },
+      {
+        "id": "B",
+        "text": "只能定性描述"
+      },
+      {
+        "id": "C",
+        "text": "与需求无关"
+      },
+      {
+        "id": "D",
+        "text": "不需要记录"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "验收标准需要可度量、可复现，并与业务目标对齐，才能判断是否达成。",
+    "tags": [
+      "验收标准"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S17",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "方案设计阶段识别风险的意义是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "提前设计兜底、审批与回退机制"
+      },
+      {
+        "id": "B",
+        "text": "保证项目一定没有风险"
+      },
+      {
+        "id": "C",
+        "text": "只为应付文档"
+      },
+      {
+        "id": "D",
+        "text": "避免与客户沟通"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "识别风险是为了提前设计兜底、审批与回退，降低交付不确定性。",
+    "tags": [
+      "风险"
+    ],
+    "sourceType": "original",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "原创情境练习题，基于公开知识点设计，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-M7",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "需求澄清通常需要明确哪些信息？",
+    "options": [
+      {
+        "id": "A",
+        "text": "业务目标与成功指标"
+      },
+      {
+        "id": "B",
+        "text": "现状流程与用户角色"
+      },
+      {
+        "id": "C",
+        "text": "约束条件与验收口径"
+      },
+      {
+        "id": "D",
+        "text": "最终上线日期必须当天确定"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "需求澄清关注目标、流程、角色、约束与验收；时间计划可在规划阶段确定。",
+    "tags": [
+      "需求澄清"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-M8",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "一份完整的 Agent 方案设计通常包括？",
+    "options": [
+      {
+        "id": "A",
+        "text": "架构设计与组件关系"
+      },
+      {
+        "id": "B",
+        "text": "知识库与工具设计"
+      },
+      {
+        "id": "C",
+        "text": "评测与验收方案"
+      },
+      {
+        "id": "D",
+        "text": "只写一句结论"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "完整方案需要架构、知识/工具、评测与验收等内容。",
+    "tags": [
+      "方案设计"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-M9",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "Agent 项目常见的风险包括？",
+    "options": [
+      {
+        "id": "A",
+        "text": "知识质量不足导致回答不可靠"
+      },
+      {
+        "id": "B",
+        "text": "工具权限过大导致越权"
+      },
+      {
+        "id": "C",
+        "text": "缺少兜底导致流程失控"
+      },
+      {
+        "id": "D",
+        "text": "所有风险都可以忽略"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "知识质量、权限与兜底是常见风险，需要提前设计应对。",
+    "tags": [
+      "风险"
+    ],
+    "sourceType": "original",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "原创情境练习题，基于公开知识点设计，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S18",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "需求优先级排序的主要依据是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "业务价值与实现成本"
+      },
+      {
+        "id": "B",
+        "text": "只有开发难度"
+      },
+      {
+        "id": "C",
+        "text": "只有客户情绪"
+      },
+      {
+        "id": "D",
+        "text": "随机顺序"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "优先级应综合业务价值、成本与风险来权衡。",
+    "tags": [
+      "需求分析"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S19",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "梳理现状流程最重要的产出是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "明确各环节、角色与断点"
+      },
+      {
+        "id": "B",
+        "text": "只画一张漂亮的图"
+      },
+      {
+        "id": "C",
+        "text": "直接给出方案"
+      },
+      {
+        "id": "D",
+        "text": "忽略异常路径"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "现状流程梳理要看清环节、角色与断点，为方案提供依据。",
+    "tags": [
+      "流程梳理"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S20",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "判断一个场景是否适合 Agent 化，可优先看？",
+    "options": [
+      {
+        "id": "A",
+        "text": "是否存在高频重复任务与可获取的知识"
+      },
+      {
+        "id": "B",
+        "text": "是否必须完全无人干预"
+      },
+      {
+        "id": "C",
+        "text": "是否只做一次且从不重复"
+      },
+      {
+        "id": "D",
+        "text": "是否完全不需要数据"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "高频、重复且有知识依据的任务更适合 Agent 化。",
+    "tags": [
+      "场景适配"
+    ],
+    "sourceType": "original",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "原创情境练习题，基于公开知识点设计，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S21",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "架构设计中的“关注点分离”意味着？",
+    "options": [
+      {
+        "id": "A",
+        "text": "不同职责模块各自负责清晰边界"
+      },
+      {
+        "id": "B",
+        "text": "所有逻辑写在一起"
+      },
+      {
+        "id": "C",
+        "text": "组件越多越好"
+      },
+      {
+        "id": "D",
+        "text": "不考虑模块间通信"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "关注点分离让职责边界清晰，便于维护与扩展。",
+    "tags": [
+      "架构设计"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S22",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "验收标准中的“可度量”最接近下列哪项？",
+    "options": [
+      {
+        "id": "A",
+        "text": "给出可量化的成功指标"
+      },
+      {
+        "id": "B",
+        "text": "用模糊形容词描述"
+      },
+      {
+        "id": "C",
+        "text": "只看主观感觉"
+      },
+      {
+        "id": "D",
+        "text": "不写验收条件"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "可度量意味着能用数值或明确结果判断是否达标。",
+    "tags": [
+      "验收标准"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S23",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "面对高风险方案，更稳妥的做法是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "提前设计审批、回退与降级预案"
+      },
+      {
+        "id": "B",
+        "text": "直接上线后再处理"
+      },
+      {
+        "id": "C",
+        "text": "忽略风险"
+      },
+      {
+        "id": "D",
+        "text": "不做任何验证"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "高风险方案需要审批、回退与降级预案。",
+    "tags": [
+      "风险"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-M10",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "需求澄清清单通常包括？",
+    "options": [
+      {
+        "id": "A",
+        "text": "业务目标与成功指标"
+      },
+      {
+        "id": "B",
+        "text": "用户角色与现状流程"
+      },
+      {
+        "id": "C",
+        "text": "约束与验收口径"
+      },
+      {
+        "id": "D",
+        "text": "只记录项目名称"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "需求澄清需要目标、角色、流程、约束与验收口径。",
+    "tags": [
+      "需求澄清"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-M11",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "完整方案设计通常包含？",
+    "options": [
+      {
+        "id": "A",
+        "text": "架构与组件关系"
+      },
+      {
+        "id": "B",
+        "text": "知识库与工具设计"
+      },
+      {
+        "id": "C",
+        "text": "评测与验收方案"
+      },
+      {
+        "id": "D",
+        "text": "只给一句结论"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "方案设计需覆盖架构、知识与工具、评测验收。",
+    "tags": [
+      "方案设计"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-M12",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "Agent 项目常见风险包括？",
+    "options": [
+      {
+        "id": "A",
+        "text": "知识质量不足"
+      },
+      {
+        "id": "B",
+        "text": "工具权限过大"
+      },
+      {
+        "id": "C",
+        "text": "缺少异常兜底"
+      },
+      {
+        "id": "D",
+        "text": "所有风险都无需处理"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "知识、权限与兜底是常见风险，需提前设计应对。",
+    "tags": [
+      "风险"
+    ],
+    "sourceType": "original",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "原创情境练习题，基于公开知识点设计，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-M13",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "向客户表达方案时，应做到？",
+    "options": [
+      {
+        "id": "A",
+        "text": "复述需求确认理解"
+      },
+      {
+        "id": "B",
+        "text": "说明方案取舍与风险"
+      },
+      {
+        "id": "C",
+        "text": "给出可验收的口径"
+      },
+      {
+        "id": "D",
+        "text": "只讲技术细节不讲价值"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "方案表达需要确认需求、说明取舍风险并给出验收口径。",
+    "tags": [
+      "方案表达"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S24",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "easy",
+    "stem": "需求分析的第一步通常是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "明确业务目标与现状"
+      },
+      {
+        "id": "B",
+        "text": "直接写代码"
+      },
+      {
+        "id": "C",
+        "text": "先定界面"
+      },
+      {
+        "id": "D",
+        "text": "忽略用户"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "需求分析先明确目标与现状，再谈方案。",
+    "tags": [
+      "需求分析"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S25",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "用户角色建模的作用是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "理解不同角色的诉求与权限差异"
+      },
+      {
+        "id": "B",
+        "text": "增加文档长度"
+      },
+      {
+        "id": "C",
+        "text": "替代测试"
+      },
+      {
+        "id": "D",
+        "text": "只用于画图"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "角色建模帮助理解不同用户诉求与权限边界。",
+    "tags": [
+      "需求分析"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S26",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "现状流程中存在人工断点时，更应？",
+    "options": [
+      {
+        "id": "A",
+        "text": "识别断点原因并判断是否适合自动化"
+      },
+      {
+        "id": "B",
+        "text": "直接全部自动化"
+      },
+      {
+        "id": "C",
+        "text": "忽略断点"
+      },
+      {
+        "id": "D",
+        "text": "只记录不分析"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "先理解断点原因，再判断是否适合自动化与如何兜底。",
+    "tags": [
+      "流程梳理"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S27",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "成功指标（North Star）应尽量？",
+    "options": [
+      {
+        "id": "A",
+        "text": "与业务价值直接相关且可量化"
+      },
+      {
+        "id": "B",
+        "text": "模糊不可测"
+      },
+      {
+        "id": "C",
+        "text": "与业务无关"
+      },
+      {
+        "id": "D",
+        "text": "只衡量页面访问量"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "成功指标要贴合业务价值并可量化。",
+    "tags": [
+      "需求分析"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S28",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "方案设计中的“约束条件”通常指？",
+    "options": [
+      {
+        "id": "A",
+        "text": "成本、时间、合规与系统边界等限制"
+      },
+      {
+        "id": "B",
+        "text": "只有预算"
+      },
+      {
+        "id": "C",
+        "text": "只有技术栈"
+      },
+      {
+        "id": "D",
+        "text": "与方案无关"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "约束包含成本、时间、合规、系统边界等限制因素。",
+    "tags": [
+      "方案设计"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S29",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "技术选型时更应避免？",
+    "options": [
+      {
+        "id": "A",
+        "text": "脱离需求盲目追求新模型"
+      },
+      {
+        "id": "B",
+        "text": "基于需求权衡"
+      },
+      {
+        "id": "C",
+        "text": "考虑成本"
+      },
+      {
+        "id": "D",
+        "text": "考虑可维护性"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "选型要贴合需求，而不是盲目追新。",
+    "tags": [
+      "技术选型"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S30",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "架构设计中预留“降级路径”的意义是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "异常时保证核心功能可用"
+      },
+      {
+        "id": "B",
+        "text": "让系统更复杂"
+      },
+      {
+        "id": "C",
+        "text": "替代测试"
+      },
+      {
+        "id": "D",
+        "text": "只用于演示"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "降级路径在异常时保障核心功能可用性。",
+    "tags": [
+      "架构设计"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S31",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "验收口径与业务目标不一致会导致？",
+    "options": [
+      {
+        "id": "A",
+        "text": "交付结果无法判断是否达标"
+      },
+      {
+        "id": "B",
+        "text": "项目一定成功"
+      },
+      {
+        "id": "C",
+        "text": "测试成本下降"
+      },
+      {
+        "id": "D",
+        "text": "需求更清晰"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "验收口径必须与业务目标一致，否则无法判断达标。",
+    "tags": [
+      "验收标准"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S32",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "风险评估中“概率高、影响大”的风险应？",
+    "options": [
+      {
+        "id": "A",
+        "text": "优先设计应对与缓解措施"
+      },
+      {
+        "id": "B",
+        "text": "完全忽略"
+      },
+      {
+        "id": "C",
+        "text": "只记录不处理"
+      },
+      {
+        "id": "D",
+        "text": "推迟到最后"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "高概率高影响的风险需要优先应对。",
+    "tags": [
+      "风险"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S33",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "向客户复述需求的主要目的是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "确认双方对问题与目标理解一致"
+      },
+      {
+        "id": "B",
+        "text": "展示口才"
+      },
+      {
+        "id": "C",
+        "text": "延长会议"
+      },
+      {
+        "id": "D",
+        "text": "替代文档"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "复述需求是为了对齐理解，避免方向偏差。",
+    "tags": [
+      "方案表达"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S34",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "方案中说明“取舍”的价值是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "让客户理解为什么这样选以及代价"
+      },
+      {
+        "id": "B",
+        "text": "隐藏风险"
+      },
+      {
+        "id": "C",
+        "text": "只讲优点"
+      },
+      {
+        "id": "D",
+        "text": "避免讨论"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "说明取舍让方案更可信，帮助客户理解决策依据。",
+    "tags": [
+      "方案表达"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S35",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "POC（概念验证）的主要目的是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "用小范围验证方案可行性"
+      },
+      {
+        "id": "B",
+        "text": "直接全量上线"
+      },
+      {
+        "id": "C",
+        "text": "替代需求分析"
+      },
+      {
+        "id": "D",
+        "text": "只做演示"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "POC 用小范围验证可行性与关键技术风险。",
+    "tags": [
+      "验证"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S36",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "需求变更频繁时，更应？",
+    "options": [
+      {
+        "id": "A",
+        "text": "建立变更评估与版本管理机制"
+      },
+      {
+        "id": "B",
+        "text": "直接接受所有变更"
+      },
+      {
+        "id": "C",
+        "text": "拒绝一切变更"
+      },
+      {
+        "id": "D",
+        "text": "忽略影响"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "需求变更需要评估影响并做版本管理。",
+    "tags": [
+      "需求管理"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S37",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "判断是否引入 Multi-Agent 时，关键看？",
+    "options": [
+      {
+        "id": "A",
+        "text": "任务是否天然可拆分为清晰子任务"
+      },
+      {
+        "id": "B",
+        "text": "是否想让方案听起来高端"
+      },
+      {
+        "id": "C",
+        "text": "是否需要更多服务器"
+      },
+      {
+        "id": "D",
+        "text": "与需求无关"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "多 Agent 适合可拆分、职责清晰的复杂任务。",
+    "tags": [
+      "方案设计"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S38",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "“最小可行产品（MVP）”的核心思想是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "用最小范围验证核心价值"
+      },
+      {
+        "id": "B",
+        "text": "一次做完所有功能"
+      },
+      {
+        "id": "C",
+        "text": "只做界面"
+      },
+      {
+        "id": "D",
+        "text": "不做任何验证"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "MVP 用最小范围验证核心价值，再逐步扩展。",
+    "tags": [
+      "方案设计"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S39",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "项目中的“假设”应如何处理？",
+    "options": [
+      {
+        "id": "A",
+        "text": "记录假设并在验证后更新"
+      },
+      {
+        "id": "B",
+        "text": "当作事实"
+      },
+      {
+        "id": "C",
+        "text": "完全忽略"
+      },
+      {
+        "id": "D",
+        "text": "不告诉任何人"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "假设要显式记录，并通过验证确认或修正。",
+    "tags": [
+      "方案设计"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S40",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "知识助手方案中，答案“不可溯源”会带来什么风险？",
+    "options": [
+      {
+        "id": "A",
+        "text": "用户无法验证回答可信度"
+      },
+      {
+        "id": "B",
+        "text": "回答一定更快"
+      },
+      {
+        "id": "C",
+        "text": "成本下降"
+      },
+      {
+        "id": "D",
+        "text": "与质量无关"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "不可溯源会降低可信度，增加误信风险。",
+    "tags": [
+      "方案设计"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S41",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "客服 Workflow 中“人工兜底”通常放在？",
+    "options": [
+      {
+        "id": "A",
+        "text": "模型无法处理或需确认的关键节点"
+      },
+      {
+        "id": "B",
+        "text": "每个节点"
+      },
+      {
+        "id": "C",
+        "text": "只放在入口"
+      },
+      {
+        "id": "D",
+        "text": "完全不需要"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "人工兜底放在关键、不确定或高风险节点。",
+    "tags": [
+      "Workflow",
+      "方案设计"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S42",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "方案设计中的“组件职责单一”主要为了？",
+    "options": [
+      {
+        "id": "A",
+        "text": "便于维护、测试与替换"
+      },
+      {
+        "id": "B",
+        "text": "增加代码行数"
+      },
+      {
+        "id": "C",
+        "text": "让系统更慢"
+      },
+      {
+        "id": "D",
+        "text": "与质量无关"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "职责单一降低耦合，便于维护、测试与替换。",
+    "tags": [
+      "架构设计"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S43",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "验收方案中应明确什么？",
+    "options": [
+      {
+        "id": "A",
+        "text": "通过标准、测试样本与判定方法"
+      },
+      {
+        "id": "B",
+        "text": "只写项目名称"
+      },
+      {
+        "id": "C",
+        "text": "只写时间"
+      },
+      {
+        "id": "D",
+        "text": "不写任何人"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "验收要明确标准、样本与判定方法。",
+    "tags": [
+      "验收标准"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S44",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "行业经验案例对方案设计的价值是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "提供可参考的模式与坑点"
+      },
+      {
+        "id": "B",
+        "text": "可直接照搬不做调整"
+      },
+      {
+        "id": "C",
+        "text": "替代需求分析"
+      },
+      {
+        "id": "D",
+        "text": "与方案无关"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "案例提供参考模式与坑点，但仍需结合具体需求调整。",
+    "tags": [
+      "方案设计"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S45",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "方案汇报时，更应优先讲清楚？",
+    "options": [
+      {
+        "id": "A",
+        "text": "问题、方案、价值与风险"
+      },
+      {
+        "id": "B",
+        "text": "只讲技术细节"
+      },
+      {
+        "id": "C",
+        "text": "只讲成本"
+      },
+      {
+        "id": "D",
+        "text": "跳过问题直接说结论"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "汇报要讲清问题、方案、价值与风险，形成完整逻辑。",
+    "tags": [
+      "方案表达"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S46",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "需求中“隐性约束”容易被忽略，例如？",
+    "options": [
+      {
+        "id": "A",
+        "text": "合规要求、系统兼容性与数据权限"
+      },
+      {
+        "id": "B",
+        "text": "界面颜色"
+      },
+      {
+        "id": "C",
+        "text": "字体大小"
+      },
+      {
+        "id": "D",
+        "text": "按钮数量"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "合规、兼容与权限等隐性约束常被忽略但影响交付。",
+    "tags": [
+      "需求分析"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S47",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "多个需求冲突时，更合理的处理是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "按业务价值与影响权衡优先级"
+      },
+      {
+        "id": "B",
+        "text": "全部同时做"
+      },
+      {
+        "id": "C",
+        "text": "随机挑选"
+      },
+      {
+        "id": "D",
+        "text": "忽略所有需求"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "冲突需求要按价值与影响权衡优先级。",
+    "tags": [
+      "需求管理"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S48",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "技术方案的可维护性主要影响？",
+    "options": [
+      {
+        "id": "A",
+        "text": "后续迭代与问题排查成本"
+      },
+      {
+        "id": "B",
+        "text": "首屏加载速度"
+      },
+      {
+        "id": "C",
+        "text": "页面颜色"
+      },
+      {
+        "id": "D",
+        "text": "与项目无关"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "可维护性决定后续迭代与排查成本。",
+    "tags": [
+      "技术选型"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S49",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "方案设计阶段就该考虑评测，原因是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "提前定义“做得好”的标准，避免返工"
+      },
+      {
+        "id": "B",
+        "text": "评测与设计无关"
+      },
+      {
+        "id": "C",
+        "text": "只会增加成本"
+      },
+      {
+        "id": "D",
+        "text": "上线后再补评测"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "提前定义评测标准，能指导设计并减少返工。",
+    "tags": [
+      "方案设计"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-S50",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "single",
+    "difficulty": "medium",
+    "stem": "交付物中“操作手册”的作用是？",
+    "options": [
+      {
+        "id": "A",
+        "text": "让使用方理解如何操作与维护"
+      },
+      {
+        "id": "B",
+        "text": "只用于归档"
+      },
+      {
+        "id": "C",
+        "text": "替代代码"
+      },
+      {
+        "id": "D",
+        "text": "与交付无关"
+      }
+    ],
+    "answerIds": [
+      "A"
+    ],
+    "explanation": "操作手册帮助使用方理解操作与维护方式。",
+    "tags": [
+      "交付"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-M14",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "需求澄清需要明确？",
+    "options": [
+      {
+        "id": "A",
+        "text": "业务目标"
+      },
+      {
+        "id": "B",
+        "text": "现状流程"
+      },
+      {
+        "id": "C",
+        "text": "约束条件"
+      },
+      {
+        "id": "D",
+        "text": "只问预算"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "需求澄清覆盖目标、流程与约束，预算只是约束之一。",
+    "tags": [
+      "需求澄清"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-M15",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "方案设计的产出通常包括？",
+    "options": [
+      {
+        "id": "A",
+        "text": "架构图"
+      },
+      {
+        "id": "B",
+        "text": "知识与工具设计"
+      },
+      {
+        "id": "C",
+        "text": "评测方案"
+      },
+      {
+        "id": "D",
+        "text": "只写一段话"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "方案产出包含架构、知识与工具、评测等。",
+    "tags": [
+      "方案设计"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-M16",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "风险评估需要识别？",
+    "options": [
+      {
+        "id": "A",
+        "text": "发生概率"
+      },
+      {
+        "id": "B",
+        "text": "影响程度"
+      },
+      {
+        "id": "C",
+        "text": "应对措施"
+      },
+      {
+        "id": "D",
+        "text": "只记录不评估"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "风险评估要识别概率、影响与应对。",
+    "tags": [
+      "风险"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-M17",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "好的验收标准应具备？",
+    "options": [
+      {
+        "id": "A",
+        "text": "可量化"
+      },
+      {
+        "id": "B",
+        "text": "可复现"
+      },
+      {
+        "id": "C",
+        "text": "与目标一致"
+      },
+      {
+        "id": "D",
+        "text": "完全主观"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "验收标准应可量化、可复现并与目标一致。",
+    "tags": [
+      "验收标准"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-M18",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "客户沟通中应避免？",
+    "options": [
+      {
+        "id": "A",
+        "text": "只讲技术不讲价值"
+      },
+      {
+        "id": "B",
+        "text": "回避风险"
+      },
+      {
+        "id": "C",
+        "text": "不确认需求理解"
+      },
+      {
+        "id": "D",
+        "text": "清晰说明方案取舍"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "沟通要讲价值、风险与需求确认，不能只讲技术或回避风险。",
+    "tags": [
+      "方案表达"
+    ],
+    "sourceType": "original",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "原创情境练习题，基于公开知识点设计，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-M19",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "技术选型应考虑？",
+    "options": [
+      {
+        "id": "A",
+        "text": "需求匹配度"
+      },
+      {
+        "id": "B",
+        "text": "成本"
+      },
+      {
+        "id": "C",
+        "text": "团队能力"
+      },
+      {
+        "id": "D",
+        "text": "只选最贵方案"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "选型要综合需求、成本与团队能力。",
+    "tags": [
+      "技术选型"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-M20",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "架构设计应体现？",
+    "options": [
+      {
+        "id": "A",
+        "text": "组件关系"
+      },
+      {
+        "id": "B",
+        "text": "数据流向"
+      },
+      {
+        "id": "C",
+        "text": "异常与降级路径"
+      },
+      {
+        "id": "D",
+        "text": "只画一张静态图"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "架构设计需体现组件关系、数据流与异常路径。",
+    "tags": [
+      "架构设计"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-M21",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "方案落地前需要确认？",
+    "options": [
+      {
+        "id": "A",
+        "text": "数据准备"
+      },
+      {
+        "id": "B",
+        "text": "权限与合规"
+      },
+      {
+        "id": "C",
+        "text": "上线与回滚预案"
+      },
+      {
+        "id": "D",
+        "text": "只确认界面"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "落地前要确认数据、权限合规与上线回滚预案。",
+    "tags": [
+      "交付"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-M22",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "需求优先级排序可依据？",
+    "options": [
+      {
+        "id": "A",
+        "text": "业务价值"
+      },
+      {
+        "id": "B",
+        "text": "实现成本"
+      },
+      {
+        "id": "C",
+        "text": "风险大小"
+      },
+      {
+        "id": "D",
+        "text": "随机顺序"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "优先级综合业务价值、成本与风险。",
+    "tags": [
+      "需求管理"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-M23",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "知识助手方案的设计要点包括？",
+    "options": [
+      {
+        "id": "A",
+        "text": "知识库范围"
+      },
+      {
+        "id": "B",
+        "text": "检索与溯源"
+      },
+      {
+        "id": "C",
+        "text": "兜底与降级"
+      },
+      {
+        "id": "D",
+        "text": "完全不要来源"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "知识助手要设计知识范围、检索溯源与兜底。",
+    "tags": [
+      "方案设计"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-M24",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "客服 Workflow 设计需要覆盖？",
+    "options": [
+      {
+        "id": "A",
+        "text": "正常路径"
+      },
+      {
+        "id": "B",
+        "text": "异常路径"
+      },
+      {
+        "id": "C",
+        "text": "人工兜底"
+      },
+      {
+        "id": "D",
+        "text": "只处理成功情况"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "客服 Workflow 要覆盖正常、异常与人工兜底。",
+    "tags": [
+      "Workflow"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
+  },
+  {
+    "id": "D4-M25",
+    "domainId": "D4",
+    "lessonIds": [
+      "3.1"
+    ],
+    "type": "multiple",
+    "difficulty": "medium",
+    "stem": "Multi-Agent 方案设计需要明确？",
+    "options": [
+      {
+        "id": "A",
+        "text": "角色拆分"
+      },
+      {
+        "id": "B",
+        "text": "任务分配"
+      },
+      {
+        "id": "C",
+        "text": "结果汇总"
+      },
+      {
+        "id": "D",
+        "text": "删除所有日志"
+      }
+    ],
+    "answerIds": [
+      "A",
+      "B",
+      "C"
+    ],
+    "explanation": "多 Agent 方案要明确角色、任务分配与汇总。",
+    "tags": [
+      "Multi-Agent"
+    ],
+    "sourceType": "knowledge_based",
+    "sourceUrls": [
+      "https://cloud.tencent.com/document/product/658/137832"
+    ],
+    "authorNote": "根据官方考试大纲知识点整理的练习题，非官方真题。",
+    "status": "published",
+    "createdAt": "2026-11-11",
+    "updatedAt": "2026-11-11"
   }
 ]

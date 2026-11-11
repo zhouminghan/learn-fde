@@ -41,6 +41,8 @@ export default withMermaid(
     lastUpdated: true,
     head: [
       ['meta', { name: 'theme-color', content: '#f7f4ef' }],
+      ['link', { rel: 'icon', type: 'image/svg+xml', href: `${base}favicon.svg` }],
+      ['link', { rel: 'icon', type: 'image/png', href: `${base}favicon.png` }],
       ['script', {}, themeScript]
     ],
     themeConfig: {
