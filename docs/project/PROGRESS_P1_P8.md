@@ -5,8 +5,8 @@
 | Phase | 状态 | 说明 |
 |---|---|---|
 | P1 工程治理 | COMPLETED（待推送） | 许可证、README、.gitignore、CI、E2E、AGENTS.md 已完成；依赖高危项与分支保护待人工决策 |
-| P2 题库质量治理 | RUNNING | 重复题删除与难度校准进行中 |
-| P3 FDE Lab | PENDING | 依赖 P2 后启动 |
+| P2 题库质量治理 | COMPLETED | 重复题 3 对已删除，19 道记忆题校准为 easy，新增 21 道 hard 场景/故障题，新增重复题检测脚本 |
+| P3 FDE Lab | RUNNING | Lab 引擎与案例扩展启动中 |
 | P4 可视化教学 | PENDING | 可与 P3 并行 |
 | P5 学习闭环 | PENDING | 依赖 P3、IndexedDB 迁移设计 |
 | P6 整体验收 | PENDING | 依赖 P1-P5 |
